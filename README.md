@@ -1,4 +1,0 @@
-Docs
-====
-
-Public API Documentation
