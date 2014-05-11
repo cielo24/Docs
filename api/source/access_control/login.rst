@@ -14,25 +14,26 @@ Required arguments must be passed as query string parameters.
 
 Provide either x-auth-user and x-auth-key or just x-auth-securekey.
 
-.. list-table::
-   :header-rows: 1
+    .. list-table::
+       :widths: 6 15 4 25
+       :header-rows: 1
 
-   * - Name
-     - Description
-     - Allowed Values
-     - Example
-   * - x-auth-user
-     - The username associated with this account
-     - String
-     - ``user@example``
-   * - x-auth-key
-     - The password associated with this account
-     - String
-     - ``ExamplePassword``
-   * - x-auth-securekey
-     - A long term security key generated via generate_api_key
-     - Hex String
-     - ``968a8b637a5040159424872fffdb895b``
+       * - Name
+         - Description
+         - Allowed Values
+         - Example
+       * - x-auth-user
+         - The username associated with this account
+         - String
+         - ``user@example``
+       * - x-auth-key
+         - The password associated with this account
+         - String
+         - ``ExamplePassword``
+       * - x-auth-securekey
+         - A long term security key generated via generate_api_key
+         - Hex String
+         - ``968a8b637a5040159424872fffdb895b``
 
 **Query String Parameters** - Required
 
