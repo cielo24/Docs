@@ -15,7 +15,6 @@ Required arguments must be passed as query string parameters.
 Provide either x-auth-user and x-auth-key or just x-auth-securekey.
 
 .. list-table::
-   :widths: 6 15 4 25
    :header-rows: 1
 
    * - Name
