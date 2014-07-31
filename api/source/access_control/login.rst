@@ -100,35 +100,35 @@ Provide **x-auth-user** with either **x-auth-key** or **x-auth-securekey**.
 
 **Example Requests**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/account/login?v=1&username=user@example.com&password=example_password HTTP/1.1
-        Host: api.cielo24.com
+    GET /api/account/login?v=1&username=user@example.com&password=example_password HTTP/1.1
+    Host: api.cielo24.com
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/account/login?v=1&username=user&securekey=968a8b637a5040159424872fffdb895b HTTP/1.1
-        Host: api.cielo24.com
+    GET /api/account/login?v=1&username=user&securekey=968a8b637a5040159424872fffdb895b HTTP/1.1
+    Host: api.cielo24.com
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/account/login?v=1 HTTP/1.1
-        Host: api.cielo24.com
-        x-auth-user: user@example.com
-        x-auth-key: example_password
+    GET /api/account/login?v=1 HTTP/1.1
+    Host: api.cielo24.com
+    x-auth-user: user@example.com
+    x-auth-key: example_password
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/account/login?v=1 HTTP/1.1
-        Host: api.cielo24.com
-        x-auth-user: user@example.com
-        x-auth-securekey: 968a8b637a5040159424872fffdb895b
+    GET /api/account/login?v=1 HTTP/1.1
+    Host: api.cielo24.com
+    x-auth-user: user@example.com
+    x-auth-securekey: 968a8b637a5040159424872fffdb895b
 
 **Example Response**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 200 OK
-        Content-Type: text/javascript
+    HTTP/1.1 200 OK
+    Content-Type: text/javascript
 
-        { "ApiToken" : "7ca5dc5c7cce449fb0fff719307e8f5f" }
+    { "ApiToken" : "7ca5dc5c7cce449fb0fff719307e8f5f" }
