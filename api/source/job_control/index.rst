@@ -14,3 +14,7 @@ For each session, you will be given an api access token. This token identifies t
    add_media_to_job
    add_embedded_media_to_job
    get_media
+   perform_transcription
+   get_transcript
+   get_caption
+   get_elementlist
