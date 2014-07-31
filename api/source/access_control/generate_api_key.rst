@@ -75,17 +75,17 @@ even if keys already exist.
 
 **Example Requests**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/account/generate_api_key?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-            &account_id=user@example.com&force_new=true
-        Host: api.cielo24.com
+    GET /api/account/generate_api_key?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+        &account_id=user@example.com&force_new=true
+    Host: api.cielo24.com
 
 **Example Response**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 200 OK
-        Content-Type: text/javascript
+    HTTP/1.1 200 OK
+    Content-Type: text/javascript
 
-        {"ApiKey" : "7ca5dc5c7cce449fb0fff719307e8f5f"}
+    { "ApiKey" : "7ca5dc5c7cce449fb0fff719307e8f5f" }

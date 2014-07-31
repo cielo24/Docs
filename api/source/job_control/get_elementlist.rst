@@ -55,17 +55,17 @@ Get the fully detailed ElementList in JSON format.
 
 **Example Requests**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/job/get_elementlist?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-            &job_id=64bea283eff6475ea6596027a6ba0929
-        Host: api.cielo24.com
+    GET /api/job/get_elementlist?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+        &job_id=64bea283eff6475ea6596027a6ba0929
+    Host: api.cielo24.com
 
 **Example Response**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 200 OK
-        Content-Type: text/javascript
+    HTTP/1.1 200 OK
+    Content-Type: text/javascript
 
-        See ElementList format for details.
+    See ElementList format for details.

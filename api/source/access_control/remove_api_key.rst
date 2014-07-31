@@ -53,17 +53,17 @@ Invalidates an API Key you have previously generated. It will no longer work as 
 
 **Example Requests**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/account/remove_api_key?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-            &api_securekey=968a8b637a5040159424872fffdb895b
-        Host: api.cielo24.com
+    GET /api/account/remove_api_key?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+        &api_securekey=968a8b637a5040159424872fffdb895b
+    Host: api.cielo24.com
 
 **Example Response**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 204 OK
-        Content-Type: text/javascript
+    HTTP/1.1 204 OK
+    Content-Type: text/javascript
 
-        none
+    (none)

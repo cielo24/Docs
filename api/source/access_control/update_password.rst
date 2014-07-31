@@ -55,17 +55,17 @@ Update the password for a given account. HTTP POST only.
 
 **Example Requests**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        POST /api/account/update_password HTTP/1.1
-        Host: api.cielo24.com
-        Body: v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f&new_password=example_password
+    POST /api/account/update_password HTTP/1.1
+    Host: api.cielo24.com
+    Body: v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f&new_password=example_password
 
 **Example Response**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 204 OK
-        Content-Type: text/javascript
+    HTTP/1.1 204 OK
+    Content-Type: text/javascript
 
-        none
+    (none)

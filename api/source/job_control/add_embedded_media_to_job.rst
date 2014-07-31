@@ -64,18 +64,18 @@ Use this option to link to a video hosted by such providers as Youtube, or Vimeo
 
 **Example Requests**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/job/add_media_url?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-            &job_id=64bea283eff6475ea6596027a6ba0929
-            &media_url=http%3A%2F%2Fyoutu.be%2F5m5MPiL99Nc
-        Host: api.cielo24.com
+    GET /api/job/add_media_url?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+        &job_id=64bea283eff6475ea6596027a6ba0929
+        &media_url=http%3A%2F%2Fyoutu.be%2F5m5MPiL99Nc
+    Host: api.cielo24.com
 
 **Example Response**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 200 OK
-        Content-Type: text/javascript
+    HTTP/1.1 200 OK
+    Content-Type: text/javascript
 
-        { "TaskId" : "Encoded Task Id" }
+    { "TaskId" : "Encoded Task Id" }

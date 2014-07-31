@@ -83,18 +83,6 @@ and will be removed in the next API version.
 |                         |                                                                              |
 |                         |                                                                              |
 +-------------------------+------------------+-----------------------------------------------------------+
-| customer_approval_steps | `Allowed Values` | [ TRANSLATION, RETURN ]                                   |
-|                         +------------------+-----------------------------------------------------------+
-|                         | `Default Value`  | []                                                        |
-|                         +------------------+-----------------------------------------------------------+
-|                         | `Example`        | ``password=example_password``                             |
-+-------------------------+------------------+-----------------------------------------------------------+
-| | Requires your approval of a job at specified points in the workflow.                                 |
-| | When the job is ready points in the workflow. When the job is ready                                  |
-| | for approval...                                                                                      |
-|                                                                                                        |
-|                                                                                                        |
-+--------------------------------------------------------------------------------------------------------+
 |                         | | Requires your approval of a job at specified points in the workflow.       |
 |                         | | When the job is ready points in the workflow. When the job is ready        |
 |                         | | for approval...                                                            |
@@ -185,18 +173,18 @@ and will be removed in the next API version.
 
 **Example Requests**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/job/info?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-            &job_id=64bea283eff6475ea6596027a6ba0929
-            &transcription_fidelity=PREMIUM&priority=STANDARD
-        Host: api.cielo24.com
+    GET /api/job/info?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+        &job_id=64bea283eff6475ea6596027a6ba0929
+        &transcription_fidelity=PREMIUM&priority=STANDARD
+    Host: api.cielo24.com
 
 **Example Response**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 200 OK
-        Content-Type: text/javascript
+    HTTP/1.1 200 OK
+    Content-Type: text/javascript
 
-        { "TaskId" : "Encoded Task Id" }
+    { "TaskId" : "Encoded Task Id" }

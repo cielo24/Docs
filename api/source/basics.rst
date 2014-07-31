@@ -26,5 +26,5 @@ Many processing requests such as transcription and synchronization are not compl
 http://www .yourdomain.com/cielo24/request_complete?job_id=1234
 
 Polling
-------
+-------
 If a callback URL is not practical, the application can poll the interface by requesting the status of a given task that is associated with a given job. The task status will indicate COMPLETE when the task is done.

@@ -94,25 +94,25 @@ The media should be uploaded as raw binary, no encoding (base64, hex, etc) is re
 
 **Example Requests**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/job/add_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-            &job_id=64bea283eff6475ea6596027a6ba0929
-            &media_url=http%3A%2F%2Fwww.domain.com%2Fvideo.mp4
-        Host: api.cielo24.com
+    GET /api/job/add_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+        &job_id=64bea283eff6475ea6596027a6ba0929
+        &media_url=http%3A%2F%2Fwww.domain.com%2Fvideo.mp4
+    Host: api.cielo24.com
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        POST /api/job/add_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-            &job_id=64bea283eff6475ea6596027a6ba0929
-        Host: api.cielo24.com
-        Body: raw binary
+    POST /api/job/add_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+        &job_id=64bea283eff6475ea6596027a6ba0929
+    Host: api.cielo24.com
+    Body: raw binary
 
 **Example Response**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 200 OK
-        Content-Type: text/javascript
+    HTTP/1.1 200 OK
+    Content-Type: text/javascript
 
-        { "TaskId" : "Encoded Task Id" }
+    { "TaskId" : "Encoded Task Id" }
