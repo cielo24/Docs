@@ -1,40 +1,11 @@
-Login
-=====
+Create Job
+==========
 
-Login to the cielo24 API to obtain an API access token for use when calling other methods.
-Optional arguments may be passed either as HTTP headers or query string parameters.
-Required arguments must be passed as query string parameters.
-
+Create a new job.
 
 **HTTP Method**
 
-.. http:get:: /api/account/login
-
-**HTTP Headers** - Optional
-
-Provide **x-auth-user** with either **x-auth-key** or **x-auth-securekey**.
-
-+------------------+------------------------------------------------------------------------------+
-| Name             | Details                                                                      |
-+==================+==================+===========================================================+
-| x-auth-user      | `Description`    | The username associated with this account                 |
-|                  +------------------+-----------------------------------------------------------+
-|                  | `Allowed Values` | String                                                    |
-|                  +------------------+-----------------------------------------------------------+
-|                  | `Example`        | ``user@example.com``                                      |
-+------------------+------------------+-----------------------------------------------------------+
-| x-auth-password  | `Description`    | The password associated with this account                 |
-|                  +------------------+-----------------------------------------------------------+
-|                  | `Allowed Values` | String                                                    |
-|                  +------------------+-----------------------------------------------------------+
-|                  | `Example`        | ``example_password``                                      |
-+------------------+------------------+-----------------------------------------------------------+
-| x-auth-securekey | `Description`    | A long term security key generated via generate_api_key   |
-|                  +------------------+-----------------------------------------------------------+
-|                  | `Allowed Values` | Hex String                                                |
-|                  +------------------+-----------------------------------------------------------+
-|                  | `Example`        | ``968a8b637a5040159424872fffdb895b``                      |
-+------------------+------------------+-----------------------------------------------------------+
+.. http:get:: /api/job/new
 
 **Query String Parameters** - Required
 
@@ -47,31 +18,31 @@ Provide **x-auth-user** with either **x-auth-key** or **x-auth-securekey**.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``v=1``                                                   |
 +------------------+------------------+-----------------------------------------------------------+
+| api_token        | `Description`    | The API token used for this session                       |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Allowed Values` | Hex String                                                |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
++------------------+------------------+-----------------------------------------------------------+
 
 **Query String Parameters** - Optional
-
-    Provide **username** with either **password** or **securekey**.
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
 +==================+==================+===========================================================+
-| username         | `Description`    | The username associated with this account                 |
+| job_name         | `Description`    | A human readable identifier for the job                   |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | String                                                    |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Example`        | ``username=user@example.com``                             |
+|                  | `Example`        | ``job_name=example_name``                                 |
 +------------------+------------------+-----------------------------------------------------------+
-| password         | `Description`    | The password associated with this account                 |
+| language         | `Description`    | Native job language.                                      |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Allowed Values` | String                                                    |
+|                  | `Allowed Values` | RFC 5646 language tag                                     |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Example`        | ``password=example_password``                             |
-+------------------+------------------+-----------------------------------------------------------+
-| securekey        | `Description`    | A long term security key generated via generate_api_key   |
+|                  | `Default Value`  | en                                                        |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Allowed Values` | Hex String                                                |
-|                  +------------------+-----------------------------------------------------------+
-|                  | `Example`        | ``securekey=968a8b637a5040159424872fffdb895b``            |
+|                  | `Example`        | ``language=en``                                           |
 +------------------+------------------+-----------------------------------------------------------+
 
 **Responses**
@@ -84,7 +55,8 @@ Provide **x-auth-user** with either **x-auth-key** or **x-auth-securekey**.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "ApiToken": "a hex string consisting of the new API token"            |
+|           |               |    "JobId" : "An ID which can be used to refer to this job" ,            |
+|           |               |    "TaskId" : "An ID which exists to track tasks within a job"           |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -102,27 +74,9 @@ Provide **x-auth-user** with either **x-auth-key** or **x-auth-securekey**.
 
     .. sourcecode:: http
 
-        GET /api/account/login?v=1&username=user@example.com&password=example_password HTTP/1.1
+        GET /api/job/new?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+            &job_name=example_name&language=en
         Host: api.cielo24.com
-
-    .. sourcecode:: http
-
-        GET /api/account/login?v=1&username=user&securekey=968a8b637a5040159424872fffdb895b HTTP/1.1
-        Host: api.cielo24.com
-
-    .. sourcecode:: http
-
-        GET /api/account/login?v=1 HTTP/1.1
-        Host: api.cielo24.com
-        x-auth-user: user@example.com
-        x-auth-key: example_password
-
-    .. sourcecode:: http
-
-        GET /api/account/login?v=1 HTTP/1.1
-        Host: api.cielo24.com
-        x-auth-user: user@example.com
-        x-auth-securekey: 968a8b637a5040159424872fffdb895b
 
 **Example Response**
 
@@ -131,4 +85,7 @@ Provide **x-auth-user** with either **x-auth-key** or **x-auth-securekey**.
         HTTP/1.1 200 OK
         Content-Type: text/javascript
 
-        { "ApiToken" : "7ca5dc5c7cce449fb0fff719307e8f5f" }
+        {
+          "JobId" : "64bea283eff6475ea6596027a6ba0929" ,
+          "TaskId" : "cc8095fbfecf4647b2e10b622d81c19b"
+        }
