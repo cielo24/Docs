@@ -47,16 +47,16 @@ Logout of the current session, invalidating the API token.
 
 **Example Requests**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        GET /api/account/logout?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        Host: api.cielo24.com
+    GET /api/account/logout?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+    Host: api.cielo24.com
 
 **Example Response**
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
-        HTTP/1.1 204 OK
-        Content-Type: text/javascript
+    HTTP/1.1 204 OK
+    Content-Type: text/javascript
 
-        none
+    none
