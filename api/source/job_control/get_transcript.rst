@@ -36,7 +36,11 @@ Get the transcript file created for a target media.
 +-------------------------------+------------------------------------------------------------------------------+
 | Name                          | Details                                                                      |
 +===============================+==================+===========================================================+
-| characters_per_caption_line   | `Description`    | TODO                                                      |
+| characters_per_caption_line   | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Maximum number of characters to be displayed on each </br>                  |
+|                               |  transcript line. If 0, there is no limit.</br>                              |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Integer                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -44,7 +48,12 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``characters_per_caption_line=15``                        |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| create_paragraphs             | `Description`    | TODO                                                      |
+| create_paragraphs             | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Enable or disable paragraph breaks. If disabled, the text</br>              |
+|                               |  will only be broken up by the <i>timecode_interval</i> or</br>              |
+|                               |  <i>newlines_after_sentence</i> options.                                     |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Boolean                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -52,7 +61,12 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``create_paragraphs=true``                                |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| elementlist_version           | `Description`    | TODO                                                      |
+| elementlist_version           | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  The version of element list to generate the transcript from.</br>           |
+|                               |  If not specified, the transcript will be generated from the</br>            |
+|                               |  latest version.                                                             |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | ISO 8601 Date String                                      |
 |                               +------------------+-----------------------------------------------------------+
@@ -60,7 +74,10 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``elementlist_version=2014-07-31T12:35:52Z``              |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| emit_speaker_change_tokens_as | `Description`    | TODO                                                      |
+| emit_speaker_change_tokens_as | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Determine what characters to use to denote speaker changes.</br>            |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | String                                                    |
 |                               +------------------+-----------------------------------------------------------+
@@ -68,7 +85,11 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``emit_speaker_change_tokens_as=>>``                      |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| newlines_after_paragraph      | `Description`    | TODO                                                      |
+| newlines_after_paragraph      | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  If generating paragraphs, insert the specified number of new</br>           |
+|                               |  lines after each paragraph.                                                 |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Integer                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -76,7 +97,10 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``newlines_after_paragraph=3``                            |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| newlines_after_sentence       | `Description`    | TODO                                                      |
+| newlines_after_sentence       | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Insert the specified number of new lines after each sentence.               |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Integer                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -84,7 +108,12 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``newlines_after_sentence=1``                             |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| remove_disfluencies           | `Description`    | TODO                                                      |
+| remove_disfluencies           | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Remove verbal disfluencies from the generated transcript.</br>              |
+|                               |  Common disfluencies such as "um" and "ah" are removed while</br>            |
+|                               |  maintaining appropriate punctuation.                                        |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Boolean                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -92,7 +121,10 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``remove_disfluencies=true``                              |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| mask_profanity                | `Description`    | TODO                                                      |
+| mask_profanity                | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Replace profanity with asterisks.                                           |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Boolean                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -100,7 +132,11 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``mask_profanity=false``                                  |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| remove_sounds_list            | `Description`    | TODO                                                      |
+| remove_sounds_list            | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  A list of sounds to not show in the transcript. This is a</br>              |
+|                               |  json style list, and should look like ["MUSIC", "LAUGH"].                   |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | List of Strings                                           |
 |                               +------------------+-----------------------------------------------------------+
@@ -108,7 +144,14 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``remove_sounds_list=["MUSIC","LAUGH"]``                  |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| remove_sound_references       | `Description`    | TODO                                                      |
+| remove_sound_references       | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Remove non-verbal sound and noise references from the</br>                  |
+|                               |  generated transcript. Sounds and unidentified noises are</br>               |
+|                               |  depicted in the transcript as [sound], [cough] and [noise].</br>            |
+|                               |  If this parameter is set, these identifiers are omitted from</br>           |
+|                               |  the transcript.                                                             |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Boolean                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -116,7 +159,12 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``remove_sound_references=true``                          |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| replace_slang                 | `Description`    | TODO                                                      |
+| replace_slang                 | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Replace common slang terms from the generated transcript.</br>              |
+|                               |  Common replacements are "want to" for "wanna", "going to"</br>              |
+|                               |  for "gonna", etc.                                                           |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Boolean                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -124,7 +172,12 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``replace_slang=true``                                    |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| sound_boundaries              | `Description`    | TODO                                                      |
+| sound_boundaries              | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Specifies the characters to surround sound references with.</br>            |
+|                               |  The default will generate sound references that look like</br>              |
+|                               |  this: [MUSIC].                                                              |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Character Tuple                                           |
 |                               +------------------+-----------------------------------------------------------+
@@ -132,7 +185,11 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``sound_boundaries=('[',']')``                            |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| timecode_every_paragraph      | `Description`    | TODO                                                      |
+| timecode_every_paragraph      | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  If generating paragraphs, include timecodes at the start of each</br>       |
+|                               |  one.                                                                        |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Boolean                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -140,7 +197,11 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``timecode_every_paragraph=false``                        |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| timecode_format               | `Description`    | TODO                                                      |
+| timecode_format               | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Time format string, supports: %H: hours, %M: minutes,</br>                  |
+|                               |  %S: seconds, %f: milliseconds.                                              |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | String                                                    |
 |                               +------------------+-----------------------------------------------------------+
@@ -148,7 +209,10 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``timecode_format=[%H:%M:%S]``                            |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| timecode_interval             | `Description`    | TODO                                                      |
+| timecode_interval             | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  If generating timecodes, specify the interval in milliseconds.              |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Integer                                                   |
 |                               +------------------+-----------------------------------------------------------+
@@ -156,7 +220,10 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``timecode_interval=100``                                 |
 +-------------------------------+------------------+-----------------------------------------------------------+
-| timecode_offset               | `Description`    | TODO                                                      |
+| timecode_offset               | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Offset the start of the timecode by the given value in milliseconds.        |
+|                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Integer                                                   |
 |                               +------------------+-----------------------------------------------------------+

@@ -18,3 +18,4 @@ For each session, you will be given an api access token. This token identifies t
    get_transcript
    get_caption
    get_elementlist
+   list_elementlists
