@@ -2,7 +2,7 @@ Generate API Key
 ================
 
 Creates a long term use API key to use in lieu of a password.
-With this key you can login using your user name and the key, instead of the account password.
+With this key you can :doc:`login <login>` using your user name and the key, instead of the account password.
 If the account you have specified has one pre-existing, it is returned to you.
 Setting **force_new** explicitly requests that an additional key be created for the account
 even if keys already exist.

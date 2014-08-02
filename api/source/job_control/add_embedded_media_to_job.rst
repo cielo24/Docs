@@ -25,7 +25,7 @@ Use this option to link to a video hosted by such providers as Youtube, or Vimeo
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The id of the job                                         |
+| job_id           | `Description`    | The ID of the job                                         |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+

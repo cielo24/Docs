@@ -277,7 +277,7 @@ Get the transcript file created for a target media.
     Content-Type: text/plain
 
     [00:00:01]
-    Senator, we're making our final approach into Coruscant.
+    First line of text.
 
     [00:00:11]
-    Very good, Lieutenant.
+    Second line of text.

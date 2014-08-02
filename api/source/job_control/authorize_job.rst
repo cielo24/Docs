@@ -1,9 +1,9 @@
 Authorize Job
 =============
 
-Authorizes an existing job. If your account has the “customer authorization” feature enabled
-(It is not enabled by default.) jobs you create will be held in the “Authorizing” state until
-you call this method. Calling this method on a job that is not the “Authorizing” state has no
+Authorizes an existing job. If your account has the "customer authorization" feature enabled
+(It is not enabled by default.) jobs you create will be held in the "Authorizing" state until
+you call this method. Calling this method on a job that is not the "Authorizing" state has no
 effect and will return success.
 
 **HTTP Method**
@@ -27,7 +27,7 @@ effect and will return success.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The id of the job to be authorized                        |
+| job_id           | `Description`    | The ID of the job to be authorized                        |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+

@@ -24,7 +24,7 @@ Get a list of all tasks done by an existing job.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The id of the job for which job status is returned        |
+| job_id           | `Description`    | The ID of the job for which job status is returned        |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
