@@ -1,7 +1,7 @@
 Job Control
 ===========
 
-For each session, you will be given an api access token. This token identifies the session, and all additional accesses are made using it. Api tokens expire after the user has been inactive for more than one hour.
+All job control tasks return a task ID which can be queried at any time using task status for information.
 
 .. toctree::
    :maxdepth: 2

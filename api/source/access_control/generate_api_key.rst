@@ -32,7 +32,7 @@ even if keys already exist.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | String                                                    |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Example`        | ``account_id=user@example.com``                           |
+|                  | `Example`        | ``account_id=john_doe``                                   |
 +------------------+------------------+-----------------------------------------------------------+
 
 **Query String Parameters** - Optional
@@ -59,7 +59,7 @@ even if keys already exist.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "ApiKey" : "your new long term ApiKey"                                |
+|           |               |    "ApiKey" : "The new long term ApiKey"                                 |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -68,9 +68,14 @@ even if keys already exist.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -78,7 +83,7 @@ even if keys already exist.
 .. sourcecode:: http
 
     GET /api/account/generate_api_key?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &account_id=user@example.com&force_new=true
+        &account_id=john_doe&force_new=true
     Host: api.cielo24.com
 
 **Example Response**

@@ -46,9 +46,14 @@ Invalidates an API Key you have previously generated. It will no longer work as 
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -65,5 +70,3 @@ Invalidates an API Key you have previously generated. It will no longer work as 
 
     HTTP/1.1 204 OK
     Content-Type: text/javascript
-
-    (none)

@@ -22,7 +22,7 @@ Update the password for a given account. HTTP POST only.
 +------------------+------------------+-----------------------------------------------------------+
 | api_token        | `Description`    | The API token used for this session                       |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Allowed Values` | Hex string                                                |
+|                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
@@ -48,9 +48,14 @@ Update the password for a given account. HTTP POST only.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -67,5 +72,3 @@ Update the password for a given account. HTTP POST only.
 
     HTTP/1.1 204 OK
     Content-Type: text/javascript
-
-    (none)

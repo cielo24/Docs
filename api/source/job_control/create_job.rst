@@ -38,7 +38,7 @@ Create a new job.
 +------------------+------------------+-----------------------------------------------------------+
 | language         | `Description`    | Native job language.                                      |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Allowed Values` | RFC 5646 language tag                                     |
+|                  | `Allowed Values` | RFC 5646 Language code                                    |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Default Value`  | en                                                        |
 |                  +------------------+-----------------------------------------------------------+
@@ -55,8 +55,8 @@ Create a new job.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "JobId" : "An ID which can be used to refer to this job" ,            |
-|           |               |    "TaskId" : "An ID for tracking tasks within a job"                    |
+|           |               |    "JobId" : "An Id which can be used to refer to this job" ,            |
+|           |               |    "TaskId" : "An Id for tracking tasks within a job"                    |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -65,9 +65,14 @@ Create a new job.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**

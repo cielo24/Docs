@@ -35,7 +35,13 @@ The list is sorted by default to the creation time of the job, descending.
 |           +---------------+--------------------------------------------------------------------------+
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
-|           |               |  JSON formatted Job List. See Job List format.                           |
+|           |               |  JSON formatted Job List.                                                |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#job-list-format">          |
+|           |               |    Job List Format</a> for details.                                      |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
 |           +---------------+--------------------------------------------------------------------------+
@@ -43,9 +49,14 @@ The list is sorted by default to the creation time of the job, descending.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -62,4 +73,21 @@ The list is sorted by default to the creation time of the job, descending.
     HTTP/1.1 200 OK
     Content-Type: text/javascript
 
-    See Job List format for details.
+    {
+        "Username" : "john_doe",
+        "ActiveJobs" :
+        [{
+            "JobId" : "64bea283eff6475ea6596027a6ba0929",
+            "JobName" : "example_job",
+            "JobStatus" : "Complete",
+            "Priority" : "ECONOMY",
+            "Fidelity" : "PREMIUM",
+            "JobLanguage" : "EN_US",
+            "TargetLanguage" : "EN_US",
+            "CreationTime" : "2014-07-31T12:35:52Z",
+            "DueDate" : "2014-08-01T12:35:52Z",
+            "TurnaroundTimeHours" : 72,
+            "StartTime" : "2014-07-31T12:35:52Z",
+            "CompletedTime" : "2014-08-01T12:35:52Z"
+        }]
+    }

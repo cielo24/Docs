@@ -24,7 +24,7 @@ Gets the list of ElementLists for the job.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The id of the job                                         |
+| job_id           | `Description`    | The Id of the job                                         |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
@@ -41,7 +41,12 @@ Gets the list of ElementLists for the job.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  JSON formatted list of ElementList versions.                            |
-|           |               |  See ElementList list format.                                            |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#elementlist-list-format">  |
+|           |               |    ElementList List Format</a> for details.                              |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
 |           +---------------+--------------------------------------------------------------------------+
@@ -49,9 +54,14 @@ Gets the list of ElementLists for the job.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -69,4 +79,7 @@ Gets the list of ElementLists for the job.
     HTTP/1.1 200 OK
     Content-Type: text/javascript
 
-    See ElementList list format for details.
+    [{
+        "iwp_name" : "example",
+        "version" : "2014-07-31T12:35:52Z"
+    }]

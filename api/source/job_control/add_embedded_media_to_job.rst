@@ -25,7 +25,7 @@ Use this option to link to a video hosted by such providers as Youtube, or Vimeo
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The ID of the job                                         |
+| job_id           | `Description`    | The Id of the job                                         |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
@@ -57,9 +57,14 @@ Use this option to link to a video hosted by such providers as Youtube, or Vimeo
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -78,4 +83,4 @@ Use this option to link to a video hosted by such providers as Youtube, or Vimeo
     HTTP/1.1 200 OK
     Content-Type: text/javascript
 
-    { "TaskId" : "Encoded Task Id" }
+    { "TaskId" : "41ec7d23fb4b45f9b48a13d0b7283bf2" }

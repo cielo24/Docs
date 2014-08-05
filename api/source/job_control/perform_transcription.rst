@@ -14,39 +14,45 @@ and will be removed in the next API version.
 
 **Query String Parameters** - Required
 
-+------------------------+------------------------------------------------------------------------------+
-| Name                   | Details                                                                      |
-+========================+==================+===========================================================+
-| v                      | `Description`    | The version of the API to use                             |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Allowed Values` | 1                                                         |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Example`        | ``v=1``                                                   |
-+------------------------+------------------+-----------------------------------------------------------+
-| api_token              | `Description`    | The API token used for this session                       |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Allowed Values` | Hex String                                                |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
-+------------------------+------------------+-----------------------------------------------------------+
-| job_id                 | `Description`    | The ID of the job                                         |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Allowed Values` | Hex String                                                |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Example`        | ``job_id=64bea283eff6475ea6596027a6ba0929``               |
-+------------------------+------------------+-----------------------------------------------------------+
-| transcription_fidelity | `Description`    | The desired fidelity of the transcription                 |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Allowed Values` | Fidelity Enum (See ... for details)                       |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Example`        | ``transcription_fidelity=PREMIUM``                        |
-+------------------------+------------------+-----------------------------------------------------------+
-| priority               | `Description`    | The desired priority of the transcription                 |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Allowed Values` | Priority Enum (See ... for details)                       |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Example`        | ``priority=STANDARD``                                     |
-+------------------------+------------------+-----------------------------------------------------------+
++------------------------+-------------------------------------------------------------------------------------+
+| Name                   | Details                                                                             |
++========================+==================+==================================================================+
+| v                      | `Description`    | The version of the API to use                                    |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Allowed Values` | 1                                                                |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Example`        | ``v=1``                                                          |
++------------------------+------------------+------------------------------------------------------------------+
+| api_token              | `Description`    | The API token used for this session                              |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Allowed Values` | Hex String                                                       |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``                   |
++------------------------+------------------+------------------------------------------------------------------+
+| job_id                 | `Description`    | The Id of the job                                                |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Allowed Values` | Hex String                                                       |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Example`        | ``job_id=64bea283eff6475ea6596027a6ba0929``                      |
++------------------------+------------------+------------------------------------------------------------------+
+| transcription_fidelity | `Description`    | The desired fidelity of the transcription                        |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Allowed Values` | .. raw:: html                                                    |
+|                        |                  |                                                                  |
+|                        |                  |  <a href="../output_formats/enums.html#fidelity-enumeration">    |
+|                        |                  |  Fidelity Enum</a>                                               |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Example`        | ``transcription_fidelity=PREMIUM``                               |
++------------------------+------------------+------------------------------------------------------------------+
+| priority               | `Description`    | The desired priority of the transcription                        |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Allowed Values` | .. raw:: html                                                    |
+|                        |                  |                                                                  |
+|                        |                  |  <a href="../output_formats/enums.html#priority-enumeration">    |
+|                        |                  |  Priority Enum</a>                                               |
+|                        +------------------+------------------------------------------------------------------+
+|                        | `Example`        | ``priority=STANDARD``                                            |
++------------------------+------------------+------------------------------------------------------------------+
 
 **Query String Parameters** - Optional
 
@@ -76,7 +82,7 @@ and will be removed in the next API version.
 |                         |                                                                                         |
 |                         |  The number of hours after submission that the job will be returned.</br>               |
 |                         |  If not specified, it will be set to a default based on the value of</br>               |
-|                         |  the priority parameter. The defaults are 24, 48 and 96 for the</br>                    |
+|                         |  the priority parameter. The defaults are 24, 48 and 72 for the</br>                    |
 |                         |  PRIORITY, STANDARD, ECONOMY priorities respectively. If you</br>                       |
 |                         |  request a smaller number of hours than the default for the</br>                        |
 |                         |  priority you have selected, the priority will be automatically</br>                    |
@@ -197,9 +203,14 @@ and will be removed in the next API version.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -218,4 +229,4 @@ and will be removed in the next API version.
     HTTP/1.1 200 OK
     Content-Type: text/javascript
 
-    { "TaskId" : "Encoded Task Id" }
+    { "TaskId" : "41ec7d23fb4b45f9b48a13d0b7283bf2" }

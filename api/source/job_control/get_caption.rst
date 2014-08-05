@@ -9,33 +9,36 @@ Get the caption file created for a target media.
 
 **Query String Parameters** - Required
 
-+------------------------+------------------------------------------------------------------------------+
-| Name                   | Details                                                                      |
-+========================+==================+===========================================================+
-| v                      | `Description`    | The version of the API to use                             |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Allowed Values` | 1                                                         |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Example`        | ``v=1``                                                   |
-+------------------------+------------------+-----------------------------------------------------------+
-| api_token              | `Description`    | The API token used for this session                       |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Allowed Values` | Hex String                                                |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
-+------------------------+------------------+-----------------------------------------------------------+
-| job_id                 | `Description`    | The id of the job                                         |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Allowed Values` | Hex String                                                |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Example`        | ``job_id=64bea283eff6475ea6596027a6ba0929``               |
-+------------------------+------------------+-----------------------------------------------------------+
-| caption_format         | `Description`    | The format of the caption file to return                  |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Allowed Values` | Caption Format Enum (See ... for details)                 |
-|                        +------------------+-----------------------------------------------------------+
-|                        | `Example`        | ``caption_format=SRT``                                    |
-+------------------------+------------------+-----------------------------------------------------------+
++------------------------+----------------------------------------------------------------------------------------+
+| Name                   | Details                                                                                |
++========================+==================+=====================================================================+
+| v                      | `Description`    | The version of the API to use                                       |
+|                        +------------------+---------------------------------------------------------------------+
+|                        | `Allowed Values` | 1                                                                   |
+|                        +------------------+---------------------------------------------------------------------+
+|                        | `Example`        | ``v=1``                                                             |
++------------------------+------------------+---------------------------------------------------------------------+
+| api_token              | `Description`    | The API token used for this session                                 |
+|                        +------------------+---------------------------------------------------------------------+
+|                        | `Allowed Values` | Hex String                                                          |
+|                        +------------------+---------------------------------------------------------------------+
+|                        | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``                      |
++------------------------+------------------+---------------------------------------------------------------------+
+| job_id                 | `Description`    | The Id of the job                                                   |
+|                        +------------------+---------------------------------------------------------------------+
+|                        | `Allowed Values` | Hex String                                                          |
+|                        +------------------+---------------------------------------------------------------------+
+|                        | `Example`        | ``job_id=64bea283eff6475ea6596027a6ba0929``                         |
++------------------------+------------------+---------------------------------------------------------------------+
+| caption_format         | `Description`    | The format of the caption file to return                            |
+|                        +------------------+---------------------------------------------------------------------+
+|                        | `Allowed Values` | .. raw:: html                                                       |
+|                        |                  |                                                                     |
+|                        |                  |  <a href="../output_formats/enums.html#caption-format-enumeration"> |
+|                        |                  |  Caption Format Enum</a>                                            |
+|                        +------------------+---------------------------------------------------------------------+
+|                        | `Example`        | ``caption_format=SRT``                                              |
++------------------------+------------------+---------------------------------------------------------------------+
 
 **Query String Parameters** - Optional
 
@@ -184,7 +187,7 @@ Get the caption file created for a target media.
 | include_dfxp_metadata           | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  When true, and the caption format requested is DFXP,</br>                   |
-|                                 |  the jobs name, ID and language will be added to the DFXP</br>               |
+|                                 |  the jobs name, Id and language will be added to the DFXP</br>               |
 |                                 |  metadata header. When false, these data are omitted from</br>               |
 |                                 |  the header.                                                                 |
 |                                 |                                                                              |
@@ -611,9 +614,14 @@ Get the caption file created for a target media.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -621,8 +629,7 @@ Get the caption file created for a target media.
 .. sourcecode:: http
 
     GET /api/job/get_caption?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &job_id=64bea283eff6475ea6596027a6ba0929
-        &transcription_fidelity=PREMIUM&priority=STANDARD
+        &job_id=64bea283eff6475ea6596027a6ba0929&caption_format=SRT
     Host: api.cielo24.com
 
 **Example Response**
@@ -634,12 +641,11 @@ Get the caption file created for a target media.
 
     1
     00:02:17,440 --> 00:02:20,375
-    Senator, we're making
-    our final approach into Coruscant.
+    Some text on first line.
 
     2
     00:02:20,476 --> 00:02:22,501
-    Very good, Lieutenant.
+    More text on second line.
 
 .. sourcecode:: http
 

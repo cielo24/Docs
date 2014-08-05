@@ -24,7 +24,7 @@ Get the transcript file created for a target media.
 |                        +------------------+-----------------------------------------------------------+
 |                        | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------------+------------------+-----------------------------------------------------------+
-| job_id                 | `Description`    | The id of the job                                         |
+| job_id                 | `Description`    | The Id of the job                                         |
 |                        +------------------+-----------------------------------------------------------+
 |                        | `Allowed Values` | Hex String                                                |
 |                        +------------------+-----------------------------------------------------------+
@@ -249,9 +249,14 @@ Get the transcript file created for a target media.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -259,14 +264,7 @@ Get the transcript file created for a target media.
 .. sourcecode:: http
 
     GET /api/job/get_transcript?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &job_id=64bea283eff6475ea6596027a6ba0929&characters_per_caption_line=15
-        &create_paragraphs=true&elementlist_version=2014-07-24T14:57:38.138269
-        &emit_speaker_change_tokens_as=>>&newlines_after_paragraph=3
-        &newlines_after_sentence=1&remove_disfluencies=true
-        &mask_profanity=false&remove_sounds_list=["MUSIC","LAUGH"]
-        &remove_sound_references=true&replace_slang=true
-        &sound_boundaries=('[',']')&timecode_every_paragraph=false
-        &timecode_format=[%H:%M:%S]&timecode_interval=100&timecode_offset=200
+        &job_id=64bea283eff6475ea6596027a6ba0929
     Host: api.cielo24.com
 
 **Example Response**

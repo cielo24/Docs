@@ -24,7 +24,7 @@ Get the fully detailed ElementList in JSON format.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The id of the job                                         |
+| job_id           | `Description`    | The Id of the job                                         |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
@@ -40,7 +40,13 @@ Get the fully detailed ElementList in JSON format.
 |           +---------------+--------------------------------------------------------------------------+
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
-|           |               |  JSON formatted ElementList. See ElementList format.                     |
+|           |               |  JSON formatted ElementList.                                             |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#elementlist-format">       |
+|           |               |    ElementList Format</a> for details.                                   |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
 |           +---------------+--------------------------------------------------------------------------+
@@ -48,9 +54,14 @@ Get the fully detailed ElementList in JSON format.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -68,4 +79,34 @@ Get the fully detailed ElementList in JSON format.
     HTTP/1.1 200 OK
     Content-Type: text/javascript
 
-    See ElementList format for details.
+    {
+        "version" : 3,
+        "start_time" : 1120,
+        "end_time" : 774960,
+        "language" : "EN_US",
+        "segments" :
+        [{
+            "sequences" :
+            [{
+                "tokens" :
+                [{
+                    "interpolated" : false,
+                    "start_time" : 1120,
+                    "end_time" : 1470,
+                    "value" : "topic",
+                    "type" : 0,
+                    "display_as" : "Topic",
+                    "tags" : []
+                }],
+                "interpolated" : false,
+                "start_time" : 1120,
+                "end_time" : 1470,
+                "confidence_score" : 1.0
+            }],
+            "speaker_change" : false,
+            "speaker_id" : false,
+            "interpolated" : true,
+            "start_time" : 1120,
+            "end_time" : 3640
+        "speakers" : []
+    }

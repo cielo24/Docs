@@ -24,7 +24,7 @@ Get a list of all tasks done by an existing job.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The ID of the job for which job status is returned        |
+| job_id           | `Description`    | The Id of the job for which job status is returned        |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
@@ -40,7 +40,13 @@ Get a list of all tasks done by an existing job.
 |           +---------------+--------------------------------------------------------------------------+
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
-|           |               |  JSON formatted job status. See Job Info format.                         |
+|           |               |  JSON formatted job status.                                              |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#job-info-format">          |
+|           |               |    Job Info Format</a> for details.                                      |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
 |           +---------------+--------------------------------------------------------------------------+
@@ -48,9 +54,14 @@ Get a list of all tasks done by an existing job.
 |           |               |                                                                          |
 |           |               |  {                                                                       |
 |           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details.                        |
-|           |               |     See Error Output Format."                                            |
+|           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
+|           |               |                                                                          |
+|           |               | .. raw:: html                                                            |
+|           |               |                                                                          |
+|           |               |    See<a href="../output_formats/formats.html#error-format">             |
+|           |               |    Error Format</a> for details.                                         |
+|           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
@@ -68,4 +79,17 @@ Get a list of all tasks done by an existing job.
     HTTP/1.1 200 OK
     Content-Type: text/javascript
 
-    See Job Info format for details.
+    {
+        "JobId" : "64bea283eff6475ea6596027a6ba0929",
+        "JobName" : "example_job",
+        "Language" : "EN_US",
+        "Tasks" :
+        [{
+            "TaskId" : "23D263A01C134455B6C73D8EC2E1D784",
+            "TaskType" : "JOB_CREATED",
+            "TaskRequestTime" : "2014-07-31T12:35:52Z",
+            "TaskCompletionTime" : "2014-07-31T14:35:52Z",
+            "TaskInfo" : "example_info",
+            "TaskStatus" : "COMPLETE",
+        }]
+    }
