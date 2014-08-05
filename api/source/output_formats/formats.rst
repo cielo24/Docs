@@ -13,7 +13,7 @@ The following defines the Job Info in JSON format:
     {
         "JobId" : "<Guid HexString>",
         "JobName" : "<String>",
-        "Language" : "<IEFT Language Code>",
+        "Language" : "<RFC 5646 Language Code>",
         "Tasks" :
         [
             "List of Task Statuses (see below)"
@@ -69,8 +69,8 @@ The following defines the Job in JSON format:
         "JobStatus" : "<JobStatus Enum>",
         "Priority" : "<Priority Enum>",
         "Fidelity" : "<Fidelity Enum>",
-        "JobLanguage" : "<IEFT Language Code>",
-        "TargetLanguage" : "<IEFT Language Code>",
+        "JobLanguage" : "<RFC 5646 Language Code>",
+        "TargetLanguage" : "<RFC 5646 Language Code>",
         "CreationTime" : "<ISO 8601 Date String>",
         "DueDate" : "<ISO 8601 Date String>",
         "TurnaroundTimeHours" : "<Integer>",
@@ -112,7 +112,7 @@ All API calls expect and return ElementList version 3 data structures.
         "version" : "<Integer>",
         "start_time" : "<Integer (milliseconds)>",
         "end_time" : "<Integer (milliseconds)>",
-        "language" : "<RFC 5646 Language code>",
+        "language" : "<RFC 5646 Language Code>",
         "segments" :
         [
             "List of Segments (see below)",
