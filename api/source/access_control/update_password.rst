@@ -71,4 +71,3 @@ Update the password for a given account. HTTP POST only.
 .. sourcecode:: http
 
     HTTP/1.1 204 OK
-    Content-Type: text/javascript

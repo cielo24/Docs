@@ -62,4 +62,3 @@ Logout of the current session, invalidating the API token.
 .. sourcecode:: http
 
     HTTP/1.1 204 OK
-    Content-Type: text/javascript

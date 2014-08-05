@@ -72,4 +72,3 @@ effect and will return success.
 .. sourcecode:: http
 
     HTTP/1.1 204 OK
-    Content-Type: text/javascript

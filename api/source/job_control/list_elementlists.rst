@@ -77,7 +77,7 @@ Gets the list of ElementLists for the job.
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     [{
         "iwp_name" : "example",

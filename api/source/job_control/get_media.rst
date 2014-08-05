@@ -73,6 +73,6 @@ Get a URL to the media for an existing job. If the media was directly uploaded t
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     { "MediaUrl" : "https://fake.url.com" }

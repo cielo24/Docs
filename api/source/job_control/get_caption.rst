@@ -650,6 +650,6 @@ Get the caption file created for a target media.
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     { "CaptionUrl" : "http://domain.com/path/file.srt" }

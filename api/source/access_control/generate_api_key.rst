@@ -91,6 +91,6 @@ even if keys already exist.
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     { "ApiKey" : "7ca5dc5c7cce449fb0fff719307e8f5f" }

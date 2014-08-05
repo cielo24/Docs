@@ -78,34 +78,6 @@ and will be removed in the next API version.
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Example`        | ``callback_url=http%3A%2F%2Fdomain.com%2Fpath``                      |
 +-------------------------+------------------+----------------------------------------------------------------------+
-| turnaround_hours        | .. raw:: html                                                                           |
-|                         |                                                                                         |
-|                         |  The number of hours after submission that the job will be returned.</br>               |
-|                         |  If not specified, it will be set to a default based on the value of</br>               |
-|                         |  the priority parameter. The defaults are 24, 48 and 72 for the</br>                    |
-|                         |  PRIORITY, STANDARD, ECONOMY priorities respectively. If you</br>                       |
-|                         |  request a smaller number of hours than the default for the</br>                        |
-|                         |  priority you have selected, the priority will be automatically</br>                    |
-|                         |  changed. For example if you request a <i>turnaround_hours</i> of 36</br>               |
-|                         |  with a priority of ECONOMY, the priority will be automatically,</br>                   |
-|                         |  and silently, changed to STANDARD.                                                     |
-|                         +------------------+----------------------------------------------------------------------+
-|                         | `Allowed Values` | Integer                                                              |
-|                         +------------------+----------------------------------------------------------------------+
-|                         | `Example`        | ``turnaround_hours=36``                                              |
-+-------------------------+------------------+----------------------------------------------------------------------+
-| target_language         | .. raw:: html                                                                           |
-|                         |                                                                                         |
-|                         |  An RFC 5646 language code to translate this job into.</br>                             |
-|                         |  If not specified, then no translation will be performed.</br>                          |
-|                         |  If specified, but the language code specified matches the language</br>                |
-|                         |  code on the job request, then no translation will be performed.</br>                   |
-|                         |                                                                                         |
-|                         +------------------+----------------------------------------------------------------------+
-|                         | `Allowed Values` | RFC 5646 Language code                                               |
-|                         +------------------+----------------------------------------------------------------------+
-|                         | `Example`        | ``target_language=en``                                               |
-+-------------------------+------------------+----------------------------------------------------------------------+
 | customer_approval_steps | .. raw:: html                                                                           |
 |                         |                                                                                         |
 |                         |  Requires your approval of a job at specified points in the</br>                        |
@@ -183,6 +155,34 @@ and will be removed in the next API version.
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Example`        | ``speaker_id=true``                                                  |
 +-------------------------+------------------+----------------------------------------------------------------------+
+| target_language         | .. raw:: html                                                                           |
+|                         |                                                                                         |
+|                         |  An RFC 5646 language code to translate this job into.</br>                             |
+|                         |  If not specified, then no translation will be performed.</br>                          |
+|                         |  If specified, but the language code specified matches the language</br>                |
+|                         |  code on the job request, then no translation will be performed.</br>                   |
+|                         |                                                                                         |
+|                         +------------------+----------------------------------------------------------------------+
+|                         | `Allowed Values` | RFC 5646 Language code                                               |
+|                         +------------------+----------------------------------------------------------------------+
+|                         | `Example`        | ``target_language=en``                                               |
++-------------------------+------------------+----------------------------------------------------------------------+
+| turnaround_hours        | .. raw:: html                                                                           |
+|                         |                                                                                         |
+|                         |  The number of hours after submission that the job will be returned.</br>               |
+|                         |  If not specified, it will be set to a default based on the value of</br>               |
+|                         |  the priority parameter. The defaults are 24, 48 and 72 for the</br>                    |
+|                         |  PRIORITY, STANDARD, ECONOMY priorities respectively. If you</br>                       |
+|                         |  request a smaller number of hours than the default for the</br>                        |
+|                         |  priority you have selected, the priority will be automatically</br>                    |
+|                         |  changed. For example if you request a <i>turnaround_hours</i> of 36</br>               |
+|                         |  with a priority of ECONOMY, the priority will be automatically,</br>                   |
+|                         |  and silently, changed to STANDARD.                                                     |
+|                         +------------------+----------------------------------------------------------------------+
+|                         | `Allowed Values` | Integer                                                              |
+|                         +------------------+----------------------------------------------------------------------+
+|                         | `Example`        | ``turnaround_hours=36``                                              |
++-------------------------+------------------+----------------------------------------------------------------------+
 
 **Responses**
 
@@ -227,6 +227,6 @@ and will be removed in the next API version.
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     { "TaskId" : "41ec7d23fb4b45f9b48a13d0b7283bf2" }

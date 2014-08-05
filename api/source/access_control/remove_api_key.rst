@@ -69,4 +69,3 @@ Invalidates an API Key you have previously generated. It will no longer work as 
 .. sourcecode:: http
 
     HTTP/1.1 204 OK
-    Content-Type: text/javascript

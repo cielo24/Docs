@@ -74,6 +74,6 @@ when their status is "Authorizing" or "Pending".
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     { "TaskId" : "cc8095fbfecf4647b2e10b622d81c19b" }

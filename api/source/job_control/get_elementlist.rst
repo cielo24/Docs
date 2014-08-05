@@ -77,7 +77,7 @@ Get the fully detailed ElementList in JSON format.
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     {
         "version" : 3,

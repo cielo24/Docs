@@ -118,6 +118,6 @@ The media should be uploaded as raw binary, no encoding (base64, hex, etc) is re
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     { "TaskId" : "41ec7d23fb4b45f9b48a13d0b7283bf2" }

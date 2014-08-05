@@ -77,7 +77,7 @@ Get a list of all tasks done by an existing job.
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     {
         "JobId" : "64bea283eff6475ea6596027a6ba0929",

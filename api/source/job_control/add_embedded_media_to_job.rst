@@ -81,6 +81,6 @@ Use this option to link to a video hosted by such providers as Youtube, or Vimeo
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     { "TaskId" : "41ec7d23fb4b45f9b48a13d0b7283bf2" }

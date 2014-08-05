@@ -134,6 +134,6 @@ Required arguments must be passed as query string parameters.
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     { "ApiToken" : "7ca5dc5c7cce449fb0fff719307e8f5f" }

@@ -71,7 +71,7 @@ The list is sorted by default to the creation time of the job, descending.
 .. sourcecode:: http
 
     HTTP/1.1 200 OK
-    Content-Type: text/javascript
+    Content-Type: application/json
 
     {
         "Username" : "john_doe",
