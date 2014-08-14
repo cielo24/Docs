@@ -40,7 +40,7 @@ Many processing requests such as transcription and synchronization are not compl
 As such, the interface supports the use of a callback URL that is provided by the application developer.
 Once the job has completed, the API calls this callback URL to inform the application that the specific job has been completed.
 We make an HTTP GET request to the callback URL. HTTPS URLs are supported as well.
-We will not retry the callback if there is a failure on the remote (your) side.
+We will retry callbacks if the remote server doesn't return a HTTP success code.
 We do not send any additional data with the callback,.
 You may wish to include a unique identifier in the URL so you can tell which request has completed.
 
