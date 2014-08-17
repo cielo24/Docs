@@ -2,7 +2,9 @@ Delete Job
 ==========
 
 Delete an existing job. Jobs can only be deleted before they have started processing,
-when their status is "Authorizing" or "Pending".
+when their status is "Authorizing" or "Pending". If you need to delete a job after it
+has started processing contact support@cielo24.com and we will do our best to accommodate
+your request.
 
 **HTTP Method**
 
@@ -25,7 +27,7 @@ when their status is "Authorizing" or "Pending".
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The Id of the job to be deleted                           |
+| job_id           | `Description`    | The ID of the job to be deleted                           |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
@@ -42,7 +44,7 @@ when their status is "Authorizing" or "Pending".
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "TaskId" : "Encoded Task Id"                                          |
+|           |               |    "TaskId" : "Encoded Task ID"                                          |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -65,8 +67,8 @@ when their status is "Authorizing" or "Pending".
 
 .. sourcecode:: http
 
-    GET /api/job/delete?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &job_id=64bea283eff6475ea6596027a6ba0929
+    GET /api/job/delete?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+        &job_id=64bea283eff6475ea6596027a6ba0929 HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

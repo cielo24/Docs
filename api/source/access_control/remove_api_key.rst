@@ -60,8 +60,8 @@ Invalidates an API Key you have previously generated. It will no longer work as 
 
 .. sourcecode:: http
 
-    GET /api/account/remove_api_key?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &api_securekey=968a8b637a5040159424872fffdb895b
+    GET /api/account/remove_api_key?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+        &api_securekey=968a8b637a5040159424872fffdb895b HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

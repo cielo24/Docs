@@ -82,8 +82,8 @@ even if keys already exist.
 
 .. sourcecode:: http
 
-    GET /api/account/generate_api_key?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &account_id=john_doe&force_new=true
+    GET /api/account/generate_api_key?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+        &account_id=john_doe&force_new=true HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

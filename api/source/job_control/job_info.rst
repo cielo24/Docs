@@ -1,7 +1,7 @@
 Job Info
 ========
 
-Get a list of all tasks done by an existing job.
+Get a list of all tasks associated with an existing job.
 
 **HTTP Method**
 
@@ -24,7 +24,7 @@ Get a list of all tasks done by an existing job.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The Id of the job for which job status is returned        |
+| job_id           | `Description`    | The ID of the job for which job status is returned        |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
@@ -68,8 +68,8 @@ Get a list of all tasks done by an existing job.
 
 .. sourcecode:: http
 
-    GET /api/job/info?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &job_id=64bea283eff6475ea6596027a6ba0929
+    GET /api/job/info?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+        &job_id=64bea283eff6475ea6596027a6ba0929 HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

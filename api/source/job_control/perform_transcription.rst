@@ -1,12 +1,8 @@
 Perform Transcription
 =====================
 
-Request that transcription be performed on the specified job.
-If a transcript has already been provided, the provided transcript
-will be up-leveled rather than recreating a new base transcript.
-STANDARD and HIGH are deprecated aliases for PROFESSIONAL and PREMIUM
-and will be removed in the next API version.
-
+Request that transcription be performed on the specified job. A callback URL, if specified,
+will be called when the transcription is complete. See the <a href="../basics.html#callbacks>callback documentation</a> for details.
 
 **HTTP Method**
 
@@ -29,7 +25,7 @@ and will be removed in the next API version.
 |                        +------------------+------------------------------------------------------------------+
 |                        | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``                   |
 +------------------------+------------------+------------------------------------------------------------------+
-| job_id                 | `Description`    | The Id of the job                                                |
+| job_id                 | `Description`    | The ID of the job                                                |
 |                        +------------------+------------------------------------------------------------------+
 |                        | `Allowed Values` | Hex String                                                       |
 |                        +------------------+------------------------------------------------------------------+
@@ -121,7 +117,7 @@ and will be removed in the next API version.
 | notes                   | .. raw:: html                                                                           |
 |                         |                                                                                         |
 |                         |  Allows you to provide text that will be displayed to</br>                              |
-|                         |  the transcriber when the job is processed.                                             |
+|                         |  the transcriber when the job is processed. An HTML included will be escaped            |
 |                         |                                                                                         |
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Allowed Values` | String ( <= 1000 characters)                                         |
@@ -138,7 +134,13 @@ and will be removed in the next API version.
 |                         |  regardless of the value of this option.                                                |
 |                         |                                                                                         |
 |                         +------------------+----------------------------------------------------------------------+
-|                         | `Allowed Values` | TODO                                                                 |
+|                         | `Allowed Values` | .. raw:: html                                                        |
+|                         |                  |                                                                      |
+|                         |                  |     See <a                                                           |
+|                         |                  |     href=                                                            |
+|                         |                  |     "../output_formats/enums.html#iwp-enumeration">                  |
+|                         |                  |     Interim Work Products</a> for details.                           |
+|                         |                  |                                                                      |
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Default Value`  | []                                                                   |
 |                         +------------------+----------------------------------------------------------------------+
@@ -165,7 +167,7 @@ and will be removed in the next API version.
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Allowed Values` | RFC 5646 Language code                                               |
 |                         +------------------+----------------------------------------------------------------------+
-|                         | `Example`        | ``target_language=en``                                               |
+|                         | `Example`        | ``target_language=de``                                               |
 +-------------------------+------------------+----------------------------------------------------------------------+
 | turnaround_hours        | .. raw:: html                                                                           |
 |                         |                                                                                         |
@@ -194,7 +196,7 @@ and will be removed in the next API version.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "TaskId" : "Encoded Task Id"                                          |
+|           |               |    "TaskId" : "Encoded Task ID"                                          |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -217,9 +219,9 @@ and will be removed in the next API version.
 
 .. sourcecode:: http
 
-    GET /api/job/perform_transcription?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+    GET /api/job/perform_transcription?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
         &job_id=64bea283eff6475ea6596027a6ba0929
-        &transcription_fidelity=PREMIUM&priority=STANDARD
+        &transcription_fidelity=PREMIUM&priority=STANDARD HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

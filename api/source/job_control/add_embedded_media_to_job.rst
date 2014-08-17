@@ -2,7 +2,10 @@ Add Embedded Media To Job
 =========================
 
 Add a piece of media to an existing job via a non-direct URL.
-Use this option to link to a video hosted by such providers as Youtube, or Vimeo.
+A job may only have a single piece of media associated with it,
+attempting to add additional media will return an error code.
+
+Use this option to link to a video hosted by providers like BrightCove, Kaltura, Youtube, or Vimeo.
 
 **HTTP Method**
 
@@ -25,7 +28,7 @@ Use this option to link to a video hosted by such providers as Youtube, or Vimeo
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The Id of the job                                         |
+| job_id           | `Description`    | The ID of the job                                         |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
@@ -48,7 +51,7 @@ Use this option to link to a video hosted by such providers as Youtube, or Vimeo
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "TaskId" : "Encoded Task Id"                                          |
+|           |               |    "TaskId" : "Encoded Task ID"                                          |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -71,9 +74,9 @@ Use this option to link to a video hosted by such providers as Youtube, or Vimeo
 
 .. sourcecode:: http
 
-    GET /api/job/add_media_url?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+    GET /api/job/add_media_url?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
         &job_id=64bea283eff6475ea6596027a6ba0929
-        &media_url=http%3A%2F%2Fyoutu.be%2F5m5MPiL99Nc
+        &media_url=http%3A%2F%2Fyoutu.be%2F5m5MPiL99Nc HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

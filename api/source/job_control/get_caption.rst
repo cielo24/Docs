@@ -1,7 +1,8 @@
 Get Caption
 ===========
 
-Get the caption file created for a target media.
+Get the caption file for a job.
+The job must have completed transcription before a caption can be downloaded.
 
 **HTTP Method**
 
@@ -24,7 +25,7 @@ Get the caption file created for a target media.
 |                        +------------------+---------------------------------------------------------------------+
 |                        | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``                      |
 +------------------------+------------------+---------------------------------------------------------------------+
-| job_id                 | `Description`    | The Id of the job                                                   |
+| job_id                 | `Description`    | The ID of the job                                                   |
 |                        +------------------+---------------------------------------------------------------------+
 |                        | `Allowed Values` | Hex String                                                          |
 |                        +------------------+---------------------------------------------------------------------+
@@ -55,7 +56,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``build_url=true``                                        |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | caption_words_min               | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -66,7 +67,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | 1                                                         |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``caption_words_min=3``                                   |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | caption_by_sentence             | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -79,7 +80,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | true                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``caption_by_sentence=false``                             |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | characters_per_caption_line     | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -91,20 +92,21 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | 42                                                        |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``characters_per_caption_line=30``                        |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | dfxp_header                     | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  Allows you to specify a custom header for your DFXP</br>                    |
 |                                 |  caption file. The header should be the entire contents of</br>              |
-|                                 |  the header including the opening and closing <head> tags.                   |
+|                                 |  the header including the opening and closing <head> tags.<br>               |
+|                                 |  Ignored if caption_format does not equal DFXP                               |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | XML String                                                |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ""                                                        |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``dfxp_header=<head></head>``                             |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | disallow_dangling               | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -117,7 +119,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``disallow_dangling=true``                                |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | display_effects_speaker_as      | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -128,15 +130,17 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | Effects                                                   |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``display_effects_speaker_as=Sound``                      |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | display_speaker_id              | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  Determines the way speakers are identified in the captions.</br>            |
-|                                 |  Choose "no" to not display speaker identities at all,</br>                  |
-|                                 |  i.e. ">> example". Choose "number" to display only the</br>                 |
-|                                 |  speaker number, i.e. ">> Speaker 1: example". Choose "name"</br>            |
-|                                 |  to display the speaker name, i.e. ">> John Doe: example".</br>              |
+|                                 |  Choose "no" to not display speaker identities at all:</br>                  |
+|                                 |    ">> example"</br>                                                         |
+|                                 |  Choose "number" to display only the speaker number:</br>                    |
+|                                 |    ">> Speaker 1: example"</br>                                              |
+|                                 |  Choose "name" to display the speaker name:</br>                             |
+|                                 |    ">> John Doe: example".</br>                                              |
 |                                 |  If you choose "name", the speaker number will be displayed</br>             |
 |                                 |  if the name is not available.                                               |
 |                                 |                                                                              |
@@ -145,12 +149,12 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | name                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``display_speaker_id=number``                             |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | elementlist_version             | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  The version of element list to generate the captions from.</br>             |
-|                                 |  If not specified, the transcript will be generated from the</br>            |
+|                                 |  If not specified, the caption will be generated from the</br>               |
 |                                 |  latest version.                                                             |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
@@ -158,7 +162,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ""                                                        |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``eversion=2014-07-31T12:35:52Z``                         |
+|                                 | `Example`        | ``elementlist_version=2014-07-31T12:35:52Z``              |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | emit_speaker_change_tokens_as   | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -169,7 +173,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ">>"                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``emit_speaker_change_tokens_as=>>``                      |
+|                                 | `Example`        | ``emit_speaker_change_tokens_as=--``                      |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | force_case                      | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -182,25 +186,26 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ""                                                        |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``force_case=lower                                        |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | include_dfxp_metadata           | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  When true, and the caption format requested is DFXP,</br>                   |
-|                                 |  the jobs name, Id and language will be added to the DFXP</br>               |
+|                                 |  the jobs name, ID and language will be added to the DFXP</br>               |
 |                                 |  metadata header. When false, these data are omitted from</br>               |
 |                                 |  the header.                                                                 |
+|                                 |  Ignored if caption_format does not equal DFXP                               |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | Boolean                                                   |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | true                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``include_dfxp_metadata=false``                           |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | layout_target_caption_length_ms | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  Captions generated will be around this length. However,</br>                |
+|                                 |  Captions generated will, on average, be this duration. However,</br         |
 |                                 |  they may vary significantly based on other parameters you set.              |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
@@ -208,7 +213,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | 5000                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``layout_target_caption_length_ms=4000``                  |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | line_break_on_sentence          | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -220,7 +225,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``line_break_on_sentence=true``                           |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | line_ending_format              | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -232,7 +237,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | "UNIX"                                                    |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``line_ending_format=OSX``                                |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | lines_per_caption               | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -243,7 +248,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | 2                                                         |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``newlines_after_paragraph=3``                            |
+|                                 | `Example`        | ``lines_per_caption=3``                                   |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | mask_profanity                  | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -254,7 +259,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``mask_profanity=true``                                   |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | maximum_caption_duration        | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -266,7 +271,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | None (no maximum)                                         |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``maximum_caption_duration=10000``                        |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | merge_gap_interval              | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -279,12 +284,12 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | 1000                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``merge_gap_interval=1500``                               |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | minimum_caption_length_ms       | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  Extends the duration of captions to the this minimum length</br>            |
-|                                 |  if shorter. Additional time is taken from later caption blocks</br>         |
+|                                 |  Extends the duration of short captions to the this minimum length</br>      |
+|                                 |  Additional time is taken from later caption blocks</br>                     |
 |                                 |  to meet this minimum time.                                                  |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
@@ -292,7 +297,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | None (no minimum)                                         |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``minimum_caption_length_ms=1500``                        |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | minimum_gap_between_captions_ms | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -306,46 +311,19 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | None (no minimum)                                         |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
-+---------------------------------+------------------+-----------------------------------------------------------+
-| remove_sound_references         | .. raw:: html                                                                |
-|                                 |                                                                              |
-|                                 |  Remove non-verbal sound and noise references from the</br>                  |
-|                                 |  generated transcript. Sounds and unidentified noises are</br>               |
-|                                 |  depicted in the transcript as [sound], [cough] and [noise].</br>            |
-|                                 |  If this parameter is set, these identifiers are omitted</br>                |
-|                                 |  from the transcript.                                                        |
-|                                 |                                                                              |
-|                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | Boolean                                                   |
-|                                 +------------------+-----------------------------------------------------------+
-|                                 | `Default Value`  | true                                                      |
-|                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
-+---------------------------------+------------------+-----------------------------------------------------------+
-| merge_gap_interval              | .. raw:: html                                                                |
-|                                 |                                                                              |
-|                                 |  Rather than returning the file, return a permanent URL to the</br>          |
-|                                 |  file.                                                                       |
-|                                 |                                                                              |
-|                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | Integer                                                   |
-|                                 +------------------+-----------------------------------------------------------+
-|                                 | `Default Value`  | 0                                                         |
-|                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``minimum_gap_between_captions_ms=100``                   |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | qt_seamless                     | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  For QT caption format only. Does not put time gaps of any kind</br>         |
-|                                 |  between caption blocks.                                                     |
+|                                 |  Does not put time gaps of any kind between caption blocks.                  |
+|                                 |  Ignored if caption_format does not equal QT                                 |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | Boolean                                                   |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``qt_seamless=true``                                      |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | remove_disfluencies             | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -358,15 +336,22 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | true                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``remove_disfluencies=true``                              |
+|                                 | `Example`        | ``remove_disfluencies=false``                             |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | remove_sounds_list              | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  A list of sounds to not show in the transcript. This is a</br>              |
-|                                 |  json style list, and should look like ["MUSIC", "LAUGH"].                   |
+|                                 |  A list of sounds to not show in the caption. This is a</br>                 |
+|                                 |  JSON style list, and should look like ["MUSIC", "LAUGH"].                   |
+|                                 |  Ignored if remove_sound_references is true.                                 |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | List of Strings TODO                                      |
+|                                 | `Allowed Values` | .. raw:: html                                             |
+|                                 |                  |                                                           |
+|                                 |                  |     See <a                                                |
+|                                 |                  |     href=                                                 |
+|                                 |                  |     "../output_formats/enums.html#sound-tag-enumeration"> |
+|                                 |                  |     Sound Tags</a> for details.                           |
+|                                 |                  |                                                           |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | []                                                        |
 |                                 +------------------+-----------------------------------------------------------+
@@ -374,18 +359,18 @@ Get the caption file created for a target media.
 +---------------------------------+------------------+-----------------------------------------------------------+
 | remove_sound_references         | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  Remove non-verbal sound and noise references from the</br>                  |
+|                                 |  Remove ALL non-verbal sound and noise references from the</br>              |
 |                                 |  generated transcript. Sounds and unidentified noises are</br>               |
-|                                 |  depicted in the transcript as [sound], [cough] and [noise].</br>            |
-|                                 |  If this parameter is set, these identifiers are omitted from</br>           |
-|                                 |  the transcript.                                                             |
+|                                 |  depicted in the caption as [SOUND], [COUGH] and [NOISE].</br>               |
+|                                 |  If this parameter is set, these identifiers are omitted</br>                |
+|                                 |  from the caption.                                                           |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | Boolean                                                   |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Default Value`  | false                                                     |
+|                                 | `Default Value`  | true                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``remove_sound_references=true``                          |
+|                                 | `Example`        | ``remove_sound_references=false``                         |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | replace_slang                   | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -410,7 +395,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | 2000                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``silence_max_ms=1000``                                   |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | single_speaker_per_caption      | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -422,7 +407,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``single_speaker_per_caption=true``                       |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | sound_boundaries                | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -435,22 +420,22 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ('[',']')                                                 |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``sound_boundaries=('[',']')``                            |
+|                                 | `Example`        | ``sound_boundaries=('{','}')``                            |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | sound_threshold                 | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  Sound references that are longer than this threshold will</br>              |
 |                                 |  be made their own caption entirely, and will not have any</br>              |
 |                                 |  text included with them. If not set, Sound references will</br>             |
-|                                 |  be included back to back with text no matter the length of</br>             |
-|                                 |  the Sound.                                                                  |
+|                                 |  be included back to back with text no matter the duration of</br>           |
+|                                 |  the sound.                                                                  |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | Integer                                                   |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | None                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``sound_threshold=5000``                                  |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | sound_tokens_by_caption         | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -463,7 +448,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``sound_tokens_by_caption=true``                          |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | sound_tokens_by_line            | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -476,33 +461,47 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``sound_tokens_by_line=true``                             |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | sound_tokens_by_caption_list    | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  If non-empty, the specified sound references will always</br>               |
 |                                 |  be in their own caption. If empty, more than one</br>                       |
-|                                 |  sound reference may appear in a single caption.                             |
+|                                 |  sound reference may appear in a single caption.</br>                        |
+|                                 |  Ignored if sound_tokens_by_caption is true.                                 |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | List of Strings                                           |
+|                                 | `Allowed Values` | .. raw:: html                                             |
+|                                 |                  |                                                           |
+|                                 |                  |     See <a                                                |
+|                                 |                  |     href=                                                 |
+|                                 |                  |     "../output_formats/enums.html#sound-tag-enumeration"> |
+|                                 |                  |     Sound Tags</a> for details.                           |
+|                                 |                  |                                                           |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ["BLANK_AUDIO","MUSIC]                                    |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``sound_tokens_by_caption_list=["LAUGH"]``                |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | sound_tokens_by_line_list       | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  If non-empty, the specified sound references will always</br>               |
 |                                 |  be in their own line. If empty, more than one</br>                          |
-|                                 |  sound reference may appear in a single line.                                |
+|                                 |  sound reference may appear in a single line.</br>                           |
+|                                 |  Ignored if sound_tokens_by_line is true.                                    |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | List of Strings                                           |
+|                                 | `Allowed Values` | .. raw:: html                                             |
+|                                 |                  |                                                           |
+|                                 |                  |     See <a                                                |
+|                                 |                  |     href=                                                 |
+|                                 |                  |     "../output_formats/enums.html#sound-tag-enumeration"> |
+|                                 |                  |     Sound Tags</a> for details.                           |
+|                                 |                  |                                                           |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ["BLANK_AUDIO","MUSIC]                                    |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``sound_tokens_by_line_list=["LAUGH"]``                   |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | speaker_on_new_line             | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -515,7 +514,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | true                                                      |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``speaker_on_new_line=false``                             |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | srt_format                      | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -545,32 +544,20 @@ Get the caption file created for a target media.
 |                                 |                  |  {end_millisecond:03d}\n{caption_text}\n\n                |
 |                                 |                  |                                                           |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
-+---------------------------------+------------------+-----------------------------------------------------------+
-| srt_print_caption_numbers       | .. raw:: html                                                                |
-|                                 |                                                                              |
-|                                 |  If the caption format is SRT, determines if the caption</br>                |
-|                                 |  numbers are printed.                                                        |
-|                                 |                                                                              |
-|                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | Boolean                                                   |
-|                                 +------------------+-----------------------------------------------------------+
-|                                 | `Default Value`  | true                                                      |
-|                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``srt_format=...``                                        |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | strip_square_brackets           | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  Removes all square brackets like '[' or ']' from captions.</br>             |
 |                                 |  By default square brackets surround sound references like</br>              |
-|                                 |  '[MUSIC]', but they may exist as part of the transcript.                    |
+|                                 |  '[MUSIC]', but they may exist as part of the caption text as well.          |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | Boolean                                                   |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``strip_square_brackets=true``                            |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | utf8_mark                       | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -584,7 +571,7 @@ Get the caption file created for a target media.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | false                                                     |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``characters_per_caption_line=0``                         |
+|                                 | `Example`        | ``utf8_mark=true``                                        |
 +---------------------------------+------------------+-----------------------------------------------------------+
 
 **Responses**
@@ -628,8 +615,8 @@ Get the caption file created for a target media.
 
 .. sourcecode:: http
 
-    GET /api/job/get_caption?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &job_id=64bea283eff6475ea6596027a6ba0929&caption_format=SRT
+    GET /api/job/get_caption?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+        &job_id=64bea283eff6475ea6596027a6ba0929&caption_format=SRT HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

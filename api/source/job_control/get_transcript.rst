@@ -1,7 +1,8 @@
 Get Transcript
 ==============
 
-Get the transcript file created for a target media.
+Get the transcript file for a job.
+The job must have completed transcription before a transcript can be downloaded.
 
 **HTTP Method**
 
@@ -24,7 +25,7 @@ Get the transcript file created for a target media.
 |                        +------------------+-----------------------------------------------------------+
 |                        | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------------+------------------+-----------------------------------------------------------+
-| job_id                 | `Description`    | The Id of the job                                         |
+| job_id                 | `Description`    | The ID of the job                                         |
 |                        +------------------+-----------------------------------------------------------+
 |                        | `Allowed Values` | Hex String                                                |
 |                        +------------------+-----------------------------------------------------------+
@@ -83,7 +84,7 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Default Value`  | ">>"                                                      |
 |                               +------------------+-----------------------------------------------------------+
-|                               | `Example`        | ``emit_speaker_change_tokens_as=>>``                      |
+|                               | `Example`        | ``emit_speaker_change_tokens_as=--``                      |
 +-------------------------------+------------------+-----------------------------------------------------------+
 | newlines_after_paragraph      | .. raw:: html                                                                |
 |                               |                                                                              |
@@ -119,7 +120,7 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Default Value`  | true                                                      |
 |                               +------------------+-----------------------------------------------------------+
-|                               | `Example`        | ``remove_disfluencies=true``                              |
+|                               | `Example`        | ``remove_disfluencies=false``                             |
 +-------------------------------+------------------+-----------------------------------------------------------+
 | mask_profanity                | .. raw:: html                                                                |
 |                               |                                                                              |
@@ -130,15 +131,22 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Default Value`  | false                                                     |
 |                               +------------------+-----------------------------------------------------------+
-|                               | `Example`        | ``mask_profanity=false``                                  |
+|                               | `Example`        | ``mask_profanity=true``                                   |
 +-------------------------------+------------------+-----------------------------------------------------------+
 | remove_sounds_list            | .. raw:: html                                                                |
 |                               |                                                                              |
 |                               |  A list of sounds to not show in the transcript. This is a</br>              |
-|                               |  json style list, and should look like ["MUSIC", "LAUGH"].                   |
+|                               |  JSON style list, and should look like ["MUSIC", "LAUGH"].                   |
+|                               |  Ignored if remove_sound_references is true.                                 |
 |                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
-|                               | `Allowed Values` | List of Strings                                           |
+|                               | `Allowed Values` | .. raw:: html                                             |
+|                               |                  |                                                           |
+|                               |                  |     See <a                                                |
+|                               |                  |     href=                                                 |
+|                               |                  |     "../output_formats/enums.html#sound-tag-enumeration"> |
+|                               |                  |     Sound Tags</a> for details.                           |
+|                               |                  |                                                           |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Default Value`  | []                                                        |
 |                               +------------------+-----------------------------------------------------------+
@@ -148,7 +156,7 @@ Get the transcript file created for a target media.
 |                               |                                                                              |
 |                               |  Remove non-verbal sound and noise references from the</br>                  |
 |                               |  generated transcript. Sounds and unidentified noises are</br>               |
-|                               |  depicted in the transcript as [sound], [cough] and [noise].</br>            |
+|                               |  depicted in the transcript as [SOUND], [COUGH] and [NOISE].</br>            |
 |                               |  If this parameter is set, these identifiers are omitted from</br>           |
 |                               |  the transcript.                                                             |
 |                               |                                                                              |
@@ -157,7 +165,7 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Default Value`  | true                                                      |
 |                               +------------------+-----------------------------------------------------------+
-|                               | `Example`        | ``remove_sound_references=true``                          |
+|                               | `Example`        | ``remove_sound_references=false``                         |
 +-------------------------------+------------------+-----------------------------------------------------------+
 | replace_slang                 | .. raw:: html                                                                |
 |                               |                                                                              |
@@ -183,7 +191,7 @@ Get the transcript file created for a target media.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Default Value`  | ('[',']')                                                 |
 |                               +------------------+-----------------------------------------------------------+
-|                               | `Example`        | ``sound_boundaries=('[',']')``                            |
+|                               | `Example`        | ``sound_boundaries=('{','}')``                            |
 +-------------------------------+------------------+-----------------------------------------------------------+
 | timecode_every_paragraph      | .. raw:: html                                                                |
 |                               |                                                                              |
@@ -263,8 +271,8 @@ Get the transcript file created for a target media.
 
 .. sourcecode:: http
 
-    GET /api/job/get_transcript?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &job_id=64bea283eff6475ea6596027a6ba0929
+    GET /api/job/get_transcript?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+        &job_id=64bea283eff6475ea6596027a6ba0929 HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

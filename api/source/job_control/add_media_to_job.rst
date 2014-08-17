@@ -13,6 +13,8 @@ Do NOT specify the media_url parameter in the request URL.
 No content-type should be included in the HTTP header.
 Upload the media directly inline as the body of the request.
 The media should be uploaded as raw binary, no encoding (base64, hex, etc) is required.
+Chunk-transfer encoding is NOT supported. If uploading large files, specify the content-length
+in the header.
 
 **HTTP Method**
 
@@ -37,7 +39,7 @@ The media should be uploaded as raw binary, no encoding (base64, hex, etc) is re
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The Id of the job to which media is added                 |
+| job_id           | `Description`    | The ID of the job to which media is added                 |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
@@ -78,7 +80,7 @@ The media should be uploaded as raw binary, no encoding (base64, hex, etc) is re
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "TaskId" : "Encoded Task Id"                                          |
+|           |               |    "TaskId" : "Encoded Task ID"                                          |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -101,16 +103,17 @@ The media should be uploaded as raw binary, no encoding (base64, hex, etc) is re
 
 .. sourcecode:: http
 
-    GET /api/job/add_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+    GET /api/job/add_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
         &job_id=64bea283eff6475ea6596027a6ba0929
-        &media_url=http%3A%2F%2Fwww.domain.com%2Fvideo.mp4
+        &media_url=http%3A%2F%2Fwww.domain.com%2Fvideo.mp4 HTTP/1.1
     Host: api.cielo24.com
 
 .. sourcecode:: http
 
-    POST /api/job/add_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &job_id=64bea283eff6475ea6596027a6ba0929
+    POST /api/job/add_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+        &job_id=64bea283eff6475ea6596027a6ba0929 HTTP/1.1
     Host: api.cielo24.com
+    Content-Length: 349500
     Body: raw binary
 
 **Example Response**

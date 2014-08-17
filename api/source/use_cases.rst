@@ -10,18 +10,16 @@ Once the requested transcription has been completed, all supported transcription
 
 The following delineates the simplified steps involved:
 
-1. Login via account credentials.
-2. Create job.
-3. Specify media file URL or upload the media file. A media file is either an audio or video file.
-4. Make request to perform a transcription task. Specify:
-
-    a. Fidelity: MECHANICAL, PREMIUM or PROFESSIONAL fidelity transcription.
-    b. Priority ECONOMY, STANDARD or PRIORITY.
-
-5. Wait for callback URL or poll task status for completion.
-6. [**Option**] Request transcript. Specify format of transcript (e.g. standard, time coded, replace slang, etc.). Request can be made multiple times for a given job (i.e. multiple requests can be made for multiple output types).
-7. [**Option**] Request caption file. Specify format of caption file (e.g. SRT, DFXP, lines per caption file, characters per caption line, etc.). Request can be made multiple times for a given job.
-8. [**Option**] Request complete element list. A complete list of all words and transcription codes is returned. In addition to the words, the following additional information is provided for each word: confidence score, starting time, ending time, preferred display format, and surrounding punctuation.
+#. Login via account credentials.
+#. Create job.
+#. Specify media file URL or upload the media file. A media file is either an audio or video file.
+#. Make request to perform a transcription task. Specify:
+##. Fidelity: MECHANICAL, PREMIUM or PROFESSIONAL fidelity transcription.
+##. Priority ECONOMY, STANDARD or PRIORITY.
+#. Wait for callback URL or poll task status for completion.
+#. [**Option**] Request transcript. Specify format of transcript (e.g. standard, time coded, replace slang, etc.). Request can be made multiple times for a given job (i.e. multiple requests can be made for multiple output types).
+#. [**Option**] Request caption file. Specify format of caption file (e.g. SRT, DFXP, lines per caption file, characters per caption line, etc.). Request can be made multiple times for a given job.
+#. [**Option**] Request complete element list. A complete list of all words and transcription codes is returned. In addition to the words, the following additional information is provided for each word: confidence score, starting time, ending time, preferred display format, and surrounding punctuation.
 
 Request from Media File and Corresponding Transcript
 ----------------------------------------------------

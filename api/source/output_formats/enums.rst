@@ -173,15 +173,13 @@ Token Type Enumeration
     sound</br>
     </font>
 
-Tag Enumeration
+Sound Tag Enumeration
 ---------------
 
 .. raw:: html
 
     <font color="firebrick">
     <p>
-    <span style="padding: 20px">
-    ENDS_SENTENCE</br>
     <span style="padding: 20px">
     UNKNOWN</br>
     <span style="padding: 20px">
@@ -199,8 +197,6 @@ Tag Enumeration
     <span style="padding: 20px">
     FOREIGN</br>
     <span style="padding: 20px">
-    GUESSED</br>
-    <span style="padding: 20px">
     BLANK_AUDIO</br>
     <span style="padding: 20px">
     APPLAUSE</br>
@@ -208,7 +204,7 @@ Tag Enumeration
     BLEEP</br>
     </font>
 
-Speaker Id Enumeration
+Speaker ID Enumeration
 ----------------------
 
 .. raw:: html
@@ -277,4 +273,29 @@ Customer Approval Tools Enumeration
     AMARA</br>
     <span style="padding: 20px">
     CIELO24</br>
+    </font>
+
+IWP Enumeration
+-----------------------------------
+
+.. raw:: html
+
+    <font color="firebrick">
+    <p>
+    <span style="padding: 20px">
+    PREMIUM</br>
+    <span style="padding: 20px">
+    INTERIM_PROFESSIONAL</br>
+    <span style="padding: 20px">
+    PROFESSIONAL</br>
+    <span style="padding: 20px">
+    SPEAKER_ID</br>
+    <span style="padding: 20px">
+    FINAL</br>
+    <span style="padding: 20px">
+    MECHANICAL</br>
+    <span style="padding: 20px">
+    CUSTOMER_APPROVED_RETURN</br>
+    <span style="padding: 20px">
+    CUSTOMER_APPROVED_TRANSLATION</br>
     </font>

@@ -24,7 +24,7 @@ Gets the list of ElementLists for the job.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The Id of the job                                         |
+| job_id           | `Description`    | The ID of the job                                         |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
@@ -68,8 +68,8 @@ Gets the list of ElementLists for the job.
 
 .. sourcecode:: http
 
-    GET /api/job/list_elementlists?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-        &job_id=64bea283eff6475ea6596027a6ba0929
+    GET /api/job/list_elementlists?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+        &job_id=64bea283eff6475ea6596027a6ba0929 HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

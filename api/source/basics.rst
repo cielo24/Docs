@@ -1,25 +1,31 @@
 The Basics
 ==========
 
-Interface Access & Sandbox
---------------------------
+Getting Started
+---------------
+#. Send an email to support@cielo24.com requesting a sandbox API login.
+#. Download sample API code from our repo: https://github.com/Cielo24/SampleCode
 
-The API can be accessed from the following location: https://api.cielo24.com.
-For testing, a sandbox is provided at https://sandbox.cielo24.com.
-The sandbox provides a testing platform for development, where no real processing is performed, and all results are for use in evaluating compliance with the interface.
-The API returns a canned transcript sample for all requests.
-All requested transcript and caption formats are derived from this pre-transcribed content.
+    #. Each sample code project includes a command line application you can use to experiment with the API without writing any code of your own.
 
-.. note::
+#. Use the sandbox credentials you received from support and the sample applications to connect to our API
 
-    In the initial release of the sandbox, some transcript and caption formats will not necessarily reflect the exact manipulations requested through the API.
-    For example, the number of caption lines and characters per caption line are fixed.
-    This restriction will be removed in a subsequent release, where all requests will be implemented on the sample transcript.
+Sandbox API
+-----------
+For testing, a sandbox API is provided at https://sandbox.cielo24.com.
+The sandbox provides a testing platform for development, where no real processing is performed.
+Transcript/caption requests made to the sandbox will return a pre-prepared sample, the data will not match the content or length of media you submitted.
+However, the transcript/caption will be formatted as you request in your get_transcription/get_caption call.
+The sandbox API will make URL callbacks, if requested, a few seconds after the call to perform_transcription is made.
+
+Production API
+--------------
+The production API can be accessed from the following location: https://api.cielo24.com.
 
 Account Management
 ------------------
 
-Account management is largely performed outside of the API. To set up a new account please register for an account at http://www.cielo24.com.
+Account management is largely performed outside of the API. To set up a new production account please register for an account at http://www.cielo24.com. To request a sandbox account, email to support@cielo24.com.
 
 Sub-Accounts
 ------------
@@ -36,13 +42,13 @@ Sub-accounts can, in turn, create their own further sub-accounts. In all cases, 
 Callbacks
 ---------
 
-Many processing requests such as transcription and synchronization are not completed immediately.
+Processing requests such as transcription are not completed immediately.
 As such, the interface supports the use of a callback URL that is provided by the application developer.
 Once the job has completed, the API calls this callback URL to inform the application that the specific job has been completed.
-We make an HTTP GET request to the callback URL. HTTPS URLs are supported as well.
-We will retry callbacks if the remote server doesn't return a HTTP success code.
-We do not send any additional data with the callback,.
-You may wish to include a unique identifier in the URL so you can tell which request has completed.
+We make a GET request to the callback URL. HTTPS and embedded basic HTTP auth URLs are supported.
+We will retry callbacks three times over a 30 minute period if the remote server doesn't return a HTTP success code (200 OK.)
+You may wish to include a unique identifier in the URL so you can tell which request has completed, or you can request that we send additional data with the callback.
+See the callback_url parameter of each method for a list of the data that can be sent.
 
 For example: http://www.yourdomain.com/cielo24/request_complete?job_id=1234
 
