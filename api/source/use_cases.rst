@@ -14,8 +14,10 @@ The following delineates the simplified steps involved:
 #. Create job.
 #. Specify media file URL or upload the media file. A media file is either an audio or video file.
 #. Make request to perform a transcription task. Specify:
-##. Fidelity: MECHANICAL, PREMIUM or PROFESSIONAL fidelity transcription.
-##. Priority ECONOMY, STANDARD or PRIORITY.
+
+    #. Fidelity: MECHANICAL, PREMIUM or PROFESSIONAL fidelity transcription.
+    #. Priority ECONOMY, STANDARD or PRIORITY.
+
 #. Wait for callback URL or poll task status for completion.
 #. [**Option**] Request transcript. Specify format of transcript (e.g. standard, time coded, replace slang, etc.). Request can be made multiple times for a given job (i.e. multiple requests can be made for multiple output types).
 #. [**Option**] Request caption file. Specify format of caption file (e.g. SRT, DFXP, lines per caption file, characters per caption line, etc.). Request can be made multiple times for a given job.
