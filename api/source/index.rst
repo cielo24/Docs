@@ -5,8 +5,6 @@ cielo24 Web Services Platform API
 
 The cielo24 Web Services Platform API allows developers to easily integrate transcription, captioning and keyword extraction into their applications without having to use a manual web portal.
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 

@@ -121,10 +121,6 @@ html_theme_options = {"nosidebar": "true"}
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
 
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
-html_logo = 'logo.png'
-
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
@@ -134,6 +130,10 @@ html_logo = 'logo.png'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# The name of an image file (relative to this directory) to place at the top
+# of the sidebar.
+html_logo = 'logo.png'
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -208,7 +208,7 @@ latex_documents = [
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = 'logo.png'
+latex_logo = '_static/logo.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
