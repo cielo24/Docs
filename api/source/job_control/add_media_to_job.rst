@@ -13,8 +13,8 @@ Do NOT specify the media_url parameter in the request URL.
 No content-type should be included in the HTTP header.
 Upload the media directly inline as the body of the request.
 The media should be uploaded as raw binary, no encoding (base64, hex, etc) is required.
-Chunk-transfer encoding is NOT supported. If uploading large files, specify the content-length
-in the header.
+Chunk-transfer encoding is NOT supported. If uploading large files (500 mb and up),
+specify the content-length in the header.
 
 **HTTP Method**
 
@@ -48,15 +48,15 @@ in the header.
 
 **Query String Parameters** - Required `(when adding media from URL)`
 
-+------------------+--------------------------------------------------------------------------+
-| Name             | Details                                                                  |
-+==================+==================+=======================================================+
-| media_url        | `Description`    | The URL from which media will be obtained             |
-|                  +------------------+-------------------------------------------------------+
-|                  | `Allowed Values` | URL Encoded String                                    |
-|                  +------------------+-------------------------------------------------------+
-|                  | `Example`        | ``media_url=http%3A%2F%2Fwww.domain.com%2Fvideo.mp4`` |
-+------------------+------------------+-------------------------------------------------------+
++------------------+------------------------------------------------------------------------------+
+| Name             | Details                                                                      |
++==================+==================+===========================================================+
+| media_url        | `Description`    | The URL from which media will be obtained                 |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Allowed Values` | URL Encoded String                                        |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Example`        | ``media_url=http%3A%2F%2Fwww.domain.com%2Fvideo.mp4``     |
++------------------+------------------+-----------------------------------------------------------+
 
 **Request Body** - Required `(when adding media from local file)`
 
@@ -70,33 +70,45 @@ in the header.
 |                  | `Example`        | not applicable                                            |
 +------------------+------------------+-----------------------------------------------------------+
 
+**HTTP Headers** - Required `(when uploading LARGE media files)`
+
++------------------+------------------------------------------------------------------------------+
+| Name             | Details                                                                      |
++==================+==================+===========================================================+
+| Content-Length   | `Description`    | File size (in bytes)                                      |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Allowed Values` | Integer                                                   |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Example`        | ``645809838``                                             |
++------------------+------------------+-----------------------------------------------------------+
+
 **Responses**
 
-+-----------+------------------------------------------------------------------------------------------+
-| HTTP Code | Details                                                                                  |
-+===========+===============+==========================================================================+
-| 200       | `Description` | Success                                                                  |
-|           +---------------+--------------------------------------------------------------------------+
-|           | `Contents`    | .. code-block:: javascript                                               |
-|           |               |                                                                          |
-|           |               |  {                                                                       |
-|           |               |    "TaskId" : "Encoded Task ID"                                          |
-|           |               |  }                                                                       |
-+-----------+---------------+--------------------------------------------------------------------------+
-| 400       | `Description` | An error occurred                                                        |
-|           +---------------+--------------------------------------------------------------------------+
-|           | `Contents`    | .. code-block:: javascript                                               |
-|           |               |                                                                          |
-|           |               |  {                                                                       |
-|           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details."                       |
-|           |               |  }                                                                       |
-|           |               |                                                                          |
-|           |               | .. container::                                                           |
-|           |               |                                                                          |
-|           |               |    See :ref:`error-format-label` for details.                            |
-|           |               |                                                                          |
-+-----------+---------------+--------------------------------------------------------------------------+
++-----------+-------------------------------------------------------------------------------------+
+| HTTP Code | Details                                                                             |
++===========+===============+=====================================================================+
+| 200       | `Description` | Success                                                             |
+|           +---------------+---------------------------------------------------------------------+
+|           | `Contents`    | .. code-block:: javascript                                          |
+|           |               |                                                                     |
+|           |               |  {                                                                  |
+|           |               |    "TaskId" : "Encoded Task ID"                                     |
+|           |               |  }                                                                  |
++-----------+---------------+---------------------------------------------------------------------+
+| 400       | `Description` | An error occurred                                                   |
+|           +---------------+---------------------------------------------------------------------+
+|           | `Contents`    | .. code-block:: javascript                                          |
+|           |               |                                                                     |
+|           |               |  {                                                                  |
+|           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                  |
+|           |               |    "ErrorComment": "Description of error details."                  |
+|           |               |  }                                                                  |
+|           |               |                                                                     |
+|           |               | .. container::                                                      |
+|           |               |                                                                     |
+|           |               |    See :ref:`error-format-label` for details.                       |
+|           |               |                                                                     |
++-----------+---------------+---------------------------------------------------------------------+
 
 **Example Requests**
 
@@ -112,7 +124,7 @@ in the header.
     POST /api/job/add_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
         &job_id=64bea283eff6475ea6596027a6ba0929 HTTP/1.1
     Host: api.cielo24.com
-    Content-Length: 349500
+    Content-Length: 645809838
     Body: raw binary
 
 **Example Response**
