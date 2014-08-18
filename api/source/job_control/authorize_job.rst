@@ -64,7 +64,7 @@ to enable the "customer authorization" feature.
 .. sourcecode:: http
 
     GET /api/job/authorize?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
-        &job_id=64bea283eff6475ea6596027a6ba0929 HTTP/1.1
+    &job_id=64bea283eff6475ea6596027a6ba0929 HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

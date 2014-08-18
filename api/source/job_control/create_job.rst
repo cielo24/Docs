@@ -2,7 +2,7 @@ Create Job
 ==========
 
 Create a new job.
-A job is a container into you can upload media and request that transcription be performed.
+A job is a container into which you can upload media and request that transcription be performed.
 Creating a job is prerequisite for virtually all other methods.
 
 **HTTP Method**
@@ -81,7 +81,7 @@ Creating a job is prerequisite for virtually all other methods.
 .. sourcecode:: http
 
     GET /api/job/new?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
-        &job_name=example_name&language=en HTTP/1.1
+    &job_name=example_name&language=en HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

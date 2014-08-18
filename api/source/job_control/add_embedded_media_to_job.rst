@@ -74,8 +74,8 @@ Use this option to link to a video hosted by providers like BrightCove, Kaltura,
 .. sourcecode:: http
 
     GET /api/job/add_media_url?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
-        &job_id=64bea283eff6475ea6596027a6ba0929
-        &media_url=http%3A%2F%2Fyoutu.be%2F5m5MPiL99Nc HTTP/1.1
+    &job_id=64bea283eff6475ea6596027a6ba0929
+    &media_url=http%3A%2F%2Fyoutu.be%2F5m5MPiL99Nc HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**

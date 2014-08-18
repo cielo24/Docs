@@ -202,7 +202,7 @@ The job must have completed transcription before a caption can be downloaded.
 +---------------------------------+------------------+-----------------------------------------------------------+
 | layout_target_caption_length_ms | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  Captions generated will, on average, be this duration. However,</br         |
+|                                 |  Captions generated will, on average, be this duration. However,</br>        |
 |                                 |  they may vary significantly based on other parameters you set.              |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
@@ -285,8 +285,8 @@ The job must have completed transcription before a caption can be downloaded.
 +---------------------------------+------------------+-----------------------------------------------------------+
 | minimum_caption_length_ms       | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  Extends the duration of short captions to the this minimum length</br>      |
-|                                 |  Additional time is taken from later caption blocks</br>                     |
+|                                 |  Extends the duration of short captions to the this minimum</br>             |
+|                                 |  length. Additional time is taken from later caption blocks</br>             |
 |                                 |  to meet this minimum time.                                                  |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
@@ -312,7 +312,7 @@ The job must have completed transcription before a caption can be downloaded.
 +---------------------------------+------------------+-----------------------------------------------------------+
 | qt_seamless                     | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  Does not put time gaps of any kind between caption blocks.                  |
+|                                 |  Does not put time gaps of any kind between caption blocks.</br>             |
 |                                 |  Ignored if caption_format does not equal QT.                                |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
@@ -466,7 +466,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ["BLANK_AUDIO","MUSIC]                                    |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``sound_tokens_by_caption_list=["LAUGH"]``                |
+|                                 | `Example`        | ``sound_tokens_by_caption_list=[]``                       |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | sound_tokens_by_line_list       | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -480,7 +480,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ["BLANK_AUDIO","MUSIC]                                    |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``sound_tokens_by_line_list=["LAUGH"]``                   |
+|                                 | `Example`        | ``sound_tokens_by_line_list=["NOISE"]``                   |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | speaker_on_new_line             | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -594,7 +594,7 @@ The job must have completed transcription before a caption can be downloaded.
 .. sourcecode:: http
 
     GET /api/job/get_caption?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
-        &job_id=64bea283eff6475ea6596027a6ba0929&caption_format=SRT HTTP/1.1
+    &job_id=64bea283eff6475ea6596027a6ba0929&caption_format=SRT HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**
