@@ -96,7 +96,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 |  Allows you to specify a custom header for your DFXP</br>                    |
 |                                 |  caption file. The header should be the entire contents of</br>              |
 |                                 |  the header including the opening and closing <head> tags.<br>               |
-|                                 |  Ignored if caption_format does not equal DFXP                               |
+|                                 |  Ignored if caption_format does not equal DFXP.                              |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | XML String                                                |
@@ -191,7 +191,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 |  the jobs name, ID and language will be added to the DFXP</br>               |
 |                                 |  metadata header. When false, these data are omitted from</br>               |
 |                                 |  the header.</br>                                                            |
-|                                 |  Ignored if caption_format does not equal DFXP                               |
+|                                 |  Ignored if caption_format does not equal DFXP.                              |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | Boolean                                                   |
@@ -313,7 +313,7 @@ The job must have completed transcription before a caption can be downloaded.
 | qt_seamless                     | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  Does not put time gaps of any kind between caption blocks.                  |
-|                                 |  Ignored if caption_format does not equal QT                                 |
+|                                 |  Ignored if caption_format does not equal QT.                                |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | Boolean                                                   |

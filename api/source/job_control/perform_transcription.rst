@@ -1,8 +1,9 @@
 Perform Transcription
 =====================
 
-Request that transcription be performed on the specified job. A callback URL, if specified,
-will be called when the transcription is complete. See :ref:`callbacks-label` for details.
+Request that transcription be performed on the specified job.
+A callback URL, if specified, will be called when the transcription is complete.
+See :ref:`callbacks-label` for details.
 
 **HTTP Method**
 
@@ -111,7 +112,8 @@ will be called when the transcription is complete. See :ref:`callbacks-label` fo
 | notes                   | .. raw:: html                                                                           |
 |                         |                                                                                         |
 |                         |  Allows you to provide text that will be displayed to</br>                              |
-|                         |  the transcriber when the job is processed. An HTML included will be escaped            |
+|                         |  the transcriber when the job is processed.</br>                                        |
+|                         |  An HTML included will be escaped.                                                      |
 |                         |                                                                                         |
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Allowed Values` | String ( <= 1000 characters)                                         |
