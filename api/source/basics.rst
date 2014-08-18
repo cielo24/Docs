@@ -3,7 +3,7 @@ The Basics
 
 Getting Started
 ---------------
-#. Send an email to support@cielo24.com requesting a sandbox API login.
+#. Send an email to `support@cielo24.com <mailto:support@cielo24.com>`_ requesting a sandbox API login.
 #. Download sample API code from our repo: https://github.com/Cielo24/SampleCode
 
     #. Each sample code project includes a command line application you can use to experiment with the API without writing any code of your own.
@@ -25,7 +25,7 @@ The production API can be accessed from the following location: https://api.ciel
 Account Management
 ------------------
 
-Account management is largely performed outside of the API. To set up a new production account please register for an account at http://www.cielo24.com. To request a sandbox account, email to support@cielo24.com.
+Account management is largely performed outside of the API. To set up a new production account please register for an account at http://www.cielo24.com. To request a sandbox account, email to `support@cielo24.com <mailto:support@cielo24.com>`_.
 
 Sub-Accounts
 ------------

@@ -4,7 +4,8 @@ Authorize Job
 Authorize an existing job. If your account has the "customer authorization" feature enabled
 (it is not enabled by default) jobs you create will be held in the "Authorizing" state until
 you call this method. Calling this method on a job that is not the "Authorizing" state has no
-effect and will return success. Please contact support@cielo24.com to enable the "customer authorization" feature.
+effect and will return success. Please contact `support@cielo24.com <mailto:support@cielo24.com>`_
+to enable the "customer authorization" feature.
 
 **HTTP Method**
 

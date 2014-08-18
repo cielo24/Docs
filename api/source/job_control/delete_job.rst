@@ -5,7 +5,8 @@ Delete an existing job.
 Jobs can only be deleted before they have started processing,
 when their status is "Authorizing" or "Pending".
 If you need to delete a job after it has started processing
-contact support@cielo24.com and we will do our best to accommodate your request.
+contact `support@cielo24.com <mailto:support@cielo24.com>`_
+and we will do our best to accommodate your request.
 
 **HTTP Method**
 
