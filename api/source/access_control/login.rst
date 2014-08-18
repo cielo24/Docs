@@ -96,10 +96,9 @@ Required arguments must be passed as query string parameters.
 |           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
 |           |               |                                                                          |
-|           |               | .. raw:: html                                                            |
+|           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See<a href="../output_formats/formats.html#error-format">             |
-|           |               |    Error Format</a> for details.                                         |
+|           |               |    See :ref:`error-format-label` for details.                            |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 

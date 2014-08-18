@@ -2,7 +2,7 @@ Perform Transcription
 =====================
 
 Request that transcription be performed on the specified job. A callback URL, if specified,
-will be called when the transcription is complete. See the <a href="../basics.html#callbacks>callback documentation</a> for details.
+will be called when the transcription is complete. See :ref:`callbacks-label` for details.
 
 **HTTP Method**
 
@@ -33,19 +33,13 @@ will be called when the transcription is complete. See the <a href="../basics.ht
 +------------------------+------------------+------------------------------------------------------------------+
 | transcription_fidelity | `Description`    | The desired fidelity of the transcription                        |
 |                        +------------------+------------------------------------------------------------------+
-|                        | `Allowed Values` | .. raw:: html                                                    |
-|                        |                  |                                                                  |
-|                        |                  |  <a href="../output_formats/enums.html#fidelity-enumeration">    |
-|                        |                  |  Fidelity Enum</a>                                               |
+|                        | `Allowed Values` | :ref:`fidelity-label`                                            |
 |                        +------------------+------------------------------------------------------------------+
 |                        | `Example`        | ``transcription_fidelity=PREMIUM``                               |
 +------------------------+------------------+------------------------------------------------------------------+
 | priority               | `Description`    | The desired priority of the transcription                        |
 |                        +------------------+------------------------------------------------------------------+
-|                        | `Allowed Values` | .. raw:: html                                                    |
-|                        |                  |                                                                  |
-|                        |                  |  <a href="../output_formats/enums.html#priority-enumeration">    |
-|                        |                  |  Priority Enum</a>                                               |
+|                        | `Allowed Values` | :ref:`priority-label`                                            |
 |                        +------------------+------------------------------------------------------------------+
 |                        | `Example`        | ``priority=STANDARD``                                            |
 +------------------------+------------------+------------------------------------------------------------------+
@@ -134,13 +128,7 @@ will be called when the transcription is complete. See the <a href="../basics.ht
 |                         |  regardless of the value of this option.                                                |
 |                         |                                                                                         |
 |                         +------------------+----------------------------------------------------------------------+
-|                         | `Allowed Values` | .. raw:: html                                                        |
-|                         |                  |                                                                      |
-|                         |                  |     See <a                                                           |
-|                         |                  |     href=                                                            |
-|                         |                  |     "../output_formats/enums.html#iwp-enumeration">                  |
-|                         |                  |     Interim Work Products</a> for details.                           |
-|                         |                  |                                                                      |
+|                         | `Allowed Values` | :ref:`iwp-label`                                                     |
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Default Value`  | []                                                                   |
 |                         +------------------+----------------------------------------------------------------------+
@@ -208,10 +196,9 @@ will be called when the transcription is complete. See the <a href="../basics.ht
 |           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
 |           |               |                                                                          |
-|           |               | .. raw:: html                                                            |
+|           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See<a href="../output_formats/formats.html#error-format">             |
-|           |               |    Error Format</a> for details.                                         |
+|           |               |    See :ref:`error-format-label` for details.                            |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 

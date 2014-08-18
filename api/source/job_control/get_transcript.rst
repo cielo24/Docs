@@ -140,13 +140,7 @@ The job must have completed transcription before a transcript can be downloaded.
 |                               |  Ignored if remove_sound_references is true.                                 |
 |                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
-|                               | `Allowed Values` | .. raw:: html                                             |
-|                               |                  |                                                           |
-|                               |                  |     See <a                                                |
-|                               |                  |     href=                                                 |
-|                               |                  |     "../output_formats/enums.html#sound-tag-enumeration"> |
-|                               |                  |     Sound Tags</a> for details.                           |
-|                               |                  |                                                           |
+|                               | `Allowed Values` |  :ref:`sound-tag-label`                                   |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Default Value`  | []                                                        |
 |                               +------------------+-----------------------------------------------------------+
@@ -260,10 +254,9 @@ The job must have completed transcription before a transcript can be downloaded.
 |           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
 |           |               |                                                                          |
-|           |               | .. raw:: html                                                            |
+|           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See<a href="../output_formats/formats.html#error-format">             |
-|           |               |    Error Format</a> for details.                                         |
+|           |               |    See :ref:`error-format-label` for details.                            |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 

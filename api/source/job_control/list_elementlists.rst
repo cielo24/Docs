@@ -42,10 +42,9 @@ Gets the list of ElementLists for the job.
 |           |               |                                                                          |
 |           |               |  JSON formatted list of ElementList versions.                            |
 |           |               |                                                                          |
-|           |               | .. raw:: html                                                            |
+|           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See<a href="../output_formats/formats.html#elementlist-list-format">  |
-|           |               |    ElementList List Format</a> for details.                              |
+|           |               |    See :ref:`elementlist-list-format-label` for details.                 |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -57,10 +56,9 @@ Gets the list of ElementLists for the job.
 |           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
 |           |               |                                                                          |
-|           |               | .. raw:: html                                                            |
+|           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See<a href="../output_formats/formats.html#error-format">             |
-|           |               |    Error Format</a> for details.                                         |
+|           |               |    See :ref:`error-format-label` for details.                            |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 

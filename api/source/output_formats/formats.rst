@@ -3,6 +3,8 @@ JSON Formats
 
 Below are the descriptions of the formats used in cielo24 API.
 
+.. _job-info-format-label:
+
 Job Info Format
 ---------------
 
@@ -20,6 +22,8 @@ The following defines the Job Info in JSON format:
         ]
     }
 
+.. _task-status-format-label:
+
 Task Status Format
 ------------------
 
@@ -36,10 +40,17 @@ The following defines the Task Status in JSON format:
         "TaskStatus" : "<TaskStatus Enum>",
     }
 
+.. container::
+
+    Related: :ref:`task-status-label`,
+    :ref:`task-type-label`
+    .
+
 .. raw:: html
 
-    Related: <a href="enums.html#task-status-enumeration">Task Status</a>,
-    <a href="enums.html#task-type-enumeration">Task Type</a>.</br></br>
+    </br>
+
+.. _job-list-format-label:
 
 Job List Format
 ---------------
@@ -55,6 +66,8 @@ The following defines the Job List in JSON format:
             "List of Jobs (see below)"
         ]
     }
+
+.. _job-format-label:
 
 Job Format
 ----------
@@ -78,11 +91,18 @@ The following defines the Job in JSON format:
         "CompletedTime" : "<ISO 8601 Date String>"
     }
 
+.. container::
+
+    Related: :ref:`job-status-label`,
+    :ref:`fidelity-label`,
+    :ref:`priority-label`
+    .
+
 .. raw:: html
 
-    Related: <a href="enums.html#job-status-enumeration">Job Status</a>,
-    <a href="enums.html#fidelity-enumeration">Fidelity</a>,
-    <a href="enums.html#priority-enumeration">Priority</a>.</br></br>
+    </br>
+
+.. _error-format-label:
 
 Error Format
 ------------
@@ -96,9 +116,15 @@ The following defines the Error Output in JSON format:
         "ErrorComment" : "<String>"
     }
 
+.. container::
+
+    Related: :ref:`error-type-label`.
+
 .. raw:: html
 
-    Related: <a href="enums.html#error-type-enumeration">Error Type</a>.</br></br>
+    </br>
+
+.. _elementlist-format-label:
 
 ElementList Format
 ------------------
@@ -123,6 +149,8 @@ All API calls expect and return ElementList version 3 data structures.
         ]
     }
 
+.. _speaker-format-label:
+
 Speaker Format
 --------------
 
@@ -136,9 +164,15 @@ The following defines the Speaker in JSON format:
         "gender" : "<SpeakerGender Enum>"
     }
 
+.. container::
+
+    Related: :ref:`speaker-gender-label`.
+
 .. raw:: html
 
-    Related: <a href="enums.html#speaker-gender-enumeration">Speaker Gender</a>.</br></br>
+    </br>
+
+.. _segment-format-label:
 
 Segment Format
 --------------
@@ -159,6 +193,8 @@ The following defines the Segment in JSON format:
         ]
     }
 
+.. _sequence-format-label:
+
 Sequence Format
 ---------------
 
@@ -176,6 +212,8 @@ The following defines the Sequence in JSON format:
             "List of Tokens (see below)"
         ]
     }
+
+.. _token-format-label:
 
 Token Format
 ------------
@@ -197,9 +235,15 @@ The following defines the Token in JSON format:
         ]
     }
 
+.. container::
+
+    Related: :ref:`token-type-label`.
+
 .. raw:: html
 
-    Related: <a href="enums.html#token-type-enumeration">Token Type</a>.</br></br>
+    </br>
+
+.. _elementlist-list-format-label:
 
 ElementList List Format
 -----------------------

@@ -49,10 +49,9 @@ Invalidates an API Key you have previously generated. It will no longer work as 
 |           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
 |           |               |                                                                          |
-|           |               | .. raw:: html                                                            |
+|           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See<a href="../output_formats/formats.html#error-format">             |
-|           |               |    Error Format</a> for details.                                         |
+|           |               |    See :ref:`error-format-label` for details.                            |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 

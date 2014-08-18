@@ -3,6 +3,8 @@ Enumeration Types
 
 Enumeration types used in cielo24 API.
 
+.. _task-type-label:
+
 Task Type Enumeration
 ---------------------
 
@@ -32,6 +34,8 @@ Task Type Enumeration
     JOB_GET_ELEMENTLIST</br>
     </font>
 
+.. _error-type-label:
+
 Error Type Enumeration
 ----------------------
 
@@ -59,6 +63,8 @@ Error Type Enumeration
     ITEM_NOT_FOUND <font color="black">- You have provided an ID for a Job, task, billing item, contact info, or other item, that could not be found in the system. See the ErrorComment for more details on the item that was not found.</font></br>
     </font>
 
+.. _job-status-label:
+
 Job Status Enumeration
 ----------------------
 
@@ -76,6 +82,8 @@ Job Status Enumeration
     Complete</br>
     </font>
 
+.. _task-status-label:
+
 Task Status Enumeration
 -----------------------
 
@@ -92,6 +100,8 @@ Task Status Enumeration
     <span style="padding: 20px">
     FAILED</br>
     </font>
+
+.. _priority-label:
 
 Priority Enumeration
 --------------------
@@ -112,6 +122,8 @@ Priority Enumeration
     HIGH</br>
     </font>
 
+.. _fidelity-label:
+
 Fidelity Enumeration
 --------------------
 
@@ -130,6 +142,8 @@ Fidelity Enumeration
     <span style="padding: 20px">
     PROFESSIONAL</br>
     </font>
+
+.. _caption-format-label:
 
 Caption Format Enumeration
 --------------------------
@@ -158,6 +172,8 @@ Caption Format Enumeration
     ECHO</br>
     </font>
 
+.. _token-type-label:
+
 Token Type Enumeration
 ----------------------
 
@@ -173,8 +189,10 @@ Token Type Enumeration
     sound</br>
     </font>
 
+.. _sound-tag-label:
+
 Sound Tag Enumeration
----------------
+---------------------
 
 .. raw:: html
 
@@ -218,6 +236,8 @@ Speaker ID Enumeration
     <span style="padding: 20px">
     name</br>
     </font>
+
+.. _speaker-gender-label:
 
 Speaker Gender Enumeration
 --------------------------
@@ -274,6 +294,8 @@ Customer Approval Tools Enumeration
     <span style="padding: 20px">
     CIELO24</br>
     </font>
+
+.. _iwp-label:
 
 IWP Enumeration
 -----------------------------------

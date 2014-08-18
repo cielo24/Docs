@@ -33,10 +33,7 @@ The job must have completed transcription before a caption can be downloaded.
 +------------------------+------------------+---------------------------------------------------------------------+
 | caption_format         | `Description`    | The format of the caption file to return                            |
 |                        +------------------+---------------------------------------------------------------------+
-|                        | `Allowed Values` | .. raw:: html                                                       |
-|                        |                  |                                                                     |
-|                        |                  |  <a href="../output_formats/enums.html#caption-format-enumeration"> |
-|                        |                  |  Caption Format Enum</a>                                            |
+|                        | `Allowed Values` | :ref:`caption-format-label`                                         |
 |                        +------------------+---------------------------------------------------------------------+
 |                        | `Example`        | ``caption_format=SRT``                                              |
 +------------------------+------------------+---------------------------------------------------------------------+
@@ -186,14 +183,14 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ""                                                        |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``force_case=lower                                        |
+|                                 | `Example`        | ``force_case=lower``                                      |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | include_dfxp_metadata           | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  When true, and the caption format requested is DFXP,</br>                   |
 |                                 |  the jobs name, ID and language will be added to the DFXP</br>               |
 |                                 |  metadata header. When false, these data are omitted from</br>               |
-|                                 |  the header.                                                                 |
+|                                 |  the header.</br>                                                            |
 |                                 |  Ignored if caption_format does not equal DFXP                               |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
@@ -341,17 +338,11 @@ The job must have completed transcription before a caption can be downloaded.
 | remove_sounds_list              | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  A list of sounds to not show in the caption. This is a</br>                 |
-|                                 |  JSON style list, and should look like ["MUSIC", "LAUGH"].                   |
+|                                 |  JSON style list, and should look like ["MUSIC", "LAUGH"].</br>              |
 |                                 |  Ignored if remove_sound_references is true.                                 |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | .. raw:: html                                             |
-|                                 |                  |                                                           |
-|                                 |                  |     See <a                                                |
-|                                 |                  |     href=                                                 |
-|                                 |                  |     "../output_formats/enums.html#sound-tag-enumeration"> |
-|                                 |                  |     Sound Tags</a> for details.                           |
-|                                 |                  |                                                           |
+|                                 | `Allowed Values` |  :ref:`sound-tag-label`                                   |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | []                                                        |
 |                                 +------------------+-----------------------------------------------------------+
@@ -471,13 +462,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 |  Ignored if sound_tokens_by_caption is true.                                 |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | .. raw:: html                                             |
-|                                 |                  |                                                           |
-|                                 |                  |     See <a                                                |
-|                                 |                  |     href=                                                 |
-|                                 |                  |     "../output_formats/enums.html#sound-tag-enumeration"> |
-|                                 |                  |     Sound Tags</a> for details.                           |
-|                                 |                  |                                                           |
+|                                 | `Allowed Values` |  :ref:`sound-tag-label`                                   |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ["BLANK_AUDIO","MUSIC]                                    |
 |                                 +------------------+-----------------------------------------------------------+
@@ -491,13 +476,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 |  Ignored if sound_tokens_by_line is true.                                    |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | .. raw:: html                                             |
-|                                 |                  |                                                           |
-|                                 |                  |     See <a                                                |
-|                                 |                  |     href=                                                 |
-|                                 |                  |     "../output_formats/enums.html#sound-tag-enumeration"> |
-|                                 |                  |     Sound Tags</a> for details.                           |
-|                                 |                  |                                                           |
+|                                 | `Allowed Values` |  :ref:`sound-tag-label`                                   |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ["BLANK_AUDIO","MUSIC]                                    |
 |                                 +------------------+-----------------------------------------------------------+
@@ -604,10 +583,9 @@ The job must have completed transcription before a caption can be downloaded.
 |           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
 |           |               |                                                                          |
-|           |               | .. raw:: html                                                            |
+|           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See<a href="../output_formats/formats.html#error-format">             |
-|           |               |    Error Format</a> for details.                                         |
+|           |               |    See :ref:`error-format-label` for details.                            |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 

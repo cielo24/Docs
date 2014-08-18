@@ -57,10 +57,9 @@ The job must have completed transcription before a caption can be downloaded.
 |           |               |                                                                          |
 |           |               |  JSON formatted ElementList.                                             |
 |           |               |                                                                          |
-|           |               | .. raw:: html                                                            |
+|           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See<a href="../output_formats/formats.html#elementlist-format">       |
-|           |               |    ElementList Format</a> for details.                                   |
+|           |               |    See :ref:`elementlist-format-label` for details.                      |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -72,10 +71,9 @@ The job must have completed transcription before a caption can be downloaded.
 |           |               |    "ErrorComment": "Description of error details."                       |
 |           |               |  }                                                                       |
 |           |               |                                                                          |
-|           |               | .. raw:: html                                                            |
+|           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See<a href="../output_formats/formats.html#error-format">             |
-|           |               |    Error Format</a> for details.                                         |
+|           |               |    See :ref:`error-format-label` for details.                            |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
