@@ -8,15 +8,15 @@ Getting Started
 
     #. Each sample code project includes a command line application you can use to experiment with the API without writing any code of your own.
 
-#. Use the sandbox credentials you received from support and the sample applications to connect to our API
+#. Use the sandbox credentials you received from support and the sample applications to connect to our API.
 
 Sandbox API
 -----------
 For testing, a sandbox API is provided at https://sandbox.cielo24.com.
 The sandbox provides a testing platform for development, where no real processing is performed.
 Transcript/caption requests made to the sandbox will return a pre-prepared sample, the data will not match the content or length of media you submitted.
-However, the transcript/caption will be formatted as you request in your get_transcription/get_caption call.
-The sandbox API will make URL callbacks, if requested, a few seconds after the call to perform_transcription is made.
+However, the transcript/caption will be formatted as you request in your :doc:`get_transcript <job_control/get_transcript>` **/** :doc:`get_caption <job_control/get_caption>` call.
+The sandbox API will make URL callbacks, if requested, a few seconds after the call to :doc:`perform_transcription <job_control/perform_transcription>` is made.
 
 Production API
 --------------
@@ -25,7 +25,8 @@ The production API can be accessed from the following location: https://api.ciel
 Account Management
 ------------------
 
-Account management is largely performed outside of the API. To set up a new production account please register for an account at http://www.cielo24.com. To request a sandbox account, email to `support@cielo24.com <mailto:support@cielo24.com>`_.
+Account management is largely performed outside of the API. To set up a new production account please register for an account at http://www.cielo24.com.
+To request a sandbox account, email to `support@cielo24.com <mailto:support@cielo24.com>`_.
 
 Sub-Accounts
 ------------
