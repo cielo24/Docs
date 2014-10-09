@@ -182,11 +182,17 @@ Token Type Enumeration
     <font color="firebrick">
     <p>
     <span style="padding: 20px">
-    word</br>
+    word
+    <font color="black"> - Used to denote a word in the transcript.</font>
+    </br>
     <span style="padding: 20px">
-    punctuation</br>
+    punctuation
+    <font color="black"> - Used to denote punctuation in the transcript.</font>
+    </br>
     <span style="padding: 20px">
-    sound</br>
+    sound
+    <font color="black"> - Used to denote a sound or other non-word item in a transcript. If specified, a tag must also be specified on the token.</font>
+    </br>
     </font>
 
 .. _sound-tag-label:
@@ -220,6 +226,10 @@ Sound Tag Enumeration
     APPLAUSE</br>
     <span style="padding: 20px">
     BLEEP</br>
+    <span style="padding: 20px">
+    ENDS_SENTENCE
+    <font color="black"> - Used to denote that this token ends the current sentence.</font>
+    </br>
     </font>
 
 Speaker ID Enumeration

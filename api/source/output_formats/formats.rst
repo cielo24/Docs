@@ -129,7 +129,8 @@ The following defines the Error Output in JSON format:
 ElementList Format
 ------------------
 
-The ElementList format is defined in the cielo24 ElementList format specification.
+An ElementList is JSON encoded data that contains words, timing, and some metadata of a transcript.
+The JSON data structures that comprise an ElementList are defined below.
 All API calls expect and return ElementList version 3 data structures.
 
 .. code-block:: javascript
@@ -148,6 +149,8 @@ All API calls expect and return ElementList version 3 data structures.
             "List of Speakers (see below)",
         ]
     }
+
+An example ElementList can be found :doc:`here <example_elementlist>`.
 
 .. _speaker-format-label:
 
