@@ -40,24 +40,15 @@ JSON Definitions
 
         /* A dictionary of keywords (see definition below).
          * This variable is optional. */
-        "keywords" :
-        {
-            "<keyword_value>" : "<Keyword>",
-        },
+        "keywords" : { "<keyword_value>" : "<Keyword>", },
 
         /* A dictionary of topics (see definition below).
          * This variable is optional. */
-        "topics" :
-        {
-            "<topic_name>" : "<Topic>",
-        },
+        "topics" : { "<topic_name>" : "<Topic>", },
 
         /* A dictionary of entities (see definition below).
          * This variable is optional. */
-        "entities" :
-        {
-            "<entity_name>" : "<Entity>",
-        }
+        "entities" : { "<entity_name>" : "<Entity>", }
     }
 
 
@@ -198,7 +189,7 @@ JSON Definitions
         /* A URL to an external resource related to this keyword. */
         "url": "<String (URL)>",
 
-  		/* A list of time intervals during which the keyword is said. */
+        /* A list of time intervals during which the keyword is said. */
         "time_ranges": [
             ["start_time": "<Integer (milliseconds)>",
              "end_time:": "<Integer (milliseconds)>"],
