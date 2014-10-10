@@ -59,7 +59,7 @@ The job must have completed transcription before a caption can be downloaded.
 |           |               |                                                                          |
 |           |               | .. container::                                                           |
 |           |               |                                                                          |
-|           |               |    See :ref:`elementlist-format-label` for details.                      |
+|           |               |    See :ref:`elementlist-label` for details.                             |
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |

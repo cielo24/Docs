@@ -7,4 +7,5 @@ Below are descriptions of the formats and enumeration types used in cielo24 API.
    :maxdepth: 2
 
    formats
+   elementlist
    enums
