@@ -36,7 +36,28 @@ JSON Definitions
 
         /* A list of speakers (see definition below).
          * This variable is optional. */
-        "speakers" : [<Speaker>]
+        "speakers" : [<Speaker>],
+
+        /* A dictionary of keywords (see definition below).
+         * This variable is optional. */
+        "keywords" :
+        {
+            "<keyword_value>" : "<Keyword>",
+        },
+
+        /* A dictionary of topics (see definition below).
+         * This variable is optional. */
+        "topics" :
+        {
+            "<topic_name>" : "<Topic>",
+        },
+
+        /* A dictionary of entities (see definition below).
+         * This variable is optional. */
+        "entities" :
+        {
+            "<entity_name>" : "<Entity>",
+        }
     }
 
 
@@ -159,6 +180,51 @@ JSON Definitions
 .. raw:: html
 
     </br>
+
+**Keyword:**
+
+.. note::
+    The actual keyword value acts as a 'key' in the "keywords" dictionary in ElementList.
+    It is always lowercase and helps avoid duplicates.
+    The following data construct acts as the 'value'.
+
+.. code-block:: javascript
+
+    {
+        /* The display value of the keyword.
+         * May be mixed case or otherwise different than the key value. */
+        "display_name": "<String>",
+
+        /* A URL to an external resource related to this keyword. */
+        "url": "<String (URL)>",
+
+  		/* A list of time intervals during which the keyword is said. */
+        "time_ranges": [
+            ["start_time": "<Integer (milliseconds)>",
+             "end_time:": "<Integer (milliseconds)>"],
+        ]
+    }
+
+**Topic and Entity:**
+
+.. note::
+    The actual topic/entity name acts as a key in the corresponding dictionary in ElementList.
+    It is always lowercase and helps avoid duplicates.
+    The following data construct acts as the 'value'.
+
+.. code-block:: javascript
+
+    {
+        /* A URL to an external resource related to this topic/entity. */
+        "url": "<String (URL)>",
+
+        /* A list of time intervals during which the keyword is said. */
+        "time_ranges": [
+            ["start_time": "<Integer (milliseconds)>",
+             "end_time:": "<Integer (milliseconds)>"],
+        ]
+    }
+
 
 Additional Notes
 ----------------
