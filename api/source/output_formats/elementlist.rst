@@ -5,7 +5,7 @@ ElementList Format
 
 An ElementList is JSON encoded data that contains words, timing, and some metadata of a transcript.
 The JSON data structures that comprise an ElementList are defined below.
-All API calls expect and return ElementList version 3 data structures.
+All API calls expect and return ElementList version 2 data structures.
 An example ElementList can be found :doc:`here <example_elementlist>`.
 
 JSON Definitions
@@ -92,7 +92,7 @@ JSON Definitions
 
         /* The identifier of this segment’s speaker. The speaker must be
          * in the ElementList’s speakers list. This variable is optional. */
-        "speaker_id" : "<Boolean>",
+        "speaker_id" : "<Integer>",
 
         /* Reserved for future use. This variable is optional. */
         "interpolated" : "<Boolean>",
@@ -105,7 +105,10 @@ JSON Definitions
 
         /* A list of sequences (see definition below).
          * This variable is required, but can contain an empty list. */
-        "sequences" : [<Sequence>]
+        "sequences" : [<Sequence>],
+
+	/*  Reserved for future use. This variable is optional. */
+ 	"style": "<String>"
     }
 
 .. _sequence-format-label:
@@ -129,7 +132,10 @@ JSON Definitions
 
         /* A list of tokens (see definition below).
          * This variable is required, but can contain an empty list. */
-        "tokens" : [<Token>]
+        "tokens" : [<Token>],
+
+	/*  Reserved for future use. This variable is optional. */
+        "style": "<String>"
     }
 
 .. _token-format-label:
@@ -161,7 +167,10 @@ JSON Definitions
         "display_as" : "<String>",
 
         /* A list of tags. */
-        "tags" : [<Tag Enum>]
+        "tags" : [<Tag Enum>],
+
+	/*  Reserved for future use. This variable is optional. */
+        "style": "<String>"
     }
 
 .. container::
