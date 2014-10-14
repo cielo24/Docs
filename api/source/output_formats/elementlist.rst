@@ -5,7 +5,7 @@ ElementList Format
 
 An ElementList is JSON encoded data that contains words, timing, and some metadata of a transcript.
 The JSON data structures that comprise an ElementList are defined below.
-All API calls expect and return ElementList version 3 data structures.
+All API calls expect and return ElementList version 2 data structures.
 An example ElementList can be found :doc:`here <example_elementlist>`.
 
 JSON Definitions
@@ -36,7 +36,19 @@ JSON Definitions
 
         /* A list of speakers (see definition below).
          * This variable is optional. */
-        "speakers" : [<Speaker>]
+        "speakers" : [<Speaker>],
+
+        /* A dictionary of keywords (see definition below).
+         * This variable is optional. */
+        "keywords" : { "<keyword_value>" : "<Keyword>", },
+
+        /* A dictionary of topics (see definition below).
+         * This variable is optional. */
+        "topics" : { "<topic_name>" : "<Topic>", },
+
+        /* A dictionary of entities (see definition below).
+         * This variable is optional. */
+        "entities" : { "<entity_name>" : "<Entity>", }
     }
 
 
@@ -80,7 +92,7 @@ JSON Definitions
 
         /* The identifier of this segment’s speaker. The speaker must be
          * in the ElementList’s speakers list. This variable is optional. */
-        "speaker_id" : "<Boolean>",
+        "speaker_id" : "<Integer>",
 
         /* Reserved for future use. This variable is optional. */
         "interpolated" : "<Boolean>",
@@ -93,7 +105,10 @@ JSON Definitions
 
         /* A list of sequences (see definition below).
          * This variable is required, but can contain an empty list. */
-        "sequences" : [<Sequence>]
+        "sequences" : [<Sequence>],
+
+	/*  Reserved for future use. This variable is optional. */
+ 	"style": "<String>"
     }
 
 .. _sequence-format-label:
@@ -117,7 +132,10 @@ JSON Definitions
 
         /* A list of tokens (see definition below).
          * This variable is required, but can contain an empty list. */
-        "tokens" : [<Token>]
+        "tokens" : [<Token>],
+
+	/*  Reserved for future use. This variable is optional. */
+        "style": "<String>"
     }
 
 .. _token-format-label:
@@ -149,7 +167,10 @@ JSON Definitions
         "display_as" : "<String>",
 
         /* A list of tags. */
-        "tags" : [<Tag Enum>]
+        "tags" : [<Tag Enum>],
+
+	/*  Reserved for future use. This variable is optional. */
+        "style": "<String>"
     }
 
 .. container::
@@ -159,6 +180,51 @@ JSON Definitions
 .. raw:: html
 
     </br>
+
+**Keyword:**
+
+.. note::
+    The actual keyword value acts as a 'key' in the "keywords" dictionary in ElementList.
+    It is always lowercase and helps avoid duplicates.
+    The following data construct acts as the 'value'.
+
+.. code-block:: javascript
+
+    {
+        /* The display value of the keyword.
+         * May be mixed case or otherwise different than the key value. */
+        "display_name": "<String>",
+
+        /* A URL to an external resource related to this keyword. */
+        "url": "<String (URL)>",
+
+        /* A list of time intervals during which the keyword is said. */
+        "time_ranges": [
+            ["start_time": "<Integer (milliseconds)>",
+             "end_time:": "<Integer (milliseconds)>"],
+        ]
+    }
+
+**Topic and Entity:**
+
+.. note::
+    The actual topic/entity name acts as a key in the corresponding dictionary in ElementList.
+    It is always lowercase and helps avoid duplicates.
+    The following data construct acts as the 'value'.
+
+.. code-block:: javascript
+
+    {
+        /* A URL to an external resource related to this topic/entity. */
+        "url": "<String (URL)>",
+
+        /* A list of time intervals during which the keyword is said. */
+        "time_ranges": [
+            ["start_time": "<Integer (milliseconds)>",
+             "end_time:": "<Integer (milliseconds)>"],
+        ]
+    }
+
 
 Additional Notes
 ----------------
