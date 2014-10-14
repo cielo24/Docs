@@ -26,6 +26,90 @@ The list is sorted by default to the creation time of the job, descending.
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
 
+**Query String Parameters for filtering** - Optional
+
++-------------------------+------------------------------------------------------------------------------+
+| Name                    | Details                                                                      |
++=========================+==================+===========================================================+
+| CreationDateFrom        | `Description`    | Filter jobs by the `original_start_time__gte` field.      |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                       |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``CreationDateFrom=2014-08-27T13:40:53``                  |
++-------------------------+------------------+-----------------------------------------------------------+
+| CreationDateTo          | `Description`    | Filter jobs by the `original_start_time__tle` field.      |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                       |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``CreationDateTo=2014-08-27T13:40:53``                    |
++-------------------------+------------------+-----------------------------------------------------------+
+| StartDateFrom           | `Description`    | Filter jobs by the `original_start_time__gte` field.      |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                       |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``StartDateFrom=2014-08-27T13:40:53``                     |
++-------------------------+------------------+-----------------------------------------------------------+
+| StartDateTo             | `Description`    | Filter jobs by the `original_start_time__tle` field.      |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                       |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``StartDateTo=2014-08-27T13:40:53``                       |
++-------------------------+------------------+-----------------------------------------------------------+
+| DueDateFrom             | `Description`    | Filter jobs by the `original_due_date__gte` field.        |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                       |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``DueDateFrom=2014-08-27T13:40:53``                       |
++-------------------------+------------------+-----------------------------------------------------------+
+| DueDateTo               | `Description`    | Filter jobs by the `original_due_date__lte` field.        |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                       |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``DueDateTo=2014-08-27T13:40:53``                         |
++-------------------------+------------------+-----------------------------------------------------------+
+| CompleteDateFrom        | `Description`    | Filter jobs by the `complete_time__gte` field.            |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                       |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``CompleteDateFrom=2014-08-27T13:40:53``                  |
++-------------------------+------------------+-----------------------------------------------------------+
+| CompleteDateTo          | `Description`    | Filter jobs by the `complete_time__lte` field.            |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                       |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``CompleteDateTo=2014-08-27T13:40:53``                    |
++-------------------------+------------------+-----------------------------------------------------------+
+| JobStatus               | `Description`    | Filter jobs by the job status.                            |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | String.                                                   |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``JobStatus=Complete``                                    |
++-------------------------+------------------+-----------------------------------------------------------+
+| Fidelity                | `Description`    | Filter jobs by the fidelity.                              |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | String.                                                   |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``Fidelity=MECHANICAL``                                   |
++-------------------------+------------------+-----------------------------------------------------------+
+| Priority                | `Description`    | Filter jobs by the priority.                              |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | String.                                                   |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``Priority=STANDARD``                                     |
++-------------------------+------------------+-----------------------------------------------------------+
+| TurnaroundTimeHoursFrom | `Description`    | Filter jobs by the `original_turnaround_time__gte` field. |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Integer.                                                  |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``TurnaroundTimeHoursFrom=24``                            |
++-------------------------+------------------+-----------------------------------------------------------+
+| TurnaroundTimeHoursTo   | `Description`    | Filter jobs by the `original_turnaround_time__lte` field. |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Allowed Values` | Integer.                                                  |
+|                         +------------------+-----------------------------------------------------------+
+|                         | `Example`        | ``TurnaroundTimeHoursTo=24``                              |
++-------------------------+------------------+-----------------------------------------------------------+
+
 **Responses**
 
 +-----------+------------------------------------------------------------------------------------------+
@@ -64,6 +148,11 @@ The list is sorted by default to the creation time of the job, descending.
     GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
     Host: api.cielo24.com
 
+.. sourcecode:: http
+
+    GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f&Priority=STANDARD HTTP/1.1
+    Host: api.cielo24.com
+
 **Example Response**
 
 .. sourcecode:: http
@@ -72,20 +161,20 @@ The list is sorted by default to the creation time of the job, descending.
     Content-Type: application/json
 
     {
-        "Username" : "john_doe",
-        "ActiveJobs" :
+        "Username": "john_doe",
+        "ActiveJobs":
         [{
-            "JobId" : "64bea283eff6475ea6596027a6ba0929",
-            "JobName" : "example_job",
-            "JobStatus" : "Complete",
-            "Priority" : "ECONOMY",
-            "Fidelity" : "PREMIUM",
-            "JobLanguage" : "EN_US",
-            "TargetLanguage" : "EN_US",
-            "CreationTime" : "2014-07-31T12:35:52Z",
-            "DueDate" : "2014-08-01T12:35:52Z",
-            "TurnaroundTimeHours" : 72,
-            "StartTime" : "2014-07-31T12:35:52Z",
-            "CompletedTime" : "2014-08-01T12:35:52Z"
+            "JobId": "64bea283eff6475ea6596027a6ba0929",
+            "JobName": "example_job",
+            "JobStatus": "Complete",
+            "Priority": "ECONOMY",
+            "Fidelity": "PREMIUM",
+            "JobLanguage": "EN_US",
+            "TargetLanguage": "EN_US",
+            "CreationTime": "2014-07-31T12:35:52Z",
+            "DueDate": "2014-08-01T12:35:52Z",
+            "TurnaroundTimeHours": 72,
+            "StartTime": "2014-07-31T12:35:52Z",
+            "CompletedTime": "2014-08-01T12:35:52Z"
         }]
     }
