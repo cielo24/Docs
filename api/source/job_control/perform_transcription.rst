@@ -188,11 +188,11 @@ See :ref:`callback documentation <callbacks-label>` for details.
 +-------------------------+--------+---------+----------------------------------------------------------------------+
 | generate_media_intelligence_iwp  | .. raw:: html                                                                  |
 |                                  |                                                                                |
-|                                  |  Requests that media intelligence be generated for the specified interim/final |
-|                                  |  versions of the transcript. Media intelligence data is added to the           |
-|                                  |  ElementList and can be retreive using the get_elementlist API call. See the   |
-|                                  |  ElementList documentation for details about what media intelligence data is   |
-|                                  |  returned.                                                                     |
+|                                  |  Requests that media intelligence be generated for the specified </br>         |
+|                                  |  interim/final versions of the transcript. Media intelligence data is</br>     |
+|                                  |  added to the ElementList and can be retreive using the get_elementlist</br>   |
+|                                  |  API call. See the ElementList documentation for details about what media</br> |
+|                                  |  intelligence data is returned.                                                |
 |                                  |                                                                                |
 |                                  +------------------+-------------------------------------------------------------+
 |                                  | `Allowed Values` | :ref:`iwp-label`                                            |
