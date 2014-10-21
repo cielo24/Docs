@@ -192,7 +192,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                                  |  versions of the transcript. Media intelligence data is added to the           |
 |                                  |  ElementList and can be retreive using the get_elementlist API call. See the   |
 |                                  |  ElementList documentation for details about what media intelligence data is   |
-|								   |  returned.                                                                     |
+|                                  |  returned.                                                                     |
 |                                  |                                                                                |
 |                                  +------------------+-------------------------------------------------------------+
 |                                  | `Allowed Values` | :ref:`iwp-label`                                            |
