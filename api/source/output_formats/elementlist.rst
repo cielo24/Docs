@@ -181,50 +181,44 @@ JSON Definitions
 
     </br>
 
-**Keyword:**
+**Entity, Topic and Keyword:**
+
+    The entity/keyword/topic portions of the Elementlist contain metadata related
+    to the contents of the Elementlist.
 
 .. note::
-    The actual keyword value acts as a 'key' in the "keywords" dictionary in ElementList.
-    It is always lowercase and helps avoid duplicates.
-    The following data construct acts as the 'value'.
+    The time ranges for the meta data may not exactly match token or segment 
+    boundaries.
+
+.. note::
+    The text of some entities/keywords/topics may have been inferred by the content
+    of the transcript and may not actually appear in the Elementlist.
+
+.. note::
+    The actual entity/keyword/topic is the "key" in the dictionary. It is always lowercase 
+    and will not be duplicated. The following data construct is the "value" associated with
+    the "key".
+
+.. note::
+    The display_name may differ from the "key", typically in captilization, but sometimes 
+    there are other differences.
 
 .. code-block:: javascript
 
     {
-        /* The display value of the keyword.
+        /* The display value of the entity/keyword/topic.
          * May be mixed case or otherwise different than the key value. */
         "display_name": "<String>",
 
-        /* A URL to an external resource related to this keyword. */
+        /* A URL to an external resource related to this entity/keyword/topic. */
         "url": "<String (URL)>",
 
-        /* A list of time intervals during which the keyword is said. */
+        /* A list of time ranges to which the entity/keyword/topic is related. */
         "time_ranges": [
             ["start_time": "<Integer (milliseconds)>",
              "end_time:": "<Integer (milliseconds)>"],
         ]
     }
-
-**Topic and Entity:**
-
-.. note::
-    The actual topic/entity name acts as a key in the corresponding dictionary in ElementList.
-    It is always lowercase and helps avoid duplicates.
-    The following data construct acts as the 'value'.
-
-.. code-block:: javascript
-
-    {
-        /* A URL to an external resource related to this topic/entity. */
-        "url": "<String (URL)>",
-
-        /* A list of time intervals during which the keyword is said. */
-        "time_ranges": [
-            ["start_time": "<Integer (milliseconds)>",
-             "end_time:": "<Integer (milliseconds)>"],
-        ]
-    }
-
 
 Additional Notes
 ----------------
