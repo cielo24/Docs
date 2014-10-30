@@ -78,16 +78,31 @@ Get a list of all tasks associated with an existing job.
     Content-Type: application/json
 
     {
-        "JobId" : "64bea283eff6475ea6596027a6ba0929",
-        "JobName" : "example_job",
-        "Language" : "EN_US",
-        "Tasks" :
-        [{
-            "TaskId" : "23D263A01C134455B6C73D8EC2E1D784",
-            "TaskType" : "JOB_CREATED",
-            "TaskRequestTime" : "2014-07-31T12:35:52Z",
-            "TaskCompletionTime" : "2014-07-31T14:35:52Z",
-            "TaskInfo" : "example_info",
-            "TaskStatus" : "COMPLETE",
-        }]
+        "StartDate": "2014-08-27T14:00:06.472706",
+        "TargetLanguage": "en",
+        "MediaLengthSeconds": 607.81,
+        "Language": "EN_US",
+        "SourceLanguage": "en",
+        "ReturnTargets": {},
+        "CompletedDate": "2014-08-27T14:10:41.923125",
+        "JobStatus": "RETURNED",
+        "JobId": "d4fb871e07514304b23131b45f8caa1f",
+        "Priority": "STANDARD",
+        "DueDate": "2014-08-29T14:00:06.472706",
+        "Tasks": [
+            {
+                "TaskId" : "23D263A01C134455B6C73D8EC2E1D784",
+                "TaskType" : "JOB_CREATED",
+                "TaskRequestTime" : "2014-07-31T12:35:52Z",
+                "TaskCompletionTime" : "2014-07-31T14:35:52Z",
+                "TaskInfo" : "example_info",
+                "TaskStatus" : "COMPLETE",
+            }
+        ],
+        "ExternalID": "",
+        "CreationDate": "2014-08-27T14:00:06.472706",
+        "Fidelity": "MECHANICAL",
+        "JobName": "example_job",
+        "Options": {},
+        "TurnaroundTimeHours": 48
     }

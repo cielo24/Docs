@@ -43,13 +43,13 @@ The list is sorted by default to the creation time of the job, descending.
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``CreationDateTo=2014-08-27T13:40:53``                                   |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| StartDateFrom           | `Description`    | Filter jobs that were created on or after a particular date and time.    |
+| StartDateFrom           | `Description`    | Filter jobs that were started on or after a particular date and time.    |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``StartDateFrom=2014-08-27T13:40:53``                                    |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| StartDateTo             | `Description`    | Filter jobs that were created on or before a particular date and time.   |
+| StartDateTo             | `Description`    | Filter jobs that were started on or before a particular date and time.   |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
@@ -174,17 +174,26 @@ The list is sorted by default to the creation time of the job, descending.
         "Username": "john_doe",
         "ActiveJobs":
         [{
-            "JobId": "64bea283eff6475ea6596027a6ba0929",
-            "JobName": "example_job",
-            "JobStatus": "Complete",
-            "Priority": "ECONOMY",
-            "Fidelity": "PREMIUM",
-            "JobLanguage": "EN_US",
+            "StartDate": "2014-08-27T14:00:06.472706",
             "TargetLanguage": "EN_US",
-            "CreationTime": "2014-07-31T12:35:52Z",
-            "DueDate": "2014-08-01T12:35:52Z",
-            "TurnaroundTimeHours": 72,
-            "StartTime": "2014-07-31T12:35:52Z",
-            "CompletedTime": "2014-08-01T12:35:52Z"
+            "MediaLengthSeconds": 607.81,
+            "SourceLanguage": "en",
+            "TurnaroundTimeHours": 48,
+            "ReturnTargets": "",
+            "CompletedDate": "2014-08-27T14:10:41.923125",
+            "CreationTime": "2014-08-27T14:00:06.472706",
+            "CompletedTime": "2014-08-27T14:10:41.923125",
+            "JobStatus": "Complete",
+            "JobId": "d4fb871e07514304b23131b45f8caa1f",
+            "Priority": "STANDARD",
+            "DueDate": "2014-08-29T14:00:06.472706",
+            "ExternalID": "",
+            "CreationDate": "2014-08-27T14:00:06.472706",
+            "StartTime": "2014-08-27T14:00:06.472706",
+            "Fidelity": "MECHANICAL",
+            "JobName": "example_job",
+            "JobLanguage": "EN_US",
+            "Options": {},
+            "TurnaroundTimeHours": 48
         }]
     }

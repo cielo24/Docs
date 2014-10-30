@@ -15,7 +15,27 @@ The following defines the Job Info in JSON format:
     {
         "JobId" : "<Guid HexString>",
         "JobName" : "<String>",
+        "MediaLengthSeconds" : "<Integer>",
+        "ExternalID" : "<String (dependant on third-party integrations)",
+        "Priority" : "<Priority Enum>",
+        "TurnaroundTimeHours" : "<Integer>",
+        "Fidelity" : "<Fidelity Enum>",
+        "JobStatus" : "<Status Enum>",
+        "Options" : {
+            "<JobConfigOption>" : "<Value>"
+            ...
+        },
+        "ReturnTargets" : {
+            "<ReturnTargetName>" : "<ReturnTargetValue>",
+            ...
+        },
         "Language" : "<RFC 5646 Language Code>",
+        "SourceLanguage" : "<RFC 5646 Language Code>",
+        "TargetLanguage" : "<RFC 5646 Language Code>",
+        "CreationDate" : "<ISO 8601 Date String>",
+        "StartDate" : "<ISO 8601 Date String>",
+        "DueDate" : "<ISO 8601 Date String>",
+        "CompletedDate" : "<ISO 8601 Date String>",
         "Tasks" :
         [
             "List of Task Statuses (see below)"
@@ -79,7 +99,9 @@ The following defines the Job in JSON format:
     {
         "JobId" : "<Guid HexString>",
         "JobName" : "<String>",
-        "JobStatus" : "<JobStatus Enum>",
+        "MediaLengthSeconds" : "<Integer>",
+        "ExternalID" : "<String (dependant on third-party integrations)",
+        "JobStatus" : "<Status Enum>",
         "Priority" : "<Priority Enum>",
         "Fidelity" : "<Fidelity Enum>",
         "JobLanguage" : "<RFC 5646 Language Code>",
@@ -89,6 +111,18 @@ The following defines the Job in JSON format:
         "TurnaroundTimeHours" : "<Integer>",
         "StartTime" : "<ISO 8601 Date String>",
         "CompletedTime" : "<ISO 8601 Date String>"
+        "Options" : {
+            "<JobConfigOption>" : "<Value>"
+            ...
+        },
+        "ReturnTargets" : {
+            "<ReturnTargetName>" : "<ReturnTargetValue>",
+            ...
+        },
+        "CreationDate" : "<ISO 8601 Date String>",
+        "StartDate" : "<ISO 8601 Date String>",
+        "DueDate" : "<ISO 8601 Date String>",
+        "CompletedDate" : "<ISO 8601 Date String>",
     }
 
 .. container::
