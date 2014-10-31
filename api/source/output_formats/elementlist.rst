@@ -205,7 +205,7 @@ JSON Definitions
 
 .. code-block:: javascript
 
-    {
+    "keywords": {
         /* The display value of the entity/keyword/topic.
          * May be mixed case or otherwise different than the key value. */
         "display_name": "<String>",
