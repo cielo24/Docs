@@ -181,6 +181,8 @@ JSON Definitions
 
     </br>
 
+.. _mediaintelligence-label:
+
 **Entity, Topic and Keyword:**
 
     The entity/keyword/topic portions of the Elementlist contain metadata related
