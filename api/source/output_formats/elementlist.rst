@@ -181,7 +181,7 @@ JSON Definitions
 
     </br>
 
-.. _mediaintelligence-label:
+.. _media-intelligence-label:
 
 **Entity, Topic and Keyword:**
 
