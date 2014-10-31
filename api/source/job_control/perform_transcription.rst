@@ -195,7 +195,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                                  |                                                                                |
 |                                  | .. container::                                                                 |
 |                                  |                                                                                |
-|                                  |    See :ref:`ElementList media-intelligence-label` for details.                |
+|                                  |    See :ref:`ElementList <media-intelligence-label>` for details.              |
 |                                  |                                                                                |
 |                                  +------------------+-------------------------------------------------------------+
 |                                  | `Allowed Values` | :ref:`iwp-label`                                            |
