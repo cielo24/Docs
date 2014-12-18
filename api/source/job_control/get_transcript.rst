@@ -37,18 +37,6 @@ The job must have completed transcription before a transcript can be downloaded.
 +-------------------------------+------------------------------------------------------------------------------+
 | Name                          | Details                                                                      |
 +===============================+==================+===========================================================+
-| characters_per_caption_line   | .. raw:: html                                                                |
-|                               |                                                                              |
-|                               |  Maximum number of characters to be displayed on each </br>                  |
-|                               |  transcript line. If 0, there is no limit.</br>                              |
-|                               |                                                                              |
-|                               +------------------+-----------------------------------------------------------+
-|                               | `Allowed Values` | Integer                                                   |
-|                               +------------------+-----------------------------------------------------------+
-|                               | `Default Value`  | 0                                                         |
-|                               +------------------+-----------------------------------------------------------+
-|                               | `Example`        | ``characters_per_caption_line=15``                        |
-+-------------------------------+------------------+-----------------------------------------------------------+
 | create_paragraphs             | .. raw:: html                                                                |
 |                               |                                                                              |
 |                               |  Enable or disable paragraph breaks. If disabled, the text</br>              |
