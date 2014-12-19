@@ -34,7 +34,7 @@ Update the password for a given account. HTTP POST only.
 +------------------+------------------+-----------------------------------------------------------+
 
 
-**Query String Parameters** - Optional
+**Request Body** - Optional
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
