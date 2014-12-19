@@ -193,7 +193,6 @@ The list is sorted by default to the creation time of the job, descending.
             "Fidelity": "MECHANICAL",
             "JobName": "example_job",
             "JobLanguage": "EN_US",
-            "Options": {},
-            "TurnaroundTimeHours": 48
+            "Options": {}
         }]
     }
