@@ -31,79 +31,79 @@ The list is sorted by default to the creation time of the job, descending.
 +-------------------------+---------------------------------------------------------------------------------------------+
 | Name                    | Details                                                                                     |
 +=========================+==================+==========================================================================+
-| CreationDateFrom        | `Description`    | Filter jobs that were created on or after a particular date and time.    |
+| CreationDateFrom        | `Description`    | List jobs that were created on or after a particular date and time.      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``CreationDateFrom=2014-08-27T13:40:53``                                 |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| CreationDateTo          | `Description`    | Filter jobs that were created on or before a particular date and time.   |
+| CreationDateTo          | `Description`    | List jobs that were created on or before a particular date and time.     |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``CreationDateTo=2014-08-27T13:40:53``                                   |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| StartDateFrom           | `Description`    | Filter jobs that were started on or after a particular date and time.    |
+| StartDateFrom           | `Description`    | List jobs that were started on or after a particular date and time.      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``StartDateFrom=2014-08-27T13:40:53``                                    |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| StartDateTo             | `Description`    | Filter jobs that were started on or before a particular date and time.   |
+| StartDateTo             | `Description`    | List jobs that were started on or before a particular date and time.     |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``StartDateTo=2014-08-27T13:40:53``                                      |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| DueDateFrom             | `Description`    | Filter jobs that have a due date on or after a particular date and time. |
+| DueDateFrom             | `Description`    | List jobs that have a due date on or after a particular date and time.   |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``DueDateFrom=2014-08-27T13:40:53``                                      |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| DueDateTo               | `Description`    | Filter jobs that have a due date on or before a particular date and time.|
+| DueDateTo               | `Description`    | List jobs that have a due date on or before a particular date and time.  |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``DueDateTo=2014-08-27T13:40:53``                                        |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| CompleteDateFrom        | `Description`    | Filter jobs that were completed on or after a particular date and time.  |
+| CompleteDateFrom        | `Description`    | List jobs that were completed on or after a particular date and time.    |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``CompleteDateFrom=2014-08-27T13:40:53``                                 |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| CompleteDateTo          | `Description`    | Filter jobs that were completed on or before a particular date and time. |
+| CompleteDateTo          | `Description`    | List jobs that were completed on or before a particular date and time.   |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                                      |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``CompleteDateTo=2014-08-27T13:40:53``                                   |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| JobStatus               | `Description`    | Filter jobs by the status.                                               |
+| JobStatus               | `Description`    | List jobs with the specified status.                                     |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | String.                                                                  |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``JobStatus=Complete``                                                   |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| Fidelity                | `Description`    | Filter jobs by the fidelity.                                             |
+| Fidelity                | `Description`    | List jobs with the specified fidelity.                                   |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | String.                                                                  |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``Fidelity=MECHANICAL``                                                  |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| Priority                | `Description`    | Filter jobs by the priority.                                             |
+| Priority                | `Description`    | List jobs with the specified priority.                                   |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | String.                                                                  |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``Priority=STANDARD``                                                    |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| TurnaroundTimeHoursFrom | `Description`    | Filter jobs that have a turnaround time on or after a particular digit.  |
+| TurnaroundTimeHoursFrom | `Description`    | List jobs that have a turnaround time on or after a particular digit.    |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Integer.                                                                 |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Example`        | ``TurnaroundTimeHoursFrom=24``                                           |
 +-------------------------+------------------+--------------------------------------------------------------------------+
-| TurnaroundTimeHoursTo   | `Description`    | Filter jobs that have a turnaround time on or before a particular digit. |
+| TurnaroundTimeHoursTo   | `Description`    | List jobs that have a turnaround time on or before a particular digit.   |
 |                         +------------------+--------------------------------------------------------------------------+
 |                         | `Allowed Values` | Integer.                                                                 |
 |                         +------------------+--------------------------------------------------------------------------+
