@@ -31,14 +31,20 @@ To request a sandbox account, email to `support@cielo24.com <mailto:support@ciel
 Sub-Accounts
 ------------
 
-The cielo24 API supports sub-account creation.
-For organizational and access control purposes, you may create an account that is a sub-account to a primary account.
-The primary account will have the ability to generate a securekey for a subaccount, and thereby login and access it as normal without requiring knowledge of the password.
+Upon request, multiple accounts may be created for you to control access or simplify billing.
+These accounts will be related to one another by parent-child relationships.
+An unlimited number of relationship levels may be created, i.e. parent, child, grandchild.
 
-Each sub-account is a full normal account with its own list of jobs and media.
-Different sub accounts cannot access the data for each other, so this is a good way to compartmentalize your data while still being under the header of a single parent account.
+Each sub-account is a normal account with its own list of jobs and media.
+Access is restricted to the jobs in an account and that account's descendants.
+For example, the credentials for a child account may be used to create and/or access jobs in a grandchild account, but not in a parent or sibling accounts.
 
-Sub-accounts can, in turn, create their own further sub-accounts. In all cases, a primary account has access to its subs, and its subs’ subs, and so on.
+For the most part, the access to the jobs of sub-accounts is transparent, as most API calls operate using a job ID.
+Simply login as a parent, and access jobs of the sub-account as if they belonged to the parent.
+However, for some API calls, such as Create Job and List Jobs, you will need to pass an additional
+parameter to specify the sub account you want to use.
+
+If you are interested in using sub-accounts, please contact support@cielo24.com for more information.
 
 .. _callbacks-label:
 
