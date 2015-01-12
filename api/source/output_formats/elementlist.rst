@@ -185,8 +185,8 @@ JSON Definitions
 
 **Entity, Topic and Keyword:**
 
-    The entity/keyword/topic portions of the Elementlist contain metadata related
-    to the contents of the Elementlist.
+    The entity/keyword/topic portions of the ElementList contain metadata related
+    to the contents of the ElementList.
 
 .. note::
     The time ranges for the meta data may not exactly match token or segment 
@@ -194,7 +194,7 @@ JSON Definitions
 
 .. note::
     The text of some entities/keywords/topics may have been inferred by the content
-    of the transcript and may not actually appear in the Elementlist.
+    of the transcript and may not actually appear in the ElementList.
 
 .. note::
     The actual entity/keyword/topic is the "key" in the dictionary. It is always lowercase 
@@ -202,12 +202,12 @@ JSON Definitions
     the "key".
 
 .. note::
-    The display_name may differ from the "key", typically in captilization, but sometimes 
+    The display_name may differ from the "key", typically in capitalization, but sometimes
     there are other differences.
 
 .. code-block:: javascript
 
-    "keywords": {
+    "keyword (key)": {
         /* The display value of the entity/keyword/topic.
          * May be mixed case or otherwise different than the key value. */
         "display_name": "<String>",
@@ -217,8 +217,10 @@ JSON Definitions
 
         /* A list of time ranges to which the entity/keyword/topic is related. */
         "time_ranges": [
-            ["start_time": "<Integer (milliseconds)>",
-             "end_time:": "<Integer (milliseconds)>"],
+            {
+                "start_time": "<Integer (milliseconds)>",
+                "end_time:": "<Integer (milliseconds)>"
+            },
         ]
     }
 
