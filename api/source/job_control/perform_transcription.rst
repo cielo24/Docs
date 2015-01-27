@@ -102,7 +102,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                         |  request a smaller number of hours than the default for the</br>                        |
 |                         |  priority you have selected, the priority will be automatically</br>                    |
 |                         |  changed. For example if you request a <i>turnaround_hours</i> of 16</br>               |
-|                         |  with a priority of STANDARD, the priority will be automatically,</br>                   |
+|                         |  with a priority of STANDARD, the priority will be automatically,</br>                  |
 |                         |  and silently, changed to PRIORITY.                                                     |
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Allowed Values` | Integer                                                              |
