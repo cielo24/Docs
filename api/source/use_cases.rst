@@ -16,7 +16,7 @@ The following delineates the simplified steps involved:
 #. Make request to perform a transcription task. Specify:
 
     #. :ref:`Fidelity <fidelity-label>` : MECHANICAL, PREMIUM or PROFESSIONAL fidelity transcription.
-    #. :ref:`Priority <priority-label>` : ECONOMY, STANDARD or PRIORITY.
+    #. :ref:`Priority <priority-label>` : STANDARD or PRIORITY.
 
 #. Wait for callback URL or poll task status for completion.
 #. [**Option**] Request transcript. Specify format of transcript (e.g. standard, time coded, replace slang, etc.). Request can be made multiple times for a given job (i.e. multiple requests can be made for multiple output types).

@@ -98,12 +98,12 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                         |  The number of hours after submission that the job will be returned.</br>               |
 |                         |  If not specified, it will be set to a default based on the value of</br>               |
 |                         |  the priority parameter. The defaults are 24, 48 and 72 for the</br>                    |
-|                         |  PRIORITY, STANDARD, ECONOMY priorities respectively. If you</br>                       |
+|                         |  PRIORITY and STANDARD priorities respectively. If you</br>                             |
 |                         |  request a smaller number of hours than the default for the</br>                        |
 |                         |  priority you have selected, the priority will be automatically</br>                    |
-|                         |  changed. For example if you request a <i>turnaround_hours</i> of 36</br>               |
-|                         |  with a priority of ECONOMY, the priority will be automatically,</br>                   |
-|                         |  and silently, changed to STANDARD.                                                     |
+|                         |  changed. For example if you request a <i>turnaround_hours</i> of 16</br>               |
+|                         |  with a priority of STANDARD, the priority will be automatically,</br>                   |
+|                         |  and silently, changed to PRIORITY.                                                     |
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Allowed Values` | Integer                                                              |
 |                         +------------------+----------------------------------------------------------------------+

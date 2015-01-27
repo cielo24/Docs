@@ -111,15 +111,9 @@ Priority Enumeration
     <font color="firebrick">
     <p>
     <span style="padding: 20px">
-    ECONOMY</br>
-    <span style="padding: 20px">
     STANDARD</br>
     <span style="padding: 20px">
     PRIORITY</br>
-    <span style="padding: 20px">
-    CRITICAL</br>
-    <span style="padding: 20px">
-    HIGH</br>
     </font>
 
 .. _fidelity-label:
