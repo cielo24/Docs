@@ -68,7 +68,7 @@ Example ElementList
         },
         "topics": {
             "cooking techniques": {
-                "display_as": "Cooking Techniques",
+                "display_name": "Cooking Techniques",
                 "time_ranges": [
                     {
                         "start_time": 0,
@@ -79,7 +79,7 @@ Example ElementList
         },
         "entities": {
             "ann taylor pittman": {
-                "display_as": "Ann Taylor Pittman",
+                "display_name": "Ann Taylor Pittman",
                 "url": "http://www.linkedin.com/pub/ann-pittman/7/619/881",
                 "time_ranges": [
                     {
@@ -89,7 +89,7 @@ Example ElementList
                 ]
             },
             "tim": {
-                "display_as": "Tim",
+                "display_name": "Tim",
                 "time_ranges": [
                     {
                         "start_time": 6230,
