@@ -80,6 +80,10 @@ Job Status Enumeration
     In Process</br>
     <span style="padding: 20px">
     Complete</br>
+    <span style="padding: 20px">
+    Media Failure</br>
+    <span style="padding: 20px">
+    Reviewing</br>
     </font>
 
 .. _task-status-label:
