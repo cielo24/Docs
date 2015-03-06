@@ -85,11 +85,12 @@ Get a list of all tasks associated with an existing job.
         "SourceLanguage": "en",
         "ReturnTargets": {},
         "CompletedDate": "2014-08-27T14:10:41.923125",
-        "JobStatus": "RETURNED",
+        "JobStatus": "Complete",
         "JobId": "d4fb871e07514304b23131b45f8caa1f",
         "Priority": "STANDARD",
         "DueDate": "2014-08-29T14:00:06.472706",
-        "Tasks": [
+        "Tasks":
+        [
             {
                 "TaskId" : "23D263A01C134455B6C73D8EC2E1D784",
                 "TaskType" : "JOB_CREATED",
