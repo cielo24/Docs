@@ -71,8 +71,8 @@ Creating a job is prerequisite for virtually all other methods.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "JobId" : "An ID which can be used to refer to this job",             |
-|           |               |    "TaskId" : "An ID for tracking tasks within a job"                    |
+|           |               |    "JobId": "An ID which can be used to refer to this job",              |
+|           |               |    "TaskId": "An ID for tracking tasks within a job"                     |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |

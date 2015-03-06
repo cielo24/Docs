@@ -571,7 +571,7 @@ The job must have completed transcription before a caption can be downloaded.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "CaptionUrl" : "Hosted URL"                                           |
+|           |               |    "CaptionUrl": "Hosted URL"                                            |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
@@ -617,4 +617,4 @@ The job must have completed transcription before a caption can be downloaded.
     HTTP/1.1 200 OK
     Content-Type: application/json
 
-    { "CaptionUrl" : "http://domain.com/path/file.srt" }
+    { "CaptionUrl": "http://domain.com/path/file.srt" }

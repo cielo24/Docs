@@ -46,7 +46,7 @@ and we will do our best to accommodate your request.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "TaskId" : "Encoded Task ID"                                          |
+|           |               |    "TaskId": "Encoded Task ID"                                           |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |

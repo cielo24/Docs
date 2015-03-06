@@ -84,12 +84,13 @@ Get a list of all tasks associated with an existing job.
         "ExternalID": "sample_id",
         "Priority": "STANDARD",
         "Fidelity": "MECHANICAL",
-        "TurnaroundTimeHours": 48"JobStatus": "Complete",
+        "TurnaroundTimeHours": 48,
+        "JobStatus": "Complete",
         "SourceLanguage": "en",
         "TargetLanguage": "en",
         "CreationDate": "2014-08-27T14:00:06.472706",
         "StartDate": "2014-08-27T14:00:06.472706",
-            "DueDate": "2014-08-29T14:00:06.472706",
+        "DueDate": "2014-08-29T14:00:06.472706",
         "CompletedDate": "2014-08-27T14:10:41.923125",
         "ReturnTargets": {
             "url": [

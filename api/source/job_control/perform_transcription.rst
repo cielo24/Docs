@@ -113,8 +113,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 **Job Options**
   | The following options can be provided as a stringified dictionary.
   | The resulting string will be the value of the `options` query parameter.
-  | Example:
-  | ``options={"notes":"test_note","speaker_id":"true"}``
+  | Example: ``options={"notes":"test_note","speaker_id":"true"}``
 
 +-------------------------+-----------------------------------------------------------------------------------------+
 | Name                    | Details                                                                                 |
@@ -191,7 +190,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                                 |  Requests that media intelligence be generated for the specified </br>          |
 |                                 |  interim/final versions of the transcript. Media intelligence data is</br>      |
 |                                 |  added to the ElementList and can be retrieve using the</br>                    |
-|                                 |  :doc:`get_elementlist <job_control/get_elementlist>` API call.</br>            |
+|                                 |  <i>get_elementlist</i> API call.</br>                                          |
 |                                 |                                                                                 |
 |                                 | .. container::                                                                  |
 |                                 |                                                                                 |

@@ -59,7 +59,7 @@ even if keys already exist.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "ApiKey" : "The new long term ApiKey"                                 |
+|           |               |    "ApiKey": "The new long term ApiKey"                                  |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |

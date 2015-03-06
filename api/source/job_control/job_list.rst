@@ -216,14 +216,14 @@ The list is sorted by default to the creation time of the job, descending.
 
 .. sourcecode:: http
 
-    GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-    &CompleteDateTo=2014-08-27T14:44:54
+    GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+    &CompleteDateTo=2014-08-27T14%3A44%3A54 HTTP/1.1
     Host: api.cielo24.com
 
 .. sourcecode:: http
 
-    GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-    &CompleteDateTo=2014-08-27
+    GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+    &CompleteDateTo=2014-08-27 HTTP/1.1
     Host: api.cielo24.com
 
 **Example Response**
