@@ -31,97 +31,140 @@ The list is sorted by default to the creation time of the job, descending.
 +-------------------------+-----------------------------------------------------------------------+
 | Name                    | Details                                                               |
 +=========================+==================+====================================================+
-| CreationDateFrom        | `Description`    | List jobs that were created on or after a          |
-|                         |                  | the specified date and time.                       |
+| CreationDateFrom        | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were created on or after</br>      |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``CreationDateFrom=2014-08-27T13:40:53``           |
 +-------------------------+------------------+----------------------------------------------------+
-| CreationDateTo          | `Description`    | List jobs that were created on or before a         |
-|                         |                  | the specified date and time.                       |
+| CreationDateTo          | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were created on or before</br>     |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``CreationDateTo=2014-08-27T13:40:53``             |
 +-------------------------+------------------+----------------------------------------------------+
-| StartDateFrom           | `Description`    | List jobs that were started on or after a          |
-|                         |                  | the specified date and time.                       |
+| StartDateFrom           | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were started on or after</br>      |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``StartDateFrom=2014-08-27T13:40:53``              |
 +-------------------------+------------------+----------------------------------------------------+
-| StartDateTo             | `Description`    | List jobs that were started on or before a         |
-|                         |                  | the specified date and time.                       |
+| StartDateTo             | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were started on or before</br>     |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``StartDateTo=2014-08-27T13:40:53``                |
 +-------------------------+------------------+----------------------------------------------------+
-| DueDateFrom             | `Description`    | List jobs that have a due date on or after a       |
-|                         |                  | the specified date and time.                       |
+| DueDateFrom             | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that have a due date on or after</br>   |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``DueDateFrom=2014-08-27T13:40:53``                |
 +-------------------------+------------------+----------------------------------------------------+
-| DueDateTo               | `Description`    | List jobs that have a due date on or before a      |
-|                         |                  | the specified date and time.                       |
+| DueDateTo               | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that have a due date on or before</br>  |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``DueDateTo=2014-08-27T13:40:53``                  |
 +-------------------------+------------------+----------------------------------------------------+
-| CompleteDateFrom        | `Description`    | List jobs that were completed on or after a        |
-|                         |                  | the specified date and time.                       |
+| CompleteDateFrom        | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were completed on or after</br>    |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``CompleteDateFrom=2014-08-27T13:40:53``           |
 +-------------------------+------------------+----------------------------------------------------+
-| CompleteDateTo          | `Description`    | List jobs that were completed on or before a       |
-|                         |                  | the specified date and time.                       |
+| CompleteDateTo          | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were completed on or before</br>   |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``CompleteDateTo=2014-08-27T13:40:53``             |
 +-------------------------+------------------+----------------------------------------------------+
-| JobStatus               | `Description`    | List jobs with the specified status.               |
+| JobStatus               | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs with the specified status.              |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | String.                                            |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``JobStatus=Complete``                             |
 +-------------------------+------------------+----------------------------------------------------+
-| Fidelity                | `Description`    | List jobs with the specified fidelity.             |
+| Fidelity                | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs with the specified fidelity.            |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | String.                                            |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``Fidelity=MECHANICAL``                            |
 +-------------------------+------------------+----------------------------------------------------+
-| Priority                | `Description`    | List jobs with the specified priority.             |
+| Priority                | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs with the specified priority.            |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | String.                                            |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``Priority=STANDARD``                              |
 +-------------------------+------------------+----------------------------------------------------+
-| TurnaroundTimeHoursFrom | `Description`    | List jobs that have a turnaround time on or after  |
-|                         |                  | the specified hour.                                |
+| TurnaroundTimeHoursFrom | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that have a turnaround time</br>        |
+|                         |                  |  on or after the specified hour.                   |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Integer.                                           |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``TurnaroundTimeHoursFrom=24``                     |
 +-------------------------+------------------+----------------------------------------------------+
-| TurnaroundTimeHoursTo   | `Description`    | List jobs that have a turnaround time on or before |
-|                         |                  | the specified hour.                                |
+| TurnaroundTimeHoursTo   | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that have a turnaround time</br>        |
+|                         |                  |  on or before the specified hour.                  |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Integer.                                           |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``TurnaroundTimeHoursTo=48``                       |
 +-------------------------+------------------+----------------------------------------------------+
-| Username                | `Description`    | List jobs that are owned by the specified          |
-|                         |                  | sub-account. Pass '*' to list all jobs owned by    |
-|                         |                  | the logged in account and all of its descendants.  |
+| Username                | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that are owned by the specified</br>    |
+|                         |                  |  sub-account. Pass '*' to list all jobs</br>       |
+|                         |                  |  owned by the logged in account and all</br>       |
+|                         |                  |  of its descendants.                               |
+|                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | String.                                            |
 |                         +------------------+----------------------------------------------------+
@@ -173,12 +216,14 @@ The list is sorted by default to the creation time of the job, descending.
 
 .. sourcecode:: http
 
-    GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f&CompleteDateTo=2014-08-27T14:44:54 HTTP/1.1
+    GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+    &CompleteDateTo=2014-08-27T14:44:54
     Host: api.cielo24.com
 
 .. sourcecode:: http
 
-    GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f&CompleteDateTo=2014-08-27 HTTP/1.1
+    GET /api/job/list?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
+    &CompleteDateTo=2014-08-27
     Host: api.cielo24.com
 
 **Example Response**
@@ -192,25 +237,30 @@ The list is sorted by default to the creation time of the job, descending.
         "Username": "john_doe",
         "ActiveJobs":
         [{
-            "StartDate": "2014-08-27T14:00:06.472706",
-            "TargetLanguage": "EN_US",
-            "MediaLengthSeconds": 607.81,
-            "SourceLanguage": "en",
-            "TurnaroundTimeHours": 48,
-            "ReturnTargets": "",
-            "CompletedDate": "2014-08-27T14:10:41.923125",
-            "CreationTime": "2014-08-27T14:00:06.472706",
-            "CompletedTime": "2014-08-27T14:10:41.923125",
-            "JobStatus": "Complete",
             "JobId": "d4fb871e07514304b23131b45f8caa1f",
-            "Priority": "STANDARD",
-            "DueDate": "2014-08-29T14:00:06.472706",
-            "ExternalID": "",
-            "CreationDate": "2014-08-27T14:00:06.472706",
-            "StartTime": "2014-08-27T14:00:06.472706",
-            "Fidelity": "MECHANICAL",
             "JobName": "example_job",
-            "JobLanguage": "EN_US",
+            "MediaLengthSeconds": 607.81,
+            "ExternalID": "sample_id",
+            "Priority": "STANDARD",
+            "Fidelity": "MECHANICAL",
+            "TurnaroundTimeHours": 48,
+            "JobStatus": "Complete",
+            "SourceLanguage": "en",
+            "TargetLanguage": "en",
+            "CreationDate": "2014-08-27T14:00:06.472706",
+            "StartDate": "2014-08-27T14:00:06.472706",
+            "DueDate": "2014-08-29T14:00:06.472706",
+            "CompletedDate": "2014-08-27T14:10:41.923125",
+            "ReturnTargets":  {
+                "url": [
+                    {
+                        "callback_url": "https://sample-url.com/return/"
+                    },
+                    {
+                        "callback_url": "https://sample-url-2.com/return/"
+                    }
+                ]
+            },
             "Options": {}
         }]
     }

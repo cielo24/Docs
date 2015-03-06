@@ -78,32 +78,28 @@ Get a list of all tasks associated with an existing job.
     Content-Type: application/json
 
     {
-        "StartDate": "2014-08-27T14:00:06.472706",
-        "TargetLanguage": "en",
-        "MediaLengthSeconds": 607.81,
-        "Language": "EN_US",
-        "SourceLanguage": "en",
-        "ReturnTargets": {},
-        "CompletedDate": "2014-08-27T14:10:41.923125",
-        "JobStatus": "Complete",
         "JobId": "d4fb871e07514304b23131b45f8caa1f",
-        "Priority": "STANDARD",
-        "DueDate": "2014-08-29T14:00:06.472706",
-        "Tasks":
-        [
-            {
-                "TaskId" : "23D263A01C134455B6C73D8EC2E1D784",
-                "TaskType" : "JOB_CREATED",
-                "TaskRequestTime" : "2014-07-31T12:35:52Z",
-                "TaskCompletionTime" : "2014-07-31T14:35:52Z",
-                "TaskInfo" : "example_info",
-                "TaskStatus" : "COMPLETE",
-            }
-        ],
-        "ExternalID": "",
-        "CreationDate": "2014-08-27T14:00:06.472706",
-        "Fidelity": "MECHANICAL",
         "JobName": "example_job",
+        "MediaLengthSeconds": 607.81,
+        "ExternalID": "sample_id",
+        "Priority": "STANDARD",
+        "Fidelity": "MECHANICAL",
+        "TurnaroundTimeHours": 48"JobStatus": "Complete",
+        "SourceLanguage": "en",
+        "TargetLanguage": "en",
+        "CreationDate": "2014-08-27T14:00:06.472706",
+        "StartDate": "2014-08-27T14:00:06.472706",
+            "DueDate": "2014-08-29T14:00:06.472706",
+        "CompletedDate": "2014-08-27T14:10:41.923125",
+        "ReturnTargets": {
+            "url": [
+                {
+                    "callback_url": "https://sample-url.com/return/"
+                },
+                {
+                    "callback_url": "https://sample-url-2.com/return/"
+                }
+            ]
+        },
         "Options": {},
-        "TurnaroundTimeHours": 48
     }

@@ -71,7 +71,7 @@ Creating a job is prerequisite for virtually all other methods.
 |           | `Contents`    | .. code-block:: javascript                                               |
 |           |               |                                                                          |
 |           |               |  {                                                                       |
-|           |               |    "JobId" : "An ID which can be used to refer to this job" ,            |
+|           |               |    "JobId" : "An ID which can be used to refer to this job",             |
 |           |               |    "TaskId" : "An ID for tracking tasks within a job"                    |
 |           |               |  }                                                                       |
 +-----------+---------------+--------------------------------------------------------------------------+
@@ -106,6 +106,6 @@ Creating a job is prerequisite for virtually all other methods.
     Content-Type: application/json
 
     {
-      "JobId" : "64bea283eff6475ea6596027a6ba0929" ,
+      "JobId" : "64bea283eff6475ea6596027a6ba0929",
       "TaskId" : "cc8095fbfecf4647b2e10b622d81c19b"
     }

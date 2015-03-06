@@ -185,25 +185,25 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                         | `Default Value`  | []                                                                   |
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Example`        | ``return_iwp=[MECHANICAL,FINAL]``                                    |
-+-------------------------+--------+---------+----------------------------------------------------------------------+
-| generate_media_intelligence_iwp  | .. raw:: html                                                                  |
-|                                  |                                                                                |
-|                                  |  Requests that media intelligence be generated for the specified </br>         |
-|                                  |  interim/final versions of the transcript. Media intelligence data is</br>     |
-|                                  |  added to the ElementList and can be retreive using the get_elementlist</br>   |
-|                                  |  API call.                                                                     |
-|                                  |                                                                                |
-|                                  | .. container::                                                                 |
-|                                  |                                                                                |
-|                                  |    See :ref:`ElementList <media-intelligence-label>` for details.              |
-|                                  |                                                                                |
-|                                  +------------------+-------------------------------------------------------------+
-|                                  | `Allowed Values` | :ref:`iwp-label`                                            |
-|                                  +------------------+-------------------------------------------------------------+
-|                                  | `Default Value`  | []                                                          |
-|                                  +------------------+-------------------------------------------------------------+
-|                                  | `Example`        | ``generate_media_intelligence_iwp=[MECHANICAL,FINAL]``      |
-+-------------------------+--------+--------------------------------------------------------------------------------+
++-------------------------+-------+----------+----------------------------------------------------------------------+
+| generate_media_intelligence_iwp | .. raw:: html                                                                   |
+|                                 |                                                                                 |
+|                                 |  Requests that media intelligence be generated for the specified </br>          |
+|                                 |  interim/final versions of the transcript. Media intelligence data is</br>      |
+|                                 |  added to the ElementList and can be retrieve using the</br>                    |
+|                                 |  :doc:`get_elementlist <job_control/get_elementlist>` API call.</br>            |
+|                                 |                                                                                 |
+|                                 | .. container::                                                                  |
+|                                 |                                                                                 |
+|                                 |    See :ref:`ElementList <media-intelligence-label>` for details.               |
+|                                 |                                                                                 |
+|                                 +------------------+--------------------------------------------------------------+
+|                                 | `Allowed Values` | :ref:`iwp-label`                                             |
+|                                 +------------------+--------------------------------------------------------------+
+|                                 | `Default Value`  | []                                                           |
+|                                 +------------------+--------------------------------------------------------------+
+|                                 | `Example`        | ``generate_media_intelligence_iwp=[MECHANICAL,FINAL]``       |
++-------------------------+-------+------------------+--------------------------------------------------------------+
 | speaker_id              | .. raw:: html                                                                           |
 |                         |                                                                                         |
 |                         |  Requests that speaker names be identified.                                             |
@@ -248,9 +248,10 @@ See :ref:`callback documentation <callbacks-label>` for details.
 
 .. sourcecode:: http
 
-    GET /api/job/perform_transcription?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+    GET /api/job/perform_transcription?v=1 HTTP/1.1
+    &api_token=7ca5dc5c7cce449fb0fff719307e8f5f
     &job_id=64bea283eff6475ea6596027a6ba0929
-    &transcription_fidelity=PREMIUM&priority=STANDARD HTTP/1.1
+    &transcription_fidelity=PREMIUM&priority=STANDARD
     Host: api.cielo24.com
 
 **Example Response**

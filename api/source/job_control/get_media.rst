@@ -74,4 +74,4 @@ Get a URL to the media for an existing job. If the media was directly uploaded t
     HTTP/1.1 200 OK
     Content-Type: application/json
 
-    { "MediaUrl" : "https://fake.url.com" }
+    { "MediaUrl" : "https://sample.url.com" }
