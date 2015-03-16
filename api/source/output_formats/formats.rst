@@ -18,7 +18,6 @@ The following defines the Job Info in JSON format:
         "MediaLengthSeconds" : "<Integer>",
         "ExternalID" : "<String (dependant on third-party integrations)",
         "Priority" : "<Priority Enum>",
-        "TurnaroundTimeHours" : "<Integer>",
         "Fidelity" : "<Fidelity Enum>",
         "JobStatus" : "<Status Enum>",
         "Options" : {
@@ -108,7 +107,6 @@ The following defines the Job in JSON format:
         "TargetLanguage" : "<RFC 5646 Language Code>",
         "CreationTime" : "<ISO 8601 Date String>",
         "DueDate" : "<ISO 8601 Date String>",
-        "TurnaroundTimeHours" : "<Integer>",
         "StartTime" : "<ISO 8601 Date String>",
         "CompletedTime" : "<ISO 8601 Date String>"
         "Options" : {

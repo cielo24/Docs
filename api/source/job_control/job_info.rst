@@ -84,7 +84,6 @@ Get a list of all tasks associated with an existing job.
         "ExternalID": "sample_id",
         "Priority": "STANDARD",
         "Fidelity": "MECHANICAL",
-        "TurnaroundTimeHours": 48,
         "JobStatus": "Complete",
         "SourceLanguage": "en",
         "TargetLanguage": "en",
