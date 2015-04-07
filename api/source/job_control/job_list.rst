@@ -31,6 +31,26 @@ The list is sorted by default to the creation time of the job, descending.
 +-------------------------+-----------------------------------------------------------------------+
 | Name                    | Details                                                               |
 +=========================+==================+====================================================+
+| ReturnDateFrom          | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were returned since</br>           |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``ReturnDateFrom=2014-08-27T13:40:53``             |
++-------------------------+------------------+----------------------------------------------------+
+| ReturnDateTo            | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were returned to</br>              |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``ReturnDateTo=2014-08-27T13:40:53``               |
++-------------------------+------------------+----------------------------------------------------+
 | CreationDateFrom        | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
 |                         |                  |  List jobs that were created on or after</br>      |
