@@ -158,6 +158,16 @@ The list is sorted by default to the creation time of the job, descending.
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``TurnaroundTimeHoursTo=48``                       |
 +-------------------------+------------------+----------------------------------------------------+
+| JobName                 | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs matching the specified job name.</br>   |
+|                         |                  |  (supports wildcards: *)                           |
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | String.                                            |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``JobName=job_*_name_*``                           |
++-------------------------+------------------+----------------------------------------------------+
 | Username                | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
 |                         |                  |  List jobs that are owned by the specified</br>    |
