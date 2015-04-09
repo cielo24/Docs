@@ -12,7 +12,7 @@ Required arguments must be passed as query string parameters.
 
 **HTTP Headers** - Optional
 
-    Provide **x-auth-user** with either **x-auth-key** or **x-auth-securekey**.
+    Provide **x-auth-user** with either **x-auth-password** or **x-auth-securekey**.
 
 +------------------+------------------------------------------------------------------------------------------------------+
 | Name             | Details                                                                                              |
