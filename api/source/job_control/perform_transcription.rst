@@ -97,7 +97,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                         |                                                                                         |
 |                         |  The number of hours after submission that the job will be returned.</br>               |
 |                         |  If not specified, it will be set to a default based on the value of</br>               |
-|                         |  the priority parameter. The defaults are 24, 48 and 72 for the</br>                    |
+|                         |  the priority parameter. The defaults are 24 and 48 for the</br>                        |
 |                         |  PRIORITY and STANDARD priorities respectively. If you</br>                             |
 |                         |  request a smaller number of hours than the default for the</br>                        |
 |                         |  priority you have selected, the priority will be automatically</br>                    |
