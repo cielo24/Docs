@@ -132,8 +132,6 @@ Fidelity Enumeration
     <span style="padding: 20px">
     MECHANICAL</br>
     <span style="padding: 20px">
-    HIGH</br>
-    <span style="padding: 20px">
     EXTERNAL</br>
     <span style="padding: 20px">
     PREMIUM</br>
