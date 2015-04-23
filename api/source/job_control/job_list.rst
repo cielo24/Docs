@@ -243,7 +243,6 @@ The list is sorted by default to the creation time of the job, descending.
             "ExternalID": "sample_id",
             "Priority": "STANDARD",
             "Fidelity": "MECHANICAL",
-            "TurnaroundTimeHours": 48,
             "JobStatus": "Complete",
             "SourceLanguage": "en",
             "TargetLanguage": "en",
