@@ -168,6 +168,15 @@ The list is sorted by default to the creation time of the job, descending.
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``JobName=job_*_name_*``                           |
 +-------------------------+------------------+----------------------------------------------------+
+| ExternalID              | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs with the specified ExternalId.</br>     |
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | String.                                            |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``ExternalID=external_1234``                       |
++-------------------------+------------------+----------------------------------------------------+
 | Username                | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
 |                         |                  |  List jobs that are owned by the specified</br>    |
@@ -178,7 +187,7 @@ The list is sorted by default to the creation time of the job, descending.
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | String.                                            |
 |                         +------------------+----------------------------------------------------+
-|                         | `Example`        | ``myaccountname``                                  |
+|                         | `Example`        | ``Username=my_account_name``                       |
 +-------------------------+------------------+----------------------------------------------------+
 
 **Responses**
