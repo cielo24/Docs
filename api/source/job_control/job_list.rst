@@ -189,6 +189,29 @@ The list is sorted by default to the creation time of the job, descending.
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``Username=my_account_name``                       |
 +-------------------------+------------------+----------------------------------------------------+
+| JobDifficulty           | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  Indicates whether the job was difficult to        |
+|                         |                  |  process. This difficulty could be due to issues   |
+|                         |                  |  with media quality, cross-talk and background     |
+|                         |                  |  noise in the audio, strong accents of speakers,   |
+|                         |                  |  or complicated subject matter. The value of this  |
+|                         |                  |  field will update as the job is processed but     |
+|                         |                  |  will not change once the job has completed.       |
+|                         |                  |                                                    |
+|                         |                  |  Good - The job was processed without any major    |
+|                         |                  |  problems.                                         |
+|                         |                  |  Bad - A significant amount of the job was         |
+|                         |                  |  difficult to process. This may cause a delay of   |
+|                         |                  |  the expected due date.                            |
+|                         |                  |  Unknown - Not enough of the job has been analyzed |
+|                         |                  |  at this time to determine whether it is difficult.|
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | String.                                            |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``JobDifficulty=Good``                   |
++-------------------------+------------------+----------------------------------------------------+
 
 **Responses**
 
@@ -279,6 +302,7 @@ The list is sorted by default to the creation time of the job, descending.
                     }
                 ]
             },
-            "Options": {}
+            "Options": {},
+            "JobDifficulty": "Unknown"
         }]
     }
