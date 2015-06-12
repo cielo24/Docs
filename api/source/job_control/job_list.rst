@@ -191,26 +191,12 @@ The list is sorted by default to the creation time of the job, descending.
 +-------------------------+------------------+----------------------------------------------------+
 | JobDifficulty           | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
-|                         |                  |  Indicates whether the job was difficult to        |
-|                         |                  |  process. This difficulty could be due to issues   |
-|                         |                  |  with media quality, cross-talk and background     |
-|                         |                  |  noise in the audio, strong accents of speakers,   |
-|                         |                  |  or complicated subject matter. The value of this  |
-|                         |                  |  field will update as the job is processed but     |
-|                         |                  |  will not change once the job has completed.       |
-|                         |                  |                                                    |
-|                         |                  |  Good - The job was processed without any major    |
-|                         |                  |  problems.                                         |
-|                         |                  |  Bad - A significant amount of the job was         |
-|                         |                  |  difficult to process. This may cause a delay of   |
-|                         |                  |  the expected due date.                            |
-|                         |                  |  Unknown - Not enough of the job has been analyzed |
-|                         |                  |  at this time to determine whether it is difficult.|
+|                         |                  |  List jobs with the specified JobDifficulty.</br>  |
 |                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
-|                         | `Allowed Values` | String.                                            |
+|                         | `Allowed Values` | :ref:`job-difficulty-label`                        |
 |                         +------------------+----------------------------------------------------+
-|                         | `Example`        | ``JobDifficulty=Good``                   |
+|                         | `Example`        | ``JobDifficulty=Good``                             |
 +-------------------------+------------------+----------------------------------------------------+
 
 **Responses**
