@@ -38,8 +38,21 @@ The following defines the Job Info in JSON format:
         "Tasks" :
         [
             "List of Task Statuses (see below)"
-        ]
+        ],
+        "JobDifficulty" : "<JobDifficulty Enum>",
     }
+
+.. container::
+
+    Related: :ref:`priority-label`,
+    :ref:`fidelity-label`,
+    :ref:`job-status-label`,
+    :ref:`job-difficulty-label`
+    .
+
+.. raw:: html
+
+    </br>
 
 .. _task-status-format-label:
 
@@ -121,13 +134,15 @@ The following defines the Job in JSON format:
         "StartDate" : "<ISO 8601 Date String>",
         "DueDate" : "<ISO 8601 Date String>",
         "CompletedDate" : "<ISO 8601 Date String>",
+        "JobDifficulty" : "<JobDifficulty Enum>",
     }
 
 .. container::
 
     Related: :ref:`job-status-label`,
     :ref:`fidelity-label`,
-    :ref:`priority-label`
+    :ref:`priority-label`,
+    :ref:`job-difficulty-label`
     .
 
 .. raw:: html

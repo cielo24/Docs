@@ -102,4 +102,5 @@ Get a list of all tasks associated with an existing job.
             ]
         },
         "Options": {},
+        "JobDifficulty": "Unknown"
     }

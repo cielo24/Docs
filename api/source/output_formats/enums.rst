@@ -137,6 +137,30 @@ Fidelity Enumeration
     PROFESSIONAL</br>
     </font>
 
+.. _job-difficulty-label:
+
+JobDifficulty Enumeration
+----------------------
+
+.. raw:: html
+
+    Indicates whether the job was difficult to process. This difficulty could be due to issues with media quality, cross-talk and background noise in the audio, strong accents of speakers, or complicated subject matter. The value of this field will update as the job is processed but will not change once the job has completed.
+    <font color="firebrick">
+    <p>
+    <span style="padding: 20px">
+    Good
+    <font color="black"> - The job was processed without any major problems.</font>
+    </br>
+    <span style="padding: 20px">
+    Bad
+    <font color="black"> - A significant amount of the job was difficult to process. This may cause a delay of the expected due date.</font>
+    </br>
+    <span style="padding: 20px">
+    Unknown
+    <font color="black"> - Not enough of the job has been analyzed at this time to determine whether it is difficult.</font>
+    </br>
+    </font>
+
 .. _caption-format-label:
 
 Caption Format Enumeration

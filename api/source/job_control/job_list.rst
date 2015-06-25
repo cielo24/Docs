@@ -189,6 +189,15 @@ The list is sorted by default to the creation time of the job, descending.
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``Username=my_account_name``                       |
 +-------------------------+------------------+----------------------------------------------------+
+| JobDifficulty           | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs with the specified JobDifficulty.</br>  |
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | :ref:`job-difficulty-label`                        |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``JobDifficulty=Good``                             |
++-------------------------+------------------+----------------------------------------------------+
 
 **Responses**
 
@@ -279,6 +288,7 @@ The list is sorted by default to the creation time of the job, descending.
                     }
                 ]
             },
-            "Options": {}
+            "Options": {},
+            "JobDifficulty": "Unknown"
         }]
     }
