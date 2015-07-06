@@ -39,7 +39,7 @@ Update the password for a given account. HTTP POST only.
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
 +==================+==================+===========================================================+
-| Username         | `Description`    | Sub-account for which the password should be updated.     |
+| username         | `Description`    | Sub-account for which the password should be updated.     |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | String.                                                   |
 |                  +------------------+-----------------------------------------------------------+

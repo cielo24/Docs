@@ -278,7 +278,10 @@ The list is sorted by default to the creation time of the job, descending.
             "StartDate": "2014-08-27T14:00:06.472706",
             "DueDate": "2014-08-29T14:00:06.472706",
             "CompletedDate": "2014-08-27T14:10:41.923125",
-            "ReturnTargets":  {
+            "ReturnDate": "2014-08-27T14:10:41.923125",
+            "AuthorizationDate": "2014-08-27T14:10:41.923125",
+            "JobDifficulty": "Unknown",
+            "ReturnTargets": {
                 "url": [
                     {
                         "callback_url": "https://sample-url.com/return/"
@@ -288,7 +291,11 @@ The list is sorted by default to the creation time of the job, descending.
                     }
                 ]
             },
-            "Options": {},
-            "JobDifficulty": "Unknown"
+            "Options": {
+                "option_name": {
+                    "label": "option_label",
+                    "setting": "option_setting"
+                }
+            }
         }]
     }

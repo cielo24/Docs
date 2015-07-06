@@ -15,7 +15,7 @@ The following defines the Job Info in JSON format:
     {
         "JobId" : "<Guid HexString>",
         "JobName" : "<String>",
-        "MediaLengthSeconds" : "<Integer>",
+        "MediaLengthSeconds" : "<Float>",
         "ExternalID" : "<String (dependant on third-party integrations)",
         "Priority" : "<Priority Enum>",
         "Fidelity" : "<Fidelity Enum>",
@@ -28,18 +28,15 @@ The following defines the Job Info in JSON format:
             "<ReturnTargetName>" : "<ReturnTargetValue>",
             ...
         },
-        "Language" : "<RFC 5646 Language Code>",
         "SourceLanguage" : "<RFC 5646 Language Code>",
         "TargetLanguage" : "<RFC 5646 Language Code>",
         "CreationDate" : "<ISO 8601 Date String>",
         "StartDate" : "<ISO 8601 Date String>",
         "DueDate" : "<ISO 8601 Date String>",
         "CompletedDate" : "<ISO 8601 Date String>",
-        "Tasks" :
-        [
-            "List of Task Statuses (see below)"
-        ],
-        "JobDifficulty" : "<JobDifficulty Enum>",
+        "ReturnDate": "<ISO 8601 Date String>",
+        "AuthorizationDate": "<ISO 8601 Date String>",
+        "JobDifficulty": "<JobDifficulty Enum>"
     }
 
 .. container::
@@ -111,17 +108,21 @@ The following defines the Job in JSON format:
     {
         "JobId" : "<Guid HexString>",
         "JobName" : "<String>",
-        "MediaLengthSeconds" : "<Integer>",
+        "Username": "<String>",
+        "MediaLengthSeconds" : "<Float>",
         "ExternalID" : "<String (dependant on third-party integrations)",
-        "JobStatus" : "<Status Enum>",
         "Priority" : "<Priority Enum>",
         "Fidelity" : "<Fidelity Enum>",
-        "JobLanguage" : "<RFC 5646 Language Code>",
+        "JobStatus" : "<Status Enum>",
+        "SourceLanguage" : "<RFC 5646 Language Code>",
         "TargetLanguage" : "<RFC 5646 Language Code>",
-        "CreationTime" : "<ISO 8601 Date String>",
+        "CreationDate" : "<ISO 8601 Date String>",
         "DueDate" : "<ISO 8601 Date String>",
-        "StartTime" : "<ISO 8601 Date String>",
-        "CompletedTime" : "<ISO 8601 Date String>"
+        "StartDate" : "<ISO 8601 Date String>",
+        "CompletedDate" : "<ISO 8601 Date String>"
+        "ReturnDate" : "<ISO 8601 Date String>",
+        "AuthorizationDate" : "<ISO 8601 Date String>",
+        "JobDifficulty" : "<JobDifficulty Enum>",
         "Options" : {
             "<JobConfigOption>" : "<Value>"
             ...
@@ -129,12 +130,7 @@ The following defines the Job in JSON format:
         "ReturnTargets" : {
             "<ReturnTargetName>" : "<ReturnTargetValue>",
             ...
-        },
-        "CreationDate" : "<ISO 8601 Date String>",
-        "StartDate" : "<ISO 8601 Date String>",
-        "DueDate" : "<ISO 8601 Date String>",
-        "CompletedDate" : "<ISO 8601 Date String>",
-        "JobDifficulty" : "<JobDifficulty Enum>",
+        }
     }
 
 .. container::
