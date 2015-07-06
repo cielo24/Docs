@@ -51,34 +51,6 @@ The following defines the Job Info in JSON format:
 
     </br>
 
-.. _task-status-format-label:
-
-Task Status Format
-------------------
-
-The following defines the Task Status in JSON format:
-
-.. code-block:: javascript
-
-    {
-        "TaskId" : "<Guid HexString>",
-        "TaskType" : "<TaskType Enum>",
-        "TaskRequestTime" : "<ISO 8601 Date String>",
-        "TaskCompletionTime" : "<ISO 8601 Date String>",
-        "TaskInfo" : "<String (additional information defined on a per-task basis)>",
-        "TaskStatus" : "<TaskStatus Enum>",
-    }
-
-.. container::
-
-    Related: :ref:`task-status-label`,
-    :ref:`task-type-label`
-    .
-
-.. raw:: html
-
-    </br>
-
 .. _job-list-format-label:
 
 Job List Format
