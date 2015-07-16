@@ -13,19 +13,19 @@ Example ElementList
                 "time_ranges": [
                     {
                         "start_time": 147260,
-                        "end_time:": 147830
+                        "end_time": 147830
                     },
                     {
                         "start_time": 149400,
-                        "end_time:": 149880
+                        "end_time": 149880
                     },
                     {
                         "start_time": 163210,
-                        "end_time:": 163630
+                        "end_time": 163630
                     },
                     {
                         "start_time": 203330,
-                        "end_time:": 203830
+                        "end_time": 203830
                     }
                 ]
             },
@@ -33,15 +33,15 @@ Example ElementList
                 "time_ranges": [
                     {
                         "start_time": 76630,
-                        "end_time:": 76870
+                        "end_time": 76870
                     },
                     {
                         "start_time": 82930,
-                        "end_time:": 83260
+                        "end_time": 83260
                     },
                     {
                         "start_time": 153170,
-                        "end_time:": 153370
+                        "end_time": 153370
                     }
                 ]
             },
@@ -49,11 +49,11 @@ Example ElementList
                 "time_ranges": [
                     {
                         "start_time": 118280,
-                        "end_time:": 118780
+                        "end_time": 118780
                     },
                     {
                         "start_time": 206370,
-                        "end_time:": 206870
+                        "end_time": 206870
                     }
                 ]
             },
@@ -61,7 +61,7 @@ Example ElementList
                 "time_ranges": [
                     {
                         "start_time": 39520,
-                        "end_time:": 395760
+                        "end_time": 395760
                     }
                 ]
             }
@@ -72,7 +72,7 @@ Example ElementList
                 "time_ranges": [
                     {
                         "start_time": 0,
-                        "end_time:": 219290
+                        "end_time": 219290
                     }
                 ]
             }
@@ -84,7 +84,7 @@ Example ElementList
                 "time_ranges": [
                     {
                         "start_time": 6000,
-                        "end_time:": 8000
+                        "end_time": 8000
                     }
                 ]
             },
@@ -93,11 +93,11 @@ Example ElementList
                 "time_ranges": [
                     {
                         "start_time": 6230,
-                        "end_time:": 6350
+                        "end_time": 6350
                     },
                     {
                         "start_time": 61360,
-                        "end_time:": 61450
+                        "end_time": 61450
                     }
                 ]
             }
