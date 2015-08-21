@@ -54,11 +54,11 @@ Creating a job is prerequisite for virtually all other methods.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``external_id=12345``                                     |
 +------------------+------------------+-----------------------------------------------------------+
-| Username         | `Description`    | Create the job in specified sub-account.                  |
+| username         | `Description`    | Create the job in specified sub-account.                  |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | String.                                                   |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Example`        | ``myaccountname``                                         |
+|                  | `Example`        | ``username=myaccountname``                                |
 +------------------+------------------+-----------------------------------------------------------+
 
 **Responses**

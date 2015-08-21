@@ -91,6 +91,9 @@ Get a list of all tasks associated with an existing job.
         "StartDate": "2014-08-27T14:00:06.472706",
         "DueDate": "2014-08-29T14:00:06.472706",
         "CompletedDate": "2014-08-27T14:10:41.923125",
+        "ReturnDate": "2014-08-27T14:10:41.923125",
+        "AuthorizationDate": "2014-08-27T14:10:41.923125",
+        "JobDifficulty": "Unknown",
         "ReturnTargets": {
             "url": [
                 {
@@ -101,6 +104,10 @@ Get a list of all tasks associated with an existing job.
                 }
             ]
         },
-        "Options": {},
-        "JobDifficulty": "Unknown"
+        "Options": {
+            "option_name": {
+                "label": "option_label",
+                "setting": "option_setting"
+            }
+        }
     }
