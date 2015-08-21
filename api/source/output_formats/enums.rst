@@ -140,7 +140,7 @@ Fidelity Enumeration
 .. _job-difficulty-label:
 
 JobDifficulty Enumeration
-----------------------
+-------------------------
 
 .. raw:: html
 
@@ -328,7 +328,7 @@ Customer Approval Tools Enumeration
 .. _iwp-label:
 
 IWP Enumeration
------------------------------------
+---------------
 
 .. raw:: html
 
