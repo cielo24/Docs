@@ -46,7 +46,7 @@ Creating a job is prerequisite for virtually all other methods.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``language=en``                                           |
 +------------------+------------------+-----------------------------------------------------------+
-| external_id      | `Description`    | An identifier you want to associate with this job.        |
+| external_id      | `Description`    | An identifier you want to associate with this job         |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | String                                                    |
 |                  +------------------+-----------------------------------------------------------+
@@ -54,11 +54,11 @@ Creating a job is prerequisite for virtually all other methods.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``external_id=12345``                                     |
 +------------------+------------------+-----------------------------------------------------------+
-| Username         | `Description`    | Create the job in specified sub-account.                  |
+| username         | `Description`    | Create the job in specified sub-account                   |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Allowed Values` | String.                                                   |
+|                  | `Allowed Values` | String                                                    |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Example`        | ``myaccountname``                                         |
+|                  | `Example`        | ``username=my_sub_account``                               |
 +------------------+------------------+-----------------------------------------------------------+
 
 **Responses**
