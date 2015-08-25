@@ -3,7 +3,7 @@ Aggregate Statistics
 
 Get aggregate statistics for the user account.
 The statistics can be aggregated for the requester's account and/or its sub-accounts,
-grouped by week or month and filtered by a certain time range.
+grouped by week or month and filtered by a time range.
 
 **HTTP Method**
 
