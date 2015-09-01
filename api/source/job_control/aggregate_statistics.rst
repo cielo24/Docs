@@ -62,8 +62,8 @@ grouped by week or month and filtered by a time range.
 | group_by                | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
 |                         |                  |  Defines how to segment the calculations.</br>     |
-|                         |                  |  When unset, will return a single segment</br>     |
-|                         |                  |  over the specified time range.                    |
+|                         |                  |  When unspecified, will return a single</br>       |
+|                         |                  |  segment over the given time range.                |
 |                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | ["week", "month"]                                  |
@@ -73,7 +73,9 @@ grouped by week or month and filtered by a time range.
 | start_date              | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
 |                         |                  |  Will calculate statistics for jobs returned</br>  |
-|                         |                  |  after the specified date.                         |
+|                         |                  |  after the given date. When unspecified,</br>      |
+|                         |                  |  the date of the first returned job is</br>        |
+|                         |                  |  used as the start date.                           |
 |                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
@@ -83,13 +85,17 @@ grouped by week or month and filtered by a time range.
 | end_date                | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
 |                         |                  |  Will calculate statistics for jobs returned</br>  |
-|                         |                  |  before the specified date.                        |
+|                         |                  |  before the specified date. When unspecified,</br> |
+|                         |                  |  the current time is used as the end date.         |
 |                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | Date in ISO format.                                |
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``end_date=2014-08-27T13:40:53``                   |
 +-------------------------+------------------+----------------------------------------------------+
+
+- When no range is specified, the response will contain statistics for
+
 
 **Responses**
 
@@ -145,31 +151,36 @@ grouped by week or month and filtered by a time range.
     {
         "data": [
             {
-                "billable_minutes": 4.0,
-                "start_date": "2015-02-01T00:00:00",
-                "end_date": "2015-02-28T00:00:00"
+              "billable_minutes": 10.0,
+              "start_date": "2015-03-26T11:36:09.237373",
+              "end_date": "2015-03-31T23:59:59.999999"
             },
             {
-                "billable_minutes": 40.0,
-                "start_date": "2015-03-01T00:00:00",
-                "end_date": "2015-03-31T00:00:00"
+              "billable_minutes": 1.0,
+              "start_date": "2015-04-01T00:00:00",
+              "end_date": "2015-04-30T23:59:59.999999"
             },
             {
-                "billable_minutes": 1.0,
-                "start_date": "2015-04-01T00:00:00",
-                "end_date": "2015-04-30T00:00:00"
+              "billable_minutes": 3.0,
+              "start_date": "2015-05-01T00:00:00",
+              "end_date": "2015-05-31T23:59:59.999999"
             },
             {
-                "billable_minutes": 3.0,
-                "start_date": "2015-05-01T00:00:00",
-                "end_date": "2015-05-31T00:00:00"
+              "billable_minutes": 0,
+              "start_date": "2015-06-01T00:00:00",
+              "end_date": "2015-06-30T23:59:59.999999"
             },
             {
-                "billable_minutes": 1.0,
-                "start_date": "2015-07-01T00:00:00",
-                "end_date": "2015-07-31T00:00:00"
+              "billable_minutes": 1.0,
+              "start_date": "2015-07-01T00:00:00",
+              "end_date": "2015-07-31T23:59:59.999999"
+            },
+            {
+              "billable_minutes": 0,
+              "start_date": "2015-08-01T00:00:00",
+              "end_date": "2015-08-25T11:35:46.993607"
             }
         ],
-        "start_date": null,
-        "end_date": null
+        "start_date": "2015-03-26T11:36:09.237373",
+        "end_date": "2015-08-25T11:35:46.993607"
     }
