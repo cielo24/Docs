@@ -103,6 +103,11 @@ Get a list of all tasks associated with an existing job.
                 }
             ]
         },
-        "Options": {},
+        "Options": {
+            "option_name": {
+                "label": "option_label",
+                "setting": "option_setting"
+            }
+        },
         "JobDifficulty": "Unknown"
     }

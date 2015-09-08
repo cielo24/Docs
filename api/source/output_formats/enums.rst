@@ -3,37 +3,6 @@ Enumeration Types
 
 Enumeration types used in cielo24 API.
 
-.. _task-type-label:
-
-Task Type Enumeration
----------------------
-
-.. raw:: html
-
-    <font color="firebrick">
-    <p>
-    <span style="padding: 20px">
-    JOB_CREATED</br>
-    <span style="padding: 20px">
-    JOB_DELETED</br>
-    <span style="padding: 20px">
-    JOB_ADD_MEDIA</br>
-    <span style="padding: 20px">
-    JOB_ADD_TRANSCRIPT</br>
-    <span style="padding: 20px">
-    JOB_PERFORM_TRANSCRIPTION</br>
-    <span style="padding: 20px">
-    JOB_PERFORM_PREMIUM_SYNC</br>
-    <span style="padding: 20px">
-    JOB_UPDATE_ELEMENTLIST</br>
-    <span style="padding: 20px">
-    JOB_GET_TRANSCRIPT</br>
-    <span style="padding: 20px">
-    JOB_GET_CAPTION</br>
-    <span style="padding: 20px">
-    JOB_GET_ELEMENTLIST</br>
-    </font>
-
 .. _error-type-label:
 
 Error Type Enumeration
@@ -84,25 +53,6 @@ Job Status Enumeration
     Media Failure</br>
     <span style="padding: 20px">
     Reviewing</br>
-    </font>
-
-.. _task-status-label:
-
-Task Status Enumeration
------------------------
-
-.. raw:: html
-
-    <font color="firebrick">
-    <p>
-    <span style="padding: 20px">
-    COMPLETE</br>
-    <span style="padding: 20px">
-    INPROGRESS</br>
-    <span style="padding: 20px">
-    ABORTED</br>
-    <span style="padding: 20px">
-    FAILED</br>
     </font>
 
 .. _priority-label:
@@ -252,6 +202,8 @@ Sound Tag Enumeration
     </br>
     </font>
 
+.. _speaker-id-label:
+
 Speaker ID Enumeration
 ----------------------
 
@@ -284,6 +236,8 @@ Speaker Gender Enumeration
     FEMALE</br>
     </font>
 
+.. _line-ending-label:
+
 Line Ending Enumeration
 -----------------------
 
@@ -297,6 +251,23 @@ Line Ending Enumeration
     WINDOWS</br>
     <span style="padding: 20px">
     OSX</br>
+    </font>
+
+.. _case-label:
+
+Case Enumeration
+----------------
+
+.. raw:: html
+
+    <font color="firebrick">
+    <p>
+    <span style="padding: 20px">
+    upper</br>
+    <span style="padding: 20px">
+    lower</br>
+    <span style="padding: 20px">
+    ""<font color="black">- (Empty string) represents unchanged case.</font></br>
     </font>
 
 Customer Approval Steps Enumeration

@@ -142,7 +142,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 |  if the name is not available.                                               |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | [ no, number, name ]                                      |
+|                                 | `Allowed Values` | :ref:`speaker-id-label`                                   |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | name                                                      |
 |                                 +------------------+-----------------------------------------------------------+
@@ -159,7 +159,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ""                                                        |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Example`        | ``elementlist_version=2014-07-31T12:35:52Z``              |
+|                                 | `Example`        | ``elementlist_version=2014-07-31T12:35:52.324389``        |
 +---------------------------------+------------------+-----------------------------------------------------------+
 | emit_speaker_change_tokens_as   | .. raw:: html                                                                |
 |                                 |                                                                              |
@@ -179,7 +179,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 |  changed.                                                                    |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | ["upper", "lower", ""]                                    |
+|                                 | `Allowed Values` | :ref:`case-label`                                         |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | ""                                                        |
 |                                 +------------------+-----------------------------------------------------------+
@@ -230,7 +230,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 |  captions.                                                                   |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Allowed Values` | ["UNIX", "WINDOWS", "OSX"]                                |
+|                                 | `Allowed Values` | :ref:`line-ending-label`                                  |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Default Value`  | "UNIX"                                                    |
 |                                 +------------------+-----------------------------------------------------------+
@@ -464,7 +464,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` |  :ref:`sound-tag-label`                                   |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Default Value`  | ["BLANK_AUDIO","MUSIC]                                    |
+|                                 | `Default Value`  | ["BLANK_AUDIO","MUSIC"]                                   |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Example`        | ``sound_tokens_by_caption_list=[]``                       |
 +---------------------------------+------------------+-----------------------------------------------------------+

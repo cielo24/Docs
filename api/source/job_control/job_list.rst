@@ -330,7 +330,12 @@ The list is sorted by default to the creation time of the job, descending.
                     }
                 ]
             },
-            "Options": {},
+            "Options": {
+                "option_name": {
+                    "label": "option_label",
+                    "setting": "option_setting"
+                }
+            },
             "JobDifficulty": "Unknown"
         }]
     }
