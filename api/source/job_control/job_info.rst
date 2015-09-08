@@ -1,7 +1,7 @@
 Job Info
 ========
 
-Get a list of all tasks associated with an existing job.
+Get information about an existing job.
 
 **HTTP Method**
 
@@ -93,6 +93,7 @@ Get a list of all tasks associated with an existing job.
         "CompletedDate": "2014-08-27T14:10:41.923125",
         "ReturnDate": "2014-08-27T14:10:42.885185",
         "AuthorizationDate": "2014-08-27T14:00:06.472706",
+        "JobDifficulty": "Unknown",
         "ReturnTargets": {
             "url": [
                 {
@@ -108,6 +109,5 @@ Get a list of all tasks associated with an existing job.
                 "label": "option_label",
                 "setting": "option_setting"
             }
-        },
-        "JobDifficulty": "Unknown"
+        }
     }

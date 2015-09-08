@@ -320,6 +320,7 @@ The list is sorted by default to the creation time of the job, descending.
             "CompletedDate": "2014-08-27T14:10:41.923125",
             "ReturnDate": "2014-08-27T14:10:42.885185",
             "AuthorizationDate": "2014-08-27T14:00:06.472706",
+            "JobDifficulty": "Unknown",
             "ReturnTargets":  {
                 "url": [
                     {
@@ -335,7 +336,6 @@ The list is sorted by default to the creation time of the job, descending.
                     "label": "option_label",
                     "setting": "option_setting"
                 }
-            },
-            "JobDifficulty": "Unknown"
+            }
         }]
     }
