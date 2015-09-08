@@ -111,6 +111,46 @@ The list is sorted by default to the creation time of the job, descending.
 |                         +------------------+----------------------------------------------------+
 |                         | `Example`        | ``CompleteDateTo=2014-08-27T13:40:53``             |
 +-------------------------+------------------+----------------------------------------------------+
+| ReturnDateFrom          | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were returned on or after</br>     |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``ReturnDateFrom=2014-08-27T13:40:53``             |
++-------------------------+------------------+----------------------------------------------------+
+| ReturnDateTo            | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were returned on or before</br>    |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``ReturnDateTo=2014-08-27T13:40:53``               |
++-------------------------+------------------+----------------------------------------------------+
+| AuthorizationDateFrom   | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were authorized on or after</br>   |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``AuthorizationDateFrom=2014-08-27T13:40:53``      |
++-------------------------+------------------+----------------------------------------------------+
+| AuthorizationDateTo     | `Description`    | .. raw:: html                                      |
+|                         |                  |                                                    |
+|                         |                  |  List jobs that were authorized on or before</br>  |
+|                         |                  |  the specified date and time.                      |
+|                         |                  |                                                    |
+|                         +------------------+----------------------------------------------------+
+|                         | `Allowed Values` | Date in ISO format.                                |
+|                         +------------------+----------------------------------------------------+
+|                         | `Example`        | ``AuthorizationDateTo=2014-08-27T13:40:53``        |
++-------------------------+------------------+----------------------------------------------------+
 | JobStatus               | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
 |                         |                  |  List jobs with the specified status.              |
@@ -278,6 +318,8 @@ The list is sorted by default to the creation time of the job, descending.
             "StartDate": "2014-08-27T14:00:06.472706",
             "DueDate": "2014-08-29T14:00:06.472706",
             "CompletedDate": "2014-08-27T14:10:41.923125",
+            "ReturnDate": "2014-08-27T14:10:42.885185",
+            "AuthorizationDate": "2014-08-27T14:00:06.472706",
             "ReturnTargets":  {
                 "url": [
                     {
