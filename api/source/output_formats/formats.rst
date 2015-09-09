@@ -85,7 +85,7 @@ The following defines the Job in JSON format:
         "ExternalID" : "<String (dependant on third-party integrations)",
         "Priority" : "<Priority Enum>",
         "Fidelity" : "<Fidelity Enum>",
-        "JobStatus" : "<Status Enum>",
+        "JobStatus" : "<JobStatus Enum>",
         "SourceLanguage" : "<RFC 5646 Language Code>",
         "TargetLanguage" : "<RFC 5646 Language Code>",
         "CreationDate" : "<ISO 8601 Date String>",
@@ -107,9 +107,9 @@ The following defines the Job in JSON format:
 
 .. container::
 
-    Related: :ref:`job-status-label`,
-    :ref:`fidelity-label`,
+    Related: :ref:`fidelity-label`,
     :ref:`priority-label`,
+    :ref:`job-status-label`,
     :ref:`job-difficulty-label`
     .
 
