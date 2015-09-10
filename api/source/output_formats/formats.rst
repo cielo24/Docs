@@ -19,7 +19,7 @@ The following defines the Job Info in JSON format:
         "ExternalID" : "<String (dependant on third-party integrations)",
         "Priority" : "<Priority Enum>",
         "Fidelity" : "<Fidelity Enum>",
-        "JobStatus" : "<Status Enum>",
+        "JobStatus" : "<JobStatus Enum>",
         "Options" : {
             "<JobConfigOption>" : "<Value>"
             ...
