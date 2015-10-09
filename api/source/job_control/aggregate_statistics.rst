@@ -52,12 +52,18 @@ grouped by week or month and filtered by a time range.
 |                         |                  |  statistics. When unset, will return data for</br> |
 |                         |                  |  all available metrics.</br>                       |
 |                         |                  |  Currently supported metrics:</br>                 |
-|                         |                  |  -`billable_minutes`                               |
+|                         |                  |  -`billable_minutes_total`</br>                    |
+|                         |                  |  -`billable_minutes_mechanical`</br>               |
+|                         |                  |  -`billable_minutes_premium`</br>                  |
+|                         |                  |  -`billable_minutes_professional`</br>             |
+|                         |                  |  -`billable_minutes_foreign_transcription`</br>    |
+|                         |                  |  -`billable_minutes_translation`</br>              |
+|                         |                  |  -`billable_minutes_english_transcription`         |
 |                         |                  |                                                    |
 |                         +------------------+----------------------------------------------------+
 |                         | `Allowed Values` | JSON array of strings                              |
 |                         +------------------+----------------------------------------------------+
-|                         | `Example`        | ``metrics=["billable_minutes"]``                   |
+|                         | `Example`        | ``metrics=["billable_minutes_total"]``             |
 +-------------------------+------------------+----------------------------------------------------+
 | group_by                | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
@@ -148,36 +154,31 @@ grouped by week or month and filtered by a time range.
     {
         "data": [
             {
-                "billable_minutes": 10.0,
-                "start_date": "2015-03-26T11:36:09.237373",
-                "end_date": "2015-03-31T23:59:59.999999"
+                "billable_minutes_total": 15,
+                "start_date": "2015-04-15T11:36:09.237373",
+                "end_date": "2015-04-18T23:59:59.999999"
             },
             {
-                "billable_minutes": 1.0,
-                "start_date": "2015-04-01T00:00:00",
-                "end_date": "2015-04-30T23:59:59.999999"
+                "billable_minutes_total": 10,
+                "start_date": "2015-04-19T00:00:00",
+                "end_date": "2015-04-25T23:59:59.999999"
             },
             {
-                "billable_minutes": 3.0,
-                "start_date": "2015-05-01T00:00:00",
-                "end_date": "2015-05-31T23:59:59.999999"
+                "billable_minutes_total": 38,
+                "start_date": "2015-04-26T00:00:00",
+                "end_date": "2015-05-02T23:59:59.999999"
             },
             {
-                "billable_minutes": 0,
-                "start_date": "2015-06-01T00:00:00",
-                "end_date": "2015-06-30T23:59:59.999999"
+                "billable_minutes_total": 11,
+                "start_date": "2015-05-03T00:00:00",
+                "end_date": "2015-05-09T23:59:59.999999"
             },
             {
-                "billable_minutes": 1.0,
-                "start_date": "2015-07-01T00:00:00",
-                "end_date": "2015-07-31T23:59:59.999999"
-            },
-            {
-                "billable_minutes": 0,
-                "start_date": "2015-08-01T00:00:00",
-                "end_date": "2015-08-25T11:35:46.993607"
+                "billable_minutes_total": 11,
+                "start_date": "2015-05-10T00:00:00",
+                "end_date": "2015-05-15T11:35:46.993607"
             }
         ],
-        "start_date": "2015-03-26T11:36:09.237373",
-        "end_date": "2015-08-25T11:35:46.993607"
+        "start_date": "2015-04-15T11:36:09.237373",
+        "end_date": "2015-05-15T11:35:46.993607"
     }
