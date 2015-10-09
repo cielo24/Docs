@@ -154,31 +154,48 @@ grouped by week or month and filtered by a time range.
     {
         "data": [
             {
-                "billable_minutes_total": 15,
-                "start_date": "2015-04-15T11:36:09.237373",
+                "billable_minutes_professional": 4,
+                "billable_minutes_total": 4,
+                "billable_minutes_english_transcription": 4,
+                "start_date": "2015-03-26T11:36:09.237373",
+                "end_date": "2015-03-28T23:59:59.999999"
+            },
+            {
+                "billable_minutes_professional": 10,
+                "billable_minutes_total": 14,
+                "billable_minutes_english_transcription": 14,
+                "start_date": "2015-03-29T00:00:00",
+                "end_date": "2015-04-04T23:59:59.999999"
+            },
+            {
+                "billable_minutes_professional": 15,
+                "billable_minutes_total": 25,
+                "billable_minutes_english_transcription": 17,
+                "start_date": "2015-04-05T00:00:00",
+                "end_date": "2015-04-11T23:59:59.999999"
+            },
+            {
+                "billable_minutes_professional": 17,
+                "billable_minutes_total": 18,
+                "billable_minutes_english_transcription": 15,
+                "start_date": "2015-04-12T00:00:00",
                 "end_date": "2015-04-18T23:59:59.999999"
             },
             {
+                "billable_minutes_professional": 10,
                 "billable_minutes_total": 10,
+                "billable_minutes_english_transcription": 10,
                 "start_date": "2015-04-19T00:00:00",
                 "end_date": "2015-04-25T23:59:59.999999"
             },
             {
+                "billable_minutes_professional": 38,
                 "billable_minutes_total": 38,
+                "billable_minutes_english_transcription": 38,
                 "start_date": "2015-04-26T00:00:00",
-                "end_date": "2015-05-02T23:59:59.999999"
-            },
-            {
-                "billable_minutes_total": 11,
-                "start_date": "2015-05-03T00:00:00",
-                "end_date": "2015-05-09T23:59:59.999999"
-            },
-            {
-                "billable_minutes_total": 11,
-                "start_date": "2015-05-10T00:00:00",
-                "end_date": "2015-05-15T11:35:46.993607"
+                "end_date": "2015-05-01T11:35:46.993607"
             }
         ],
-        "start_date": "2015-04-15T11:36:09.237373",
-        "end_date": "2015-05-15T11:35:46.993607"
+        "start_date": "2015-03-26T11:36:09.237373",
+        "end_date": "2015-05-01T11:35:46.993607"
     }
