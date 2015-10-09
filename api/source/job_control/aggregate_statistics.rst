@@ -141,7 +141,7 @@ grouped by week or month and filtered by a time range.
 .. sourcecode:: http
 
     GET /api/job/aggregate_statistics?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
-    &metrics=["billable_minutes"]&account_id=*&group_by=month
+    &metrics=["billable_minutes_total"]&account_id=*&group_by=month
     Host: api.cielo24.com
 
 **Example Response**
