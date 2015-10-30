@@ -49,8 +49,8 @@ grouped by week or month and filtered by a time range.
 | metrics                 | `Description`    | .. raw:: html                                      |
 |                         |                  |                                                    |
 |                         |                  |  List of metrics for which to calculate</br>       |
-|                         |                  |  statistics. When unset, will return data for</br> |
-|                         |                  |  all available metrics.</br>                       |
+|                         |                  |  statistics. When unspecified, will return </br>   |
+|                         |                  |  data for all available metrics.</br>              |
 |                         |                  |  Currently supported metrics:</br>                 |
 |                         |                  |  -`billable_minutes_total`</br>                    |
 |                         |                  |  -`billable_minutes_mechanical`</br>               |
@@ -131,12 +131,39 @@ grouped by week or month and filtered by a time range.
 |           |               |                                                                          |
 +-----------+---------------+--------------------------------------------------------------------------+
 
-**Example Requests**
+**Example Requests and Responses**
 
 .. sourcecode:: http
 
     GET /api/job/aggregate_statistics?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f HTTP/1.1
     Host: api.cielo24.com
+
+.. sourcecode:: http
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+
+    {
+        "data": [
+            /* When group_by is unspecified, data is aggregated into a single block */
+            {
+                "billable_minutes_total": 372,
+                /* Note: Total = Foreign + English + Translation */
+                "billable_minutes_foreign_transcription": 13,
+                "billable_minutes_english_transcription": 340,
+                "billable_minutes_translation": 19,
+                /* Note: Total = Professional + Premium + Mechanical */
+                "billable_minutes_professional": 323,
+                "billable_minutes_premium": 6
+                "billable_minutes_mechanical": 43,
+                "start_date": "2015-03-20T15:32:19.902607",
+                "end_date": "2015-10-30T12:28:23.894872",
+            }
+        ],
+        "start_date": null,
+        "end_date": null
+    }
+
 
 .. sourcecode:: http
 
@@ -144,8 +171,6 @@ grouped by week or month and filtered by a time range.
     &metrics=["billable_minutes_total","billable_minutes_professional","billable_minutes_english_transcription"]
     &start_date=2015-03-26T11:36:09.237373&end_date=2015-05-01T11:35:46.993607&group_by=week
     Host: api.cielo24.com
-
-**Example Response**
 
 .. sourcecode:: http
 
