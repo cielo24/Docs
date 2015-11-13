@@ -19,3 +19,4 @@ All job control tasks return a task ID which can be queried at any time using ta
    get_caption
    get_elementlist
    list_elementlists
+   aggregate_statistics
