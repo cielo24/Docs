@@ -4,8 +4,11 @@ The Basics
 Getting Started
 ---------------
 #. Send an email to `support@cielo24.com <mailto:support@cielo24.com>`_ requesting a sandbox API login.
+
 #. Download our API libraries: `Python <https://github.com/Cielo24/cielo24-python>`_, `Ruby <https://github.com/Cielo24/cielo24-ruby>`_, `Java <https://github.com/Cielo24/cielo24-java>`_, `PHP <https://github.com/Cielo24/cielo24-php>`_, `.NET <https://github.com/Cielo24/cielo24-dotnet>`_.
+
     #. Each project includes a core library and a command line application you can use to experiment with the API without writing any code of your own.
+
 #. Use the sandbox credentials you received from support and the libraries to connect to our API.
 
 Sandbox API
