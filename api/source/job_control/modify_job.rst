@@ -1,7 +1,7 @@
 Modify Job
 ==========
 
-Modify parameters of an already existing job. The job must be in Authorization state.
+Modify parameters of an already existing job. The job must be in *Authorization* state.
 
 **HTTP Method**
 
@@ -47,7 +47,7 @@ Modify parameters of an already existing job. The job must be in Authorization s
 |                        | `Allowed Values` | Integer                                              |
 |                        +------------------+------------------------------------------------------+
 |                        | `Example`        | ``turnaround_hours=36``                              |
-+-------------------------+------------------+-----------------------------------------------------+
++------------------------+------------------+------------------------------------------------------+
 | priority               | `Description`    | The desired priority of the transcription            |
 |                        +------------------+------------------------------------------------------+
 |                        | `Allowed Values` | :ref:`priority-label`                                |
