@@ -5,7 +5,7 @@ Modify parameters of an already existing job. The job must be in *Authorization*
 
 **HTTP Method**
 
-.. http:get:: /api/job/modify
+.. http:post:: /api/job/modify
 
 **Query String Parameters** - Required
 
