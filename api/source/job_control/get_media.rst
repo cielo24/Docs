@@ -46,17 +46,7 @@ Get a URL to the media for an existing job. If the media was directly uploaded t
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
 |           +---------------+--------------------------------------------------------------------------+
-|           | `Contents`    | .. code-block:: javascript                                               |
-|           |               |                                                                          |
-|           |               |  {                                                                       |
-|           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details."                       |
-|           |               |  }                                                                       |
-|           |               |                                                                          |
-|           |               | .. container::                                                           |
-|           |               |                                                                          |
-|           |               |    See :ref:`error-format-label` for details.                            |
-|           |               |                                                                          |
+|           | `Contents`    | Error description (see :ref:`error-format-label` for details)            |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**

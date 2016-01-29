@@ -64,17 +64,7 @@ The job must have completed transcription before a caption can be downloaded.
 +-----------+---------------+--------------------------------------------------------------------------+
 | 400       | `Description` | An error occurred                                                        |
 |           +---------------+--------------------------------------------------------------------------+
-|           | `Contents`    | .. code-block:: javascript                                               |
-|           |               |                                                                          |
-|           |               |  {                                                                       |
-|           |               |    "ErrorType": "ERROR_TYPE_ENUM",                                       |
-|           |               |    "ErrorComment": "Description of error details."                       |
-|           |               |  }                                                                       |
-|           |               |                                                                          |
-|           |               | .. container::                                                           |
-|           |               |                                                                          |
-|           |               |    See :ref:`error-format-label` for details.                            |
-|           |               |                                                                          |
+|           | `Contents`    | Error description (see :ref:`error-format-label` for details)            |
 +-----------+---------------+--------------------------------------------------------------------------+
 
 **Example Requests**
