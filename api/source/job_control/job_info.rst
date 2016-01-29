@@ -7,7 +7,7 @@ Get information about an existing job.
 
 .. http:get:: /api/job/info
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

@@ -8,7 +8,7 @@ The list is sorted by default to the creation time of the job, descending.
 
 .. http:get:: /api/job/list
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -26,7 +26,7 @@ The list is sorted by default to the creation time of the job, descending.
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Query String Parameters for filtering** - Optional
+**Query String Parameters for filtering** — Optional
 
 +-------------------------+-----------------------------------------------------------------------+
 | Name                    | Details                                                               |

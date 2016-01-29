@@ -9,7 +9,7 @@ grouped by week or month and filtered by a time range.
 
 .. http:get:: /api/job/aggregate_statistics
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -27,7 +27,7 @@ grouped by week or month and filtered by a time range.
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Query String Parameters for filtering** - Optional
+**Query String Parameters for filtering** — Optional
 
 +-------------------------+-----------------------------------------------------------------------+
 | Name                    | Details                                                               |

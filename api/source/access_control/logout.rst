@@ -7,7 +7,7 @@ Logout of the current session, invalidating the API token.
 
 .. http:get:: /api/account/logout
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

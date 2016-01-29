@@ -9,7 +9,7 @@ Creating a job is prerequisite for virtually all other methods.
 
 .. http:get:: /api/job/new
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -27,7 +27,7 @@ Creating a job is prerequisite for virtually all other methods.
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Query String Parameters** - Optional
+**Query String Parameters** — Optional
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

@@ -11,7 +11,7 @@ Use this option to link to a video hosted by providers like BrightCove, Kaltura,
 
 .. http:get:: /api/job/add_media_url
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

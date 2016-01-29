@@ -13,23 +13,23 @@ Error Type Enumeration
     <font color="firebrick">
     <p>
     <span style="padding: 20px">
-    LOGIN_INVALID <font color="black">- Incorrect username or password was supplied as login credentials. Check that the the correct username and password are being sent.</font></br>
+    LOGIN_INVALID <font color="black">— Incorrect username or password was supplied as login credentials. Check that the the correct username and password are being sent.</font></br>
     <span style="padding: 20px">
-    ACCOUNT_EXISTS <font color="black">- Attempted to create an account that already exists. Login with the account, or create one with a different name.</font></br>
+    ACCOUNT_EXISTS <font color="black">— Attempted to create an account that already exists. Login with the account, or create one with a different name.</font></br>
     <span style="padding: 20px">
-    ACCOUNT_UNPRIVILEGED <font color="black">- You are attempting to modify information of an account you do not have access to. You must be the owner, parent, or an administrator to modify an account’s information.</font></br>
+    ACCOUNT_UNPRIVILEGED <font color="black">— You are attempting to modify information of an account you do not have access to. You must be the owner, parent, or an administrator to modify an account’s information.</font></br>
     <span style="padding: 20px">
-    BAD_API_TOKEN <font color="black">- You have provided an incorrect API token. Either the session has gone valid, or the token provided was incorrect. Re-login to get a new session, or check that you submitted the correct token.</font></br>
+    BAD_API_TOKEN <font color="black">— You have provided an incorrect API token. Either the session has gone valid, or the token provided was incorrect. Re-login to get a new session, or check that you submitted the correct token.</font></br>
     <span style="padding: 20px">
-    INVALID_QUERY <font color="black">- You passed a parameter or other information that could not be used for this command, see the ErrorComment for more specific information.</font></br>
+    INVALID_QUERY <font color="black">— You passed a parameter or other information that could not be used for this command, see the ErrorComment for more specific information.</font></br>
     <span style="padding: 20px">
-    INVALID_OPTION <font color="black">- You supplied an option for a parameter that wasn't in it's approved option list. Please check the option list and try again.</font></br>
+    INVALID_OPTION <font color="black">— You supplied an option for a parameter that wasn't in it's approved option list. Please check the option list and try again.</font></br>
     <span style="padding: 20px">
-    MISSING_PARAMETER <font color="black">- You did not supply a required parameter for this function, see the ErrorComment for which parameter was missing.</font></br>
+    MISSING_PARAMETER <font color="black">— You did not supply a required parameter for this function, see the ErrorComment for which parameter was missing.</font></br>
     <span style="padding: 20px">
-    INVALID_URL <font color="black">- You have provided a URL for a callback, media URL, or other URL that could not be accessed. Check the URL is correct, and try again.</font></br>
+    INVALID_URL <font color="black">— You have provided a URL for a callback, media URL, or other URL that could not be accessed. Check the URL is correct, and try again.</font></br>
     <span style="padding: 20px">
-    ITEM_NOT_FOUND <font color="black">- You have provided an ID for a Job, task, billing item, contact info, or other item, that could not be found in the system. See the ErrorComment for more details on the item that was not found.</font></br>
+    ITEM_NOT_FOUND <font color="black">— You have provided an ID for a Job, task, billing item, contact info, or other item, that could not be found in the system. See the ErrorComment for more details on the item that was not found.</font></br>
     </font>
 
 .. _job-status-label:
@@ -99,15 +99,15 @@ JobDifficulty Enumeration
     <p>
     <span style="padding: 20px">
     Good
-    <font color="black"> - The job was processed without any major problems.</font>
+    <font color="black"> — The job was processed without any major problems.</font>
     </br>
     <span style="padding: 20px">
     Bad
-    <font color="black"> - A significant amount of the job was difficult to process. This may cause a delay of the expected due date.</font>
+    <font color="black"> — A significant amount of the job was difficult to process. This may cause a delay of the expected due date.</font>
     </br>
     <span style="padding: 20px">
     Unknown
-    <font color="black"> - Not enough of the job has been analyzed at this time to determine whether it is difficult.</font>
+    <font color="black"> — Not enough of the job has been analyzed at this time to determine whether it is difficult.</font>
     </br>
     </font>
 
@@ -153,15 +153,15 @@ Token Type Enumeration
     <p>
     <span style="padding: 20px">
     word
-    <font color="black"> - Used to denote a word in the transcript.</font>
+    <font color="black"> — Used to denote a word in the transcript.</font>
     </br>
     <span style="padding: 20px">
     punctuation
-    <font color="black"> - Used to denote punctuation in the transcript.</font>
+    <font color="black"> — Used to denote punctuation in the transcript.</font>
     </br>
     <span style="padding: 20px">
     sound
-    <font color="black"> - Used to denote a sound or other non-word item in a transcript. If specified, a tag must also be specified on the token.</font>
+    <font color="black"> — Used to denote a sound or other non-word item in a transcript. If specified, a tag must also be specified on the token.</font>
     </br>
     </font>
 
@@ -198,7 +198,7 @@ Sound Tag Enumeration
     BLEEP</br>
     <span style="padding: 20px">
     ENDS_SENTENCE
-    <font color="black"> - Used to denote that this token ends the current sentence.</font>
+    <font color="black"> — Used to denote that this token ends the current sentence.</font>
     </br>
     </font>
 
@@ -267,7 +267,7 @@ Case Enumeration
     <span style="padding: 20px">
     lower</br>
     <span style="padding: 20px">
-    ""<font color="black">- (Empty string) represents unchanged case.</font></br>
+    ""<font color="black"> — (Empty string) represents unchanged case.</font></br>
     </font>
 
 Customer Approval Steps Enumeration

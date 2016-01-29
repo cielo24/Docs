@@ -22,7 +22,7 @@ specify the Content-Length in the header.
 
 .. http:post:: /api/job/add_media (from local file)
 
-**Query String Parameters** - Required (always)
+**Query String Parameters** — Required (always)
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -46,7 +46,7 @@ specify the Content-Length in the header.
 |                  | `Example`        | ``job_id=64bea283eff6475ea6596027a6ba0929``               |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Query String Parameters** - Required `(when adding media from URL)`
+**Query String Parameters** — Required `(when adding media from URL)`
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -58,7 +58,7 @@ specify the Content-Length in the header.
 |                  | `Example`        | ``media_url=http%3A%2F%2Fwww.domain.com%2Fvideo.mp4``     |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Request Body** - Required `(when adding media from local file)`
+**Request Body** — Required `(when adding media from local file)`
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -70,7 +70,7 @@ specify the Content-Length in the header.
 |                  | `Example`        | not applicable                                            |
 +------------------+------------------+-----------------------------------------------------------+
 
-**HTTP Headers** - Required `(when uploading LARGE media files)`
+**HTTP Headers** — Required `(when uploading LARGE media files)`
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

@@ -9,7 +9,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 
 .. http:get:: /api/job/perform_transcription
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------------+-------------------------------------------------------------------------------------+
 | Name                   | Details                                                                             |
@@ -39,7 +39,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                        | `Example`        | ``transcription_fidelity=PREMIUM``                               |
 +------------------------+------------------+------------------------------------------------------------------+
 
-**Query String Parameters** - Optional
+**Query String Parameters** — Optional
 
 +-------------------------+-----------------------------------------------------------------------------------------+
 | Name                    | Details                                                                                 |

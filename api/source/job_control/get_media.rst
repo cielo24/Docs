@@ -7,7 +7,7 @@ Get a URL to the media for an existing job. If the media was directly uploaded t
 
 .. http:get:: /api/job/media
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

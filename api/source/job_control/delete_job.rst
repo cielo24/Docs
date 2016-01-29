@@ -12,7 +12,7 @@ and we will do our best to accommodate your request.
 
 .. http:get:: /api/job/delete
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

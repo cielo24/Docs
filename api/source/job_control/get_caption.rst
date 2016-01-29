@@ -8,7 +8,7 @@ The job must have completed transcription before a caption can be downloaded.
 
 .. http:get:: /api/job/get_caption
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------------+----------------------------------------------------------------------------------------+
 | Name                   | Details                                                                                |
@@ -38,7 +38,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                        | `Example`        | ``caption_format=SRT``                                              |
 +------------------------+------------------+---------------------------------------------------------------------+
 
-**Query String Parameters** - Optional
+**Query String Parameters** — Optional
 
 +---------------------------------+------------------------------------------------------------------------------+
 | Name                            | Details                                                                      |

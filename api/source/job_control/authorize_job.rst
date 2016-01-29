@@ -11,7 +11,7 @@ to enable the "customer authorization" feature.
 
 .. http:get:: /api/job/authorize
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

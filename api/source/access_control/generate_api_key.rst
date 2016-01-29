@@ -11,7 +11,7 @@ even if keys already exist.
 
 .. http:get:: /api/account/generate_api_key
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -29,7 +29,7 @@ even if keys already exist.
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Query String Parameters** - Optional
+**Query String Parameters** — Optional
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

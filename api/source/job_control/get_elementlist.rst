@@ -8,7 +8,7 @@ The job must have completed transcription before a caption can be downloaded.
 
 .. http:get:: /api/job/get_elementlist
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -32,7 +32,7 @@ The job must have completed transcription before a caption can be downloaded.
 |                  | `Example`        | ``job_id=64bea283eff6475ea6596027a6ba0929``               |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Query String Parameters** - Optional
+**Query String Parameters** — Optional
 
 +---------------------+---------------------------------------------------------------------------+
 | Name                | Details                                                                   |

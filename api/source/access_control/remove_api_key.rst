@@ -7,7 +7,7 @@ Invalidates an API Key you have previously generated. It will no longer work as 
 
 .. http:get:: /api/account/remove_api_key
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

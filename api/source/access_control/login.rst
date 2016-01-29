@@ -10,7 +10,7 @@ Required arguments must be passed as query string parameters.
 
 .. http:get:: /api/account/login
 
-**HTTP Headers** - Optional
+**HTTP Headers** — Optional
 
     Provide **x-auth-user** with either **x-auth-password** or **x-auth-securekey**.
 
@@ -36,7 +36,7 @@ Required arguments must be passed as query string parameters.
 |                  | `Example`        | ``968a8b637a5040159424872fffdb895b``                                              |
 +------------------+------------------+-----------------------------------------------------------------------------------+
 
-**Query String Parameters** - Required (always)
+**Query String Parameters** — Required (always)
 
 +------------------+------------------------------------------------------------------------------------------------------+
 | Name             | Details                                                                                              |
@@ -48,7 +48,7 @@ Required arguments must be passed as query string parameters.
 |                  | `Example`        | ``v=1``                                                                           |
 +------------------+------------------+-----------------------------------------------------------------------------------+
 
-**Query String Parameters** - Optional
+**Query String Parameters** — Optional
 
     Provide **username** with either **password** or **securekey**.
 

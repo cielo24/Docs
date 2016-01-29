@@ -7,7 +7,7 @@ Gets the list of ElementLists for the job.
 
 .. http:get:: /api/job/list_elementlists
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

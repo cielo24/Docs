@@ -7,7 +7,7 @@ Update the password for a given account. HTTP POST only.
 
 .. http:post:: /api/account/update_password
 
-**Request Body** - Required
+**Request Body** — Required
 
     Request body consists of a query string that contains the following parameters:
 
@@ -34,7 +34,7 @@ Update the password for a given account. HTTP POST only.
 +------------------+------------------+-----------------------------------------------------------+
 
 
-**Request Body** - Optional
+**Request Body** — Optional
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

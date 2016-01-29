@@ -7,7 +7,7 @@ Update a setting for a given account.
 
 .. http:post:: /api/account/update_setting
 
-**Request Body Parameters** - Required
+**Request Body Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -37,7 +37,7 @@ Update a setting for a given account.
 |                  | `Example`        | ``value=true``                                            |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Request Body Parameters** - Optional
+**Request Body Parameters** — Optional
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |

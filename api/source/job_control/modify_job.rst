@@ -7,7 +7,7 @@ Modify parameters of an already existing job. The job must be in *Authorization*
 
 .. http:post:: /api/job/modify
 
-**Query String Parameters** - Required
+**Query String Parameters** — Required
 
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
@@ -31,7 +31,7 @@ Modify parameters of an already existing job. The job must be in *Authorization*
 |                  | `Example`        | ``job_id=64bea283eff6475ea6596027a6ba0929``               |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Query String Parameters** - Optional
+**Query String Parameters** — Optional
 
 +------------------------+-------------------------------------------------------------------------+
 | Name                   | Details                                                                 |
