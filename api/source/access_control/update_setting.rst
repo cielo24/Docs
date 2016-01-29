@@ -96,10 +96,10 @@ Update a setting for a given account.
 
 .. sourcecode:: http
 
-    GET /api/account/update_setting?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
-    &account_id=john_doe&setting=default_job_notes
-    &value=my%20job%20notes HTTP/1.1
+    POST /api/account/update_setting HTTP/1.1
     Host: api.cielo24.com
+    Body: v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f&account_id=john_doe
+          &setting=default_job_notes&value=my%20job%20notes
 
 **Example Response**
 
