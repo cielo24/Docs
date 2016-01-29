@@ -13,5 +13,6 @@ Api tokens expire after the user has been inactive for more than one hour.
    login
    logout
    update_password
+   update_setting
    generate_api_key
    remove_api_key

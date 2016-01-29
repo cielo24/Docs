@@ -8,6 +8,7 @@ All job control tasks return a task ID which can be queried at any time using ta
 
    create_job
    authorize_job
+   modify_job
    delete_job
    job_info
    job_list
