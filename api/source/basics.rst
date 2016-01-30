@@ -70,12 +70,16 @@ If a callback URL is not practical, the application can poll the interface by re
 Languages
 ---------
 
-Transcription and translation are supported in the following languages:
+For translation jobs, either the source or the target language must be English. For non-English to non-English translation jobs, please contact `support@cielo24.com <mailto:support@cielo24.com>`_.
+
+Transcription and translation are supported in the following languages for PROFESSIONAL fidelity jobs:
 
 +---------------------+--------------------+
-| Language            | IEFT Language Code |
+| Language            | IETF Language Code |
 +=====================+====================+
 | Arabic              | ar                 |
++---------------------+--------------------+
+| Dutch               | nl                 |
 +---------------------+--------------------+
 | English             | en                 |
 +---------------------+--------------------+
@@ -89,7 +93,7 @@ Transcription and translation are supported in the following languages:
 +---------------------+--------------------+
 | Italian             | it                 |
 +---------------------+--------------------+
-| Japanese            | jp                 |
+| Japanese            | ja                 |
 +---------------------+--------------------+
 | Korean              | ko                 |
 +---------------------+--------------------+
@@ -104,4 +108,22 @@ Transcription and translation are supported in the following languages:
 | Traditional Chinese | zh                 |
 +---------------------+--------------------+
 | Turkish             | tr                 |
++---------------------+--------------------+
+
+Transcription is supported in the following languages for MECHANICAL fidelity jobs:
+
++---------------------+--------------------+
+| Language            | IETF Language Code |
++=====================+====================+
+| Dutch               | nl                 |
++---------------------+--------------------+
+| English             | en                 |
++---------------------+--------------------+
+| French              | fr                 |
++---------------------+--------------------+
+| German              | de                 |
++---------------------+--------------------+
+| Italian             | it                 |
++---------------------+--------------------+
+| Spanish             | es                 |
 +---------------------+--------------------+
