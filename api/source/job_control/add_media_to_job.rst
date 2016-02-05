@@ -14,7 +14,7 @@ No content-type should be included in the HTTP header.
 Upload the media directly inline as the body of the request.
 The media should be uploaded as raw binary, no encoding (base64, hex, etc) is required.
 Chunk-transfer encoding is NOT supported. If uploading large files (500 mb and up),
-specify the Content-Length in the header.
+specify the Content-Length in the header. File size is limited to 10 gb.
 
 **HTTP Method**
 

@@ -54,7 +54,9 @@ Update a setting for a given account.
 +--------------------------------------------------------------------------------------------------+
 | **default_job_notes**                                                                            |
 +------------------+-------------------------------------------------------------------------------+
-| `Description`    | Glossary to be used for all transcriptions                                    |
+| `Description`    | Glossary to be used for all transcriptions. Examples include: global job      |
+|                  | instructions (guidelines), terms, names, etc. to aid in transcription for     |
+|                  | each job request.                                                             |
 +------------------+-------------------------------------------------------------------------------+
 | `Allowed Values` | String (6000 characters max)                                                  |
 +------------------+-------------------------------------------------------------------------------+
