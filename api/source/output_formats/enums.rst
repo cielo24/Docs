@@ -125,6 +125,8 @@ Caption Format Enumeration
     <span style="padding: 20px">
     ECHO</br>
     <span style="padding: 20px">
+    QT</br>
+    <span style="padding: 20px">
     SAMI</br>
     <span style="padding: 20px">
     SBV</br>
@@ -132,8 +134,6 @@ Caption Format Enumeration
     SCC</br>
     <span style="padding: 20px">
     SRT</br>
-    <span style="padding: 20px">
-    QT</br>
     <span style="padding: 20px">
     TPM</br>
     <span style="padding: 20px">
