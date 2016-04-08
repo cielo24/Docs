@@ -121,25 +121,28 @@ Caption Format Enumeration
     <font color="firebrick">
     <p>
     <span style="padding: 20px">
+    DFXP</br>
+    <span style="padding: 20px">
+    ECHO</br>
+    <span style="padding: 20px">
+    SAMI</br>
+    <span style="padding: 20px">
+    SBV</br>
+    <span style="padding: 20px">
     SCC</br>
     <span style="padding: 20px">
     SRT</br>
     <span style="padding: 20px">
-    SBV</br>
-    <span style="padding: 20px">
-    DFXP</br>
-    <span style="padding: 20px">
     QT</br>
+    <span style="padding: 20px">
+    TPM</br>
     <span style="padding: 20px">
     TRANSCRIPT</br>
     <span style="padding: 20px">
     TWX</br>
     <span style="padding: 20px">
-    TPM</br>
-    <span style="padding: 20px">
     WEB_VTT</br>
-    <span style="padding: 20px">
-    ECHO</br>
+
     </font>
 
 .. _token-type-label:
