@@ -82,9 +82,9 @@ Fidelity Enumeration
     <span style="padding: 20px">
     MECHANICAL</br>
     <span style="padding: 20px">
-    PREMIUM</br>
+    PREMIUM <font color="black">— The <a href="http://docs.cielo24.com/en/latest/output_formats/formats.html#job-info-format-label">Job Info Format</a> returns this value as </font>STANDARD</br>
     <span style="padding: 20px">
-    PROFESSIONAL</br>
+    PROFESSIONAL <font color="black">— The <a href="http://docs.cielo24.com/en/latest/output_formats/formats.html#job-info-format-label">Job Info Format</a> returns this value as </font>HIGH</font></br>
     </font>
 
 .. _job-difficulty-label:
