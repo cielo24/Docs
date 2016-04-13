@@ -67,10 +67,12 @@ Polling
 
 If a callback URL is not practical, the application can poll the interface by requesting the status of a given task that is associated with a given job. The task status will indicate COMPLETE when the task is done.
 
+.. _languages-label:
+
 Languages
 ---------
 
-We support transcription to and from any of the following languages. However, please note that if English is not a source or target language, an additional translation will incur as we will have to generate a translation from the source language into English and then from English into the Target language. This will result in increased charges.
+All non-English to non-English translation jobs have an intermediate step of English. The English transcript will be returned as well. Please contact `support <mailto:support@cielo24.com>`_ with any questions.
 
 Transcription and translation are supported in the following languages for PROFESSIONAL fidelity jobs (volume may vary contact `support <mailto:support@cielo24.com>`_ for more information):
 

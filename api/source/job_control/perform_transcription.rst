@@ -83,13 +83,14 @@ See :ref:`callback documentation <callbacks-label>` for details.
 +-------------------------+------------------+----------------------------------------------------------------------+
 | target_language         | .. raw:: html                                                                           |
 |                         |                                                                                         |
-|                         |  An RFC 5646 language code to translate this job into.</br>                             |
+|                         |  A language code or a comma separated language codes list to translate </br>            |
+|                         |  this job into.</br>                                                                    |
 |                         |  If not specified, then no translation will be performed.</br>                          |
 |                         |  If specified, but the language code specified matches the language</br>                |
 |                         |  code on the job request, then no translation will be performed.</br>                   |
 |                         |                                                                                         |
 |                         +------------------+----------------------------------------------------------------------+
-|                         | `Allowed Values` | RFC 5646 Language code                                               |
+|                         | `Allowed Values` | See :ref:`languages-label` (comma separated for multiple)            |
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Example`        | ``target_language=de``                                               |
 +-------------------------+------------------+----------------------------------------------------------------------+
