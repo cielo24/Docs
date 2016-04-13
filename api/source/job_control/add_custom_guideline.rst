@@ -3,16 +3,18 @@ Add Custom Guideline To Job
 
 Add a set of guidelines for transcribers to follow when transcribing the media.
 
-To add guidelines from a publicly accessible URL where the guidelines is the actual web page,
-make a GET request and specify the URL in the **guidelines_url** parameter and specify **is_html** parameter as **true**.
+To add guidelines from a publicly accessible URL where the
+guidelines is the actual web page, make a GET request and specify
+the URL in the **guidelines_url** parameter and specify **is_html** parameter as **true**.
 
 To add guidelines from a publicly accessible Download URL,
-make a GET request and specify the URL in the **guidelines_url** parameter.
-(you do not need to specify **is_html** as false)
+make a GET request and specify the URL in the **guidelines_url** parameter
+(you do not need to specify **is_html** as false).
 
-To add media rom a local file, make a POST request,
-Do NOT specify the **guidelines_url** parameter in the request URL.
-The media should be uploaded with a multipart/form content type where the file is uploaded to form-field input **file**
+To add guidelines from a local file, make a POST request,
+DO NOT specify the **guidelines_url** parameter in the request URL.
+The guidelines should be uploaded with a multipart/form content type
+where the file is uploaded to form-field input **file**.
 
 **Note**
 if you upload a custom guidelines set, when you call the **perform_transcription** api endpoint,
@@ -80,6 +82,20 @@ you must call the option parameter with **custom_special_handling** set to **tru
 |                  | `Example`        | ``Content-Disposition: form-data; name="file"; filename="file1.txt"``  |
 |                  |                  | ``Content-Type: text/plain``                                           |
 +------------------+------------------+------------------------------------------------------------------------+
+
+
+**Request Body** — Required `(when passing in plaintext separated by new lines)`
+
++------------------+-------------------------------------------------------------------------------------------+
+| Name             | Details                                                                                   |
++==================+==================+========================================================================+
+| guidelines_data  | `Description`    | plaintext separated by new lines                                       |
+|                  +------------------+------------------------------------------------------------------------+
+|                  | `Allowed Values` | String                                                                 |
+|                  +------------------+------------------------------------------------------------------------+
+|                  | `Example`        | ``guidelines_data=This is\nCustom Guideline``                          |
++------------------+------------------+------------------------------------------------------------------------+
+
 
 **Example Requests**
 
