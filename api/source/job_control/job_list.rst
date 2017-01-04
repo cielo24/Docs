@@ -1,7 +1,7 @@
 Job List
 ========
 
-Get a list of all ACTIVE jobs associated with the user account that generated the given API Token.
+Get a list of all jobs associated with the user account that generated the given API Token.
 The list is sorted by default to the creation time of the job, descending.
 
 **HTTP Method**
