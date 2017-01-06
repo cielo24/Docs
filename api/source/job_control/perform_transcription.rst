@@ -70,7 +70,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Allowed Values` | Stringified dictionary                                               |
 |                         +------------------+----------------------------------------------------------------------+
-|                         | `Example`        | ``options={"notes":"test","speaker_id":"true"}``                     |
+|                         | `Example`        | ``options={"notes":"test","speaker_id":true}``                       |
 +-------------------------+------------------+----------------------------------------------------------------------+
 | priority                | .. raw:: html                                                                           |
 |                         |                                                                                         |
@@ -113,7 +113,7 @@ See :ref:`callback documentation <callbacks-label>` for details.
 **Job Options**
   | The following options can be provided as a stringified dictionary.
   | The resulting string will be the value of the `options` query parameter.
-  | Example: ``options={"notes":"test_note","speaker_id":"true"}``
+  | Example: ``options={"notes":"test_note","speaker_id":true}``
 
 +-------------------------+-----------------------------------------------------------------------------------------+
 | Name                    | Details                                                                                 |
