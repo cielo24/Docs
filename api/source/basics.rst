@@ -70,7 +70,7 @@ If a callback URL is not practical, the application can poll the interface by re
 Languages
 ---------
 
-For translation jobs, either the source or the target language must be English. For non-English to non-English translation jobs, please contact `support@cielo24.com <mailto:support@cielo24.com>`_.
+We support transcription to and from any of the following languages. However, please note that if English is not a source or target language, an additional translation will incur as we will have to generate a translation from the source language into English and then from English into the Target language. This will result in increased charges.
 
 Transcription and translation are supported in the following languages for PROFESSIONAL fidelity jobs:
 
