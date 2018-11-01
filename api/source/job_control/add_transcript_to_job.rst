@@ -3,7 +3,7 @@ Add transcript To Job
 
 Add a transcript to an existing job.
 
-*not supported for every workflow, talk to your account manager for more details before using this feature*
+**not supported for every workflow, talk to your account manager for more details before using this feature**
 
 To add transcript from a publicly accessible URL,
 make a GET request and specify the URL in the **transcript_url** parameter.
