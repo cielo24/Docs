@@ -39,7 +39,7 @@ specify the Content-Length in the header. File size is limited to 10 gb.
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
 +------------------+------------------+-----------------------------------------------------------+
-| job_id           | `Description`    | The ID of the job to which transcript is added                 |
+| job_id           | `Description`    | The ID of the job to which transcript is added            |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
