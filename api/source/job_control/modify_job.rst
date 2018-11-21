@@ -54,6 +54,12 @@ Modify parameters of an already existing job. The job must be in *Authorization*
 |                        +------------------+------------------------------------------------------+
 |                        | `Example`        | ``priority=STANDARD``                                |
 +------------------------+------------------+------------------------------------------------------+
+| account_id             | `Description`    | The id of the desired account assigned to the job    |
+|                        +------------------+------------------------------------------------------+
+|                        | `Allowed Values` | Integer                                              |
+|                        +------------------+------------------------------------------------------+
+|                        | `Example`        | ``account_id=12``                                    |
++------------------------+------------------+------------------------------------------------------+
 
 **Responses**
 
@@ -77,7 +83,7 @@ Modify parameters of an already existing job. The job must be in *Authorization*
     Host: api.cielo24.com
     Body: v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
           &job_id=64bea283eff6475ea6596027a6ba0929
-          &transcription_fidelity=PREMIUM&priority=STANDARD
+          &transcription_fidelity=PREMIUM&priority=STANDARD&account_id=12
 
 **Example Response**
 
