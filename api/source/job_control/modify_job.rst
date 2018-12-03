@@ -33,33 +33,33 @@ Modify parameters of an already existing job. The job must be in *Authorization*
 
 **Query String Parameters** — Optional
 
-+------------------------+-------------------------------------------------------------------------+
-| Name                   | Details                                                                 |
-+========================+==================+======================================================+
-| transcription_fidelity | `Description`    | The desired fidelity of the transcription            |
-|                        +------------------+------------------------------------------------------+
-|                        | `Allowed Values` | :ref:`fidelity-label`                                |
-|                        +------------------+------------------------------------------------------+
-|                        | `Example`        | ``transcription_fidelity=PREMIUM``                   |
-+------------------------+------------------+------------------------------------------------------+
-| turnaround_hours       | `Description`    | The number of hours after which the job is returned  |
-|                        +------------------+------------------------------------------------------+
-|                        | `Allowed Values` | Integer                                              |
-|                        +------------------+------------------------------------------------------+
-|                        | `Example`        | ``turnaround_hours=36``                              |
-+------------------------+------------------+------------------------------------------------------+
-| priority               | `Description`    | The desired priority of the transcription            |
-|                        +------------------+------------------------------------------------------+
-|                        | `Allowed Values` | :ref:`priority-label`                                |
-|                        +------------------+------------------------------------------------------+
-|                        | `Example`        | ``priority=STANDARD``                                |
-+------------------------+------------------+------------------------------------------------------+
-| account_id             | `Description`    | The id of the desired account assigned to the job    |
-|                        +------------------+------------------------------------------------------+
-|                        | `Allowed Values` | Integer                                              |
-|                        +------------------+------------------------------------------------------+
-|                        | `Example`        | ``account_id=12``                                    |
-+------------------------+------------------+------------------------------------------------------+
++------------------------+--------------------------------------------------------------------------+
+| Name                   | Details                                                                  |
++========================+==================+=======================================================+
+| transcription_fidelity | `Description`    | The desired fidelity of the transcription             |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Allowed Values` | :ref:`fidelity-label`                                 |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Example`        | ``transcription_fidelity=PREMIUM``                    |
++------------------------+------------------+-------------------------------------------------------+
+| turnaround_hours       | `Description`    | The number of hours after which the job is returned   |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Allowed Values` | Integer                                               |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Example`        | ``turnaround_hours=36``                               |
++------------------------+------------------+-------------------------------------------------------+
+| priority               | `Description`    | The desired priority of the transcription             |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Allowed Values` | :ref:`priority-label`                                 |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Example`        | ``priority=STANDARD``                                 |
++------------------------+------------------+-------------------------------------------------------+
+| account_id             | `Description`    | The username of the account to be assigned to the job |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Allowed Values` | String                                                |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Example`        | ``account_id=john_doe``                               |
++------------------------+------------------+-------------------------------------------------------+
 
 **Responses**
 
@@ -83,7 +83,7 @@ Modify parameters of an already existing job. The job must be in *Authorization*
     Host: api.cielo24.com
     Body: v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
           &job_id=64bea283eff6475ea6596027a6ba0929
-          &transcription_fidelity=PREMIUM&priority=STANDARD&account_id=12
+          &transcription_fidelity=PREMIUM&priority=STANDARD&account_id=john_doe
 
 **Example Response**
 
