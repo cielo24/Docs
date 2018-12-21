@@ -129,3 +129,5 @@ Transcription is supported in the following languages for MECHANICAL fidelity jo
 +---------------------+--------------------+
 | Spanish             | es                 |
 +---------------------+--------------------+
+| Portuguese          | pt                 |
++---------------------+--------------------+
