@@ -1,4 +1,4 @@
-Add Media To Job
+Update Job Metadata
 ================
 
 Update metadata of an existing job.
