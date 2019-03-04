@@ -63,7 +63,7 @@ Get a URL to a specific transcoded version of the media for an existing job.
 
 .. sourcecode:: http
 
-    GET /api/job/media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
+    GET /api/job/transcoded_media?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
     &job_id=64bea283eff6475ea6596027a6ba0929&transcoded_version=mp4 HTTP/1.1
     Host: api.cielo24.com
 
