@@ -562,7 +562,9 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | String                                                    |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Choices`        | 'A': American, 'B': British,                              |
+|                                 | `Choices`        | .. raw:: html                                             |
+|                                 |                  |                                                           |
+|                                 |                  | 'A': American, 'B': British,</br>                         |
 |                                 |                  | 'Z': British ize, 'U' Australian, 'C': Canadian           |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Example`        | ``replace_english_spelling=B``                            |
