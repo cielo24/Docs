@@ -552,6 +552,21 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Example`        | ``utf8_mark=true``                                        |
 +---------------------------------+------------------+-----------------------------------------------------------+
+| replace_english_spelling        | .. raw:: html                                                                |
+|                                 |                                                                              |
+|                                 |  Replaces English spelling with location accurate spelling</br>              |
+|                                 |  i.e. Color --> Colour                                                       |
+|                                 |                                                                              |
+|                                 |                                                                              |
+|                                 |                                                                              |
+|                                 +------------------+-----------------------------------------------------------+
+|                                 | `Allowed Values` | String                                                    |
+|                                 +------------------+-----------------------------------------------------------+
+|                                 | `Allowed Value`  | 'A': American, 'B': British,                              |
+|                                 |                  | 'Z': British ize, 'U' Australian, 'C': Canadian           |
+|                                 +------------------+-----------------------------------------------------------+
+|                                 | `Example`        | ``replace_english_spelling=B``                            |
++---------------------------------+------------------+-----------------------------------------------------------+
 
 **Responses**
 
