@@ -562,10 +562,13 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | String                                                    |
 |                                 +------------------+-----------------------------------------------------------+
-|                                 | `Choices`        | .. raw:: html                                             |
+|                                 | `Default Value`  | .. raw:: html                                             |
 |                                 |                  |                                                           |
-|                                 |                  | 'A': American, 'B': British,</br>                         |
-|                                 |                  | 'Z': British ize, 'U' Australian, 'C': Canadian           |
+|                                 |                  |  A --> American</br>                                      |
+|                                 |                  |  B --> British</br>                                       |
+|                                 |                  |  Z --> British ize</br>                                   |
+|                                 |                  |  U --> Australian</br>                                    |
+|                                 |                  |  C --> Canadian</br>                                      |
 |                                 |                  |                                                           |
 |                                 |                  |                                                           |
 |                                 |                  |                                                           |
