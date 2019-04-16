@@ -60,7 +60,7 @@ Modify parameters of an already existing job. The job must be in *Authorization*
 |                         +------------------+-------------------------------------------------------+
 |                         | `Example`        | ``account_id=john_doe``                               |
 +-------------------------+------------------+-------------------------------------------------------+
-| expected_speakers       | `Description`    | Amount of speakers that the video will have 			|
+| expected_speakers       | `Description`    | Amount of speakers that the video will have           |
 |                         +------------------+-------------------------------------------------------+
 |                         | `Allowed Values` | Integer                                               |
 |                         +------------------+-------------------------------------------------------+

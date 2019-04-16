@@ -25,7 +25,7 @@ Creating a job is prerequisite for virtually all other methods.
 |                  | `Allowed Values` | Hex String                                                |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``api_token=7ca5dc5c7cce449fb0fff719307e8f5f``            |
-+------------------+------------------+--------------------- --------------------------------------+
++------------------+------------------+--------------------- -------------------------------------+
 
 **Query String Parameters** — Optional
 
@@ -37,7 +37,7 @@ Creating a job is prerequisite for virtually all other methods.
 |                   | `Allowed Values` | String                                                    |
 |                   +------------------+-----------------------------------------------------------+
 |                   | `Example`        | ``job_name=example_name``                                 |
-+--------------------+------------------+-----------------------------------------------------------+
++--------------------+------------------+----------------------------------------------------------+
 | language          | `Description`    | Native job language.                                      |
 |                   +------------------+-----------------------------------------------------------+
 |                   | `Allowed Values` | RFC 5646 Language code                                    |
@@ -60,7 +60,7 @@ Creating a job is prerequisite for virtually all other methods.
 |                   +------------------+-----------------------------------------------------------+
 |                   | `Example`        | ``username=my_sub_account``                               |
 +-------------------+------------------+-----------------------------------------------------------+
-| expected_speakers | `Description`    | Amount of speakers that the video will have 			   |
+| expected_speakers | `Description`    | Amount of speakers that the video will have               |
 |                   +------------------+-----------------------------------------------------------+
 |                   | `Allowed Values` | Integer                                                   |
 |                   +------------------+-----------------------------------------------------------+
