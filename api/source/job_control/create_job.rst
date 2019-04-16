@@ -1,6 +1,6 @@
 Create Job
 ==========
-test push
+
 Create a new job.
 A job is a container into which you can upload media and request that transcription be performed.
 Creating a job is prerequisite for virtually all other methods.
@@ -59,6 +59,18 @@ Creating a job is prerequisite for virtually all other methods.
 |                  | `Allowed Values` | String                                                    |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``username=my_sub_account``                               |
++------------------+------------------+-----------------------------------------------------------+
+| requestor        | `Description`    |  An requestor you want to associate with this job         |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Allowed Values` | String                                                    |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Example`        | ``requestor=test_requestor``                              |
++------------------+------------------+-----------------------------------------------------------+
+| reference        | `Description`    |  An reference you want to associate with this job         |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Allowed Values` | String                                                    |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Example`        | ``reference=test_reference``                              |
 +------------------+------------------+-----------------------------------------------------------+
 
 **Responses**
