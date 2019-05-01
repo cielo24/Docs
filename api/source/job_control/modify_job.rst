@@ -65,6 +65,12 @@ Modify parameters of an already existing job. The job must be in *Authorization*
 |                        | `Allowed Values` | String                                                |
 |                        +------------------+-------------------------------------------------------+
 |                        | `Example`        | `requestor_id=sample_id`                              |
++-------------------------+------------------+------------------------------------------------------+
+| expected_speakers      | `Description`    | Amount of speakers that the video will have           |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Allowed Values` | Integer                                               |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Example`        | ``expected_speakers=40``                              |
 +------------------------+------------------+-------------------------------------------------------+
 
 **Responses**
