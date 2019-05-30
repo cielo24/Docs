@@ -39,10 +39,12 @@ The New Job ID and job target language will be returned upon completion.
 +=========================+=========================================================================================+
 | approve_uplevel         | .. raw:: html                                                                           |
 |                         |                                                                                         |
-|                         | Mechanical Jobs must be upleveled before a Translation can be ordered. If ordering      |
-|                         | a translation on a Mechanical job this parameter becomes required.                      |
+|                         | Mechanical, Premium, Caption Import Jobs must be upleveled before a Translation can be  |
+|                         | ordered. If ordering a translation on a Mechanical/Premium/Caption Import job           |
+|                         | this parameter becomes required                                                         |
+|                         |                                                                                         |
 |                         +------------------+----------------------------------------------------------------------+
-|                         | `Allowed Values` | "yes"                                                                |
+|                         | `Allowed Values` | yes, no, t, f, true, false                                           |
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Example`        | ``approve_uplevel=yes``                                              |
 +-------------------------+------------------+----------------------------------------------------------------------+
@@ -64,4 +66,4 @@ The New Job ID and job target language will be returned upon completion.
     HTTP/1.1 201 CREATED
     Content-Type: application/json
 
-    {"translation_job_ids": [["91aa19d058aa42b1ac98339a24a36503", "Child Translation Created for fr"], ["f51dc35a39114b4c9c8c874b422e819e", "Child Translation Created for de"]], "translation_language": "fr,de"}
+    {"translation_job_ids": ["91aa19d058aa42b1ac98339a24a36503"], "message": "Child Translation Created for de. Child Translation already exists for fr"}
