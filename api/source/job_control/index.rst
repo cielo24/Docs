@@ -12,14 +12,17 @@ All job control tasks return a task ID which can be queried at any time using ta
    delete_job
    job_info
    job_list
+   list_related
    add_media_to_job
    add_transcript_to_job
    add_embedded_media_to_job
    get_media
    get_transcoded_media
    perform_transcription
+   order_translation
    get_transcript
    get_caption
    get_elementlist
    list_elementlists
    aggregate_statistics
+   uplevel_job
