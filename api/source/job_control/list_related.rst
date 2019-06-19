@@ -59,6 +59,8 @@ Host: api.cielo24.com
 
 **Example Response**
 
+.. sourcecode:: http
+
     HTTP/1.1 200 OK
     Content-Type: application/json
 
