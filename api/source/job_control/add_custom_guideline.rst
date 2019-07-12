@@ -14,6 +14,10 @@ To add media rom a local file, make a POST request,
 Do NOT specify the **guidelines_url** parameter in the request URL.
 The media should be uploaded with a multipart/form content type where the file is uploaded to form-field input **file**
 
+**Note**
+if you upload a custom guidelines set, when you call the **perform_transcription** api endpoint,
+you must call the option parameter with **custom_special_handling** set to **true**
+
 
 **HTTP Method**
 
