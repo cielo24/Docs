@@ -72,7 +72,7 @@ Languages
 
 We support transcription to and from any of the following languages. However, please note that if English is not a source or target language, an additional translation will incur as we will have to generate a translation from the source language into English and then from English into the Target language. This will result in increased charges.
 
-Transcription and translation are supported in the following languages for PROFESSIONAL fidelity jobs:
+Transcription and translation are supported in the following languages for PROFESSIONAL fidelity jobs (volume may vary contact `support <mailto:support@cielo24.com>`_ for more information):
 
 +-------------------------------------+--------------------+
 | Language                            | IETF Language Code |
