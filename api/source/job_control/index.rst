@@ -16,7 +16,7 @@ All job control tasks return a task ID which can be queried at any time using ta
    add_media_to_job
    add_transcript_to_job
    add_embedded_media_to_job
-   add_custom_guidelines
+   add_custom_guideline
    get_media
    get_transcoded_media
    perform_transcription
