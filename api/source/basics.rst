@@ -72,7 +72,7 @@ Languages
 
 We support transcription to and from any of the following languages. However, please note that if English is not a source or target language, an additional translation will incur as we will have to generate a translation from the source language into English and then from English into the Target language. This will result in increased charges.
 
-Transcription and translation are supported in the following languages for PROFESSIONAL fidelity jobs:
+Transcription and translation are supported in the following languages for PROFESSIONAL fidelity jobs (volume may vary contact `support <mailto:support@cielo24.com>`_ for more information):
 
 +-------------------------------------+--------------------+
 | Language                            | IETF Language Code |
@@ -85,17 +85,29 @@ Transcription and translation are supported in the following languages for PROFE
 +-------------------------------------+--------------------+
 | Chinese - Cantonese (Traditional)   | zh-yue             |
 +-------------------------------------+--------------------+
+| Czech                               | cz                 |
++-------------------------------------+--------------------+
+| Danish                              | dk                 |
++-------------------------------------+--------------------+
 | Dutch                               | nl                 |
 +-------------------------------------+--------------------+
 | English                             | en                 |
 +-------------------------------------+--------------------+
 | French                              | fr                 |
 +-------------------------------------+--------------------+
+| French (Canada)                     | fr-ca              |
++-------------------------------------+--------------------+
+| Finnish                             | fi                 |
++-------------------------------------+--------------------+
 | German                              | de                 |
++-------------------------------------+--------------------+
+| Greek                               | gr                 |
 +-------------------------------------+--------------------+
 | Hebrew                              | he                 |
 +-------------------------------------+--------------------+
 | Hindi                               | hi                 |
++-------------------------------------+--------------------+
+| Indonesian                          | id                 |
 +-------------------------------------+--------------------+
 | Italian                             | it                 |
 +-------------------------------------+--------------------+
@@ -103,13 +115,29 @@ Transcription and translation are supported in the following languages for PROFE
 +-------------------------------------+--------------------+
 | Korean                              | ko                 |
 +-------------------------------------+--------------------+
-| Portuguese                          | pt                 |
+| Norwegian                           | no                 |
++-------------------------------------+--------------------+
+| Polish                              | pl                 |
++-------------------------------------+--------------------+
+| Portuguese (Brazil)                 | pt                 |
++-------------------------------------+--------------------+
+| Portuguese (Portugal)               | pt-pt              |
 +-------------------------------------+--------------------+
 | Russian                             | ru                 |
 +-------------------------------------+--------------------+
 | Spanish                             | es                 |
 +-------------------------------------+--------------------+
+| Spanish (Spain)                     | es-es              |
++-------------------------------------+--------------------+
+| Slovak                              | sk                 |
++-------------------------------------+--------------------+
+| Swedish                             | se                 |
++-------------------------------------+--------------------+
+| Thai                                | th                 |
++-------------------------------------+--------------------+
 | Turkish                             | tr                 |
++-------------------------------------+--------------------+
+| Vietnamese                          | vn                 |
 +-------------------------------------+--------------------+
 
 Transcription is supported in the following languages for MECHANICAL fidelity jobs:
