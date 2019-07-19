@@ -1,7 +1,8 @@
 Order Translation
 =================
 
-Request that orders a Translation job for a previously completed Job.
+Request that orders a **new** Translation language for a video that has
+been **previously** Transcribed and/or Translated.
 The New Job ID and job target language will be returned upon completion.
 
 **HTTP Method**
