@@ -228,23 +228,23 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                                 +------------------+----------------------------------------------------------------------+
 |                                 | `Example`        | ``first_pass_campaign=TRUE_VERBATIM``                                |
 +---------------------------------+-------+----------+----------------------------------------------------------------------+
-| generate_media_intelligence_iwp | .. raw:: html                                                                   |
-|                                 |                                                                                 |
-|                                 |  Requests that media intelligence be generated for the specified </br>          |
-|                                 |  interim/final versions of the transcript. Media intelligence data is</br>      |
-|                                 |  added to the ElementList and can be retrieve using the</br>                    |
-|                                 |  <i>get_elementlist</i> API call.</br>                                          |
-|                                 |                                                                                 |
-|                                 | .. container::                                                                  |
-|                                 |                                                                                 |
-|                                 |    See :ref:`ElementList <media-intelligence-label>` for details.               |
-|                                 |                                                                                 |
-|                                 +------------------+--------------------------------------------------------------+
-|                                 | `Allowed Values` | :ref:`iwp-label`                                             |
-|                                 +------------------+--------------------------------------------------------------+
-|                                 | `Default Value`  | []                                                           |
-|                                 +------------------+--------------------------------------------------------------+
-|                                 | `Example`        | ``generate_media_intelligence_iwp=[MECHANICAL,FINAL]``       |
+| generate_media_intelligence_iwp | .. raw:: html                                                                           |
+|                                 |                                                                                         |
+|                                 |  Requests that media intelligence be generated for the specified </br>                  |
+|                                 |  interim/final versions of the transcript. Media intelligence data is</br>              |
+|                                 |  added to the ElementList and can be retrieve using the</br>                            |
+|                                 |  <i>get_elementlist</i> API call.</br>                                                  |
+|                                 |                                                                                         |
+|                                 | .. container::                                                                          |
+|                                 |                                                                                         |
+|                                 |    See :ref:`ElementList <media-intelligence-label>` for details.                       |
+|                                 |                                                                                         |
+|                                 +------------------+----------------------------------------------------------------------+
+|                                 | `Allowed Values` | :ref:`iwp-label`                                                     |
+|                                 +------------------+----------------------------------------------------------------------+
+|                                 | `Default Value`  | []                                                                   |
+|                                 +------------------+----------------------------------------------------------------------+
+|                                 | `Example`        | ``generate_media_intelligence_iwp=[MECHANICAL,FINAL]``               |
 +---------------------------------+------------------+----------------------------------------------------------------------+
 | audio_description               | .. raw:: html                                                                           |
 |                                 |                                                                                         |
