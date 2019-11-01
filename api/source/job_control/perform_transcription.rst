@@ -109,6 +109,15 @@ See :ref:`callback documentation <callbacks-label>` for details.
 |                         +------------------+----------------------------------------------------------------------+
 |                         | `Example`        | ``turnaround_hours=36``                                              |
 +-------------------------+------------------+----------------------------------------------------------------------+
+| standard_product        | .. raw:: html                                                                           |
+|                         |                                                                                         |
+|                         |  Flag to determine whether the media is sent through </br>                              |
+|                         |  the standard product or the legacy product                                             |
+|                         +------------------+----------------------------------------------------------------------+
+|                         | `Allowed Values` | URL Encoded String: true, false, y, n, t, f                          |
+|                         +------------------+----------------------------------------------------------------------+
+|                         | `Example`        | ``standard_product=true``                                            |
++-------------------------+------------------+----------------------------------------------------------------------+
 
 **Job Options**
   | The following options can be provided as a stringified dictionary.
