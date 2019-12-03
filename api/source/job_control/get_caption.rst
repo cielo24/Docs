@@ -148,6 +148,19 @@ The job must have completed transcription before a caption can be downloaded.
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Example`        | ``display_speaker_id=number``                             |
 +---------------------------------+------------------+-----------------------------------------------------------+
+| iwp_name                        | .. raw:: html                                                                |
+|                                 |                                                                              |
+|                                 |  The named version of element list to generate the transcript from.</br>     |
+|                                 |  If not specified, the transcript will be generated from the</br>            |
+|                                 |  latest version.                                                             |
+|                                 |                                                                              |
+|                                 +------------------+-----------------------------------------------------------+
+|                                 | `Allowed Values` | String                                                    |
+|                                 +------------------+-----------------------------------------------------------+
+|                                 | `Default Value`  | ""                                                        |
+|                                 +------------------+-----------------------------------------------------------+
+|                                 | `Example`        | ``iwp_name=MECHANICAL``                                   |
++---------------------------------+------------------+-----------------------------------------------------------+
 | elementlist_version             | .. raw:: html                                                                |
 |                                 |                                                                              |
 |                                 |  The version of element list to generate the captions from.</br>             |
