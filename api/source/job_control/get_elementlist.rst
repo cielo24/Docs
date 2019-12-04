@@ -45,6 +45,19 @@ The job must have completed transcription before a caption can be downloaded.
 |                     +------------------+--------------------------------------------------------+
 |                     | `Example`        | ``elementlist_version=2014-07-31T12:35:52Z``           |
 +---------------------+------------------+--------------------------------------------------------+
+| iwp_name            | .. raw:: html                                                             |
+|                     |                                                                           |
+|                     |  The named version of element list to generate the transcript from.</br>  |
+|                     |  If not specified, the transcript will be generated from the</br>         |
+|                     |  latest version.                                                          |
+|                     |                                                                           |
+|                     +------------------+--------------------------------------------------------+
+|                     | `Allowed Values` | String                                                 |
+|                     +------------------+--------------------------------------------------------+
+|                     | `Default Value`  | None (the latest version is returned)                  |
+|                     +------------------+--------------------------------------------------------+
+|                     | `Example`        | ``iwp_name=MECHANICAL``                                |
++---------------------+------------------+--------------------------------------------------------+
 
 **Responses**
 

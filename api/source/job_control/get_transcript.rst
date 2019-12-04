@@ -63,6 +63,19 @@ The job must have completed transcription before a transcript can be downloaded.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``elementlist_version=2014-07-31T12:35:52Z``              |
 +-------------------------------+------------------+-----------------------------------------------------------+
+| iwp_name                      | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  The named version of element list to generate the transcript from.</br>     |
+|                               |  If not specified, the transcript will be generated from the</br>            |
+|                               |  latest version.                                                             |
+|                               |                                                                              |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Allowed Values` | String                                                    |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Default Value`  | ""                                                        |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Example`        | ``iwp_name=MECHANICAL``                                   |
++-------------------------------+------------------+-----------------------------------------------------------+
 | emit_speaker_change_tokens_as | .. raw:: html                                                                |
 |                               |                                                                              |
 |                               |  Determine what characters to use to denote speaker changes.</br>            |
