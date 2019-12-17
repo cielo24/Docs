@@ -50,6 +50,30 @@ The job must have completed transcription before a transcript can be downloaded.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``create_paragraphs=true``                                |
 +-------------------------------+------------------+-----------------------------------------------------------+
+| audio_description             | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Select output file format                                                   |
+|                               |                                                                              |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Allowed Values` | Boolean                                                   |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Default Value`  | false                                                     |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Example`        | ``audio_description=true``                               |
++-------------------------------+------------------+-----------------------------------------------------------+
+| mixed                         | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  **Requires audio_description parameter**                                    |
+|                               |  Mixes together the audio description transcript into the caption transcript |
+|                               |  (Under Construction)                                                        |
+|                               |                                                                              |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Allowed Values` | Boolean                                                   |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Default Value`  | false                                                     |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Example`        | ``mixed=true``                                           |
++-------------------------------+------------------+-----------------------------------------------------------+
 | elementlist_version           | .. raw:: html                                                                |
 |                               |                                                                              |
 |                               |  The version of element list to generate the transcript from.</br>           |
