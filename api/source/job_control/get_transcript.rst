@@ -59,7 +59,7 @@ The job must have completed transcription before a transcript can be downloaded.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Default Value`  | false                                                     |
 |                               +------------------+-----------------------------------------------------------+
-|                               | `Example`        | ``audio_description=true``                               |
+|                               | `Example`        | ``audio_description=true``                                |
 +-------------------------------+------------------+-----------------------------------------------------------+
 | mixed                         | .. raw:: html                                                                |
 |                               |                                                                              |
@@ -72,7 +72,7 @@ The job must have completed transcription before a transcript can be downloaded.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Default Value`  | false                                                     |
 |                               +------------------+-----------------------------------------------------------+
-|                               | `Example`        | ``mixed=true``                                           |
+|                               | `Example`        | ``mixed=true``                                            |
 +-------------------------------+------------------+-----------------------------------------------------------+
 | elementlist_version           | .. raw:: html                                                                |
 |                               |                                                                              |
