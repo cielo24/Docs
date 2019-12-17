@@ -52,7 +52,7 @@ The job must have completed transcription before a transcript can be downloaded.
 +-------------------------------+------------------+-----------------------------------------------------------+
 | audio_description             | .. raw:: html                                                                |
 |                               |                                                                              |
-|                               |  Select output file format                                                   |
+|                               |  Select Audio Description Transcript                                         |
 |                               |                                                                              |
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Allowed Values` | Boolean                                                   |
