@@ -57,7 +57,7 @@ The job must have completed transcription before a caption can be downloaded.
 +---------------------------------+------------------+-----------------------------------------------------------+
 | audio_description               | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  Select output file format                                                   |
+|                                 |  Select Audio Description Caption                                            |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | Boolean                                                   |
