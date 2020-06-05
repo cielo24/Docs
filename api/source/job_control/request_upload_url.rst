@@ -95,12 +95,14 @@ URLs have a lifetime of 48 hours.
 **Example Requests**
 
 .. sourcecode:: http
+
     GET /api/job/request_upload_url?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
     &job_id=64bea283eff6475ea6596027a6ba0929
     &media_url=http%3A%2F%2Fwww.domain.com%2Fvideo.mp4 HTTP/1.1
     Host: api.cielo24.com
 
 .. sourcecode:: http
+
     POST /api/job/request_upload_url?v=1&api_token=7ca5dc5c7cce449fb0fff719307e8f5f
     &job_id=64bea283eff6475ea6596027a6ba0929 HTTP/1.1
     Host: api.cielo24.com
@@ -110,6 +112,7 @@ URLs have a lifetime of 48 hours.
 **Example Response**
 
 .. sourcecode:: http
+
     HTTP/1.1 200 OK
     Content-Type: application/json
     { "upload_url" : "signed-url" }
