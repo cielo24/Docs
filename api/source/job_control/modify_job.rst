@@ -66,6 +66,12 @@ Modify parameters of an already existing job. The job must be in *Authorization*
 |                        +------------------+-------------------------------------------------------+
 |                        | `Example`        | `requestor_id=sample_id`                              |
 +------------------------+------------------+-------------------------------------------------------+
+| callback_url           | `Description`    | Desired callback URL (URL to POST results to          |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Allowed Values` | String                                                |
+|                        +------------------+-------------------------------------------------------+
+|                        | `Example`        | `callback_url=https://sample.com/webhook`             |
++------------------------+------------------+-------------------------------------------------------+
 | expected_speakers      | `Description`    | Amount of speakers that the video will have           |
 |                        +------------------+-------------------------------------------------------+
 |                        | `Allowed Values` | Integer                                               |
