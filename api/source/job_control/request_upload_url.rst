@@ -43,6 +43,7 @@ not applicable
 **HTTP Headers** — Required `(when uploading LARGE media files)`
 
 not applicable
+
 **Responses**
 
 +-----------+-------------------------------------------------------------------------------------+
