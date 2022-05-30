@@ -63,9 +63,11 @@ specify the Content-Length in the header. File size is limited to 10 gb.
 +------------------+------------------------------------------------------------------------------+
 | Name             | Details                                                                      |
 +==================+==================+===========================================================+
-| is_duplicate     | `Description`    | Bypass the ducplicate detection settings                  |
+| is_duplicate     | `Description`    | Allows creating multiple jobs with the same media_url     |
 |                  +------------------+-----------------------------------------------------------+
-|                  | `Allowed Values` | Boolean                                                   |
+|                  | `Allowed Values` | Boolean (not case-sensitive)                              |
+|                  +------------------+-----------------------------------------------------------+
+|                  | `Default Value`  | false                                                     |
 |                  +------------------+-----------------------------------------------------------+
 |                  | `Example`        | ``is_duplicate=true``                                     |
 +------------------+------------------+-----------------------------------------------------------+
