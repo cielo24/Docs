@@ -68,9 +68,9 @@ The job must have completed transcription before a caption can be downloaded.
 +---------------------------------+------------------+-----------------------------------------------------------+
 | mixed                           | .. raw:: html                                                                |
 |                                 |                                                                              |
-|                                 |  **Requires audio_description parameter**                                    |
-|                                 |  Mixes together the audio description transcript into the caption transcript |
-|                                 |  (Under Construction)                                                        |
+|                                 |  **Requires audio_description parameter** </br>                              |
+|                                 |  Mixes together the audio description transcript</br>                        |
+|                                 | into the caption transcript                                                  |
 |                                 |                                                                              |
 |                                 +------------------+-----------------------------------------------------------+
 |                                 | `Allowed Values` | Boolean                                                   |
