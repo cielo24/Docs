@@ -269,6 +269,29 @@ The job must have completed transcription before a transcript can be downloaded.
 |                               +------------------+-----------------------------------------------------------+
 |                               | `Example`        | ``file_format=html``                                      |
 +-------------------------------+------------------+-----------------------------------------------------------+
+| replace_english_spelling      | .. raw:: html                                                                |
+|                               |                                                                              |
+|                               |  Replaces English spelling with location accurate spelling</br>              |
+|                               |  i.e. Color --> Colour                                                       |
+|                               |                                                                              |
+|                               |                                                                              |
+|                               |                                                                              |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Allowed Values` | String                                                    |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Default Value`  | .. raw:: html                                             |
+|                               |                  |                                                           |
+|                               |                  |  A --> American</br>                                      |
+|                               |                  |  B --> British</br>                                       |
+|                               |                  |  Z --> British ize</br>                                   |
+|                               |                  |  U --> Australian</br>                                    |
+|                               |                  |  C --> Canadian</br>                                      |
+|                               |                  |                                                           |
+|                               |                  |                                                           |
+|                               |                  |                                                           |
+|                               +------------------+-----------------------------------------------------------+
+|                               | `Example`        | ``replace_english_spelling=B``                            |
++-------------------------------+------------------+-----------------------------------------------------------+
 
 **Responses**
 
