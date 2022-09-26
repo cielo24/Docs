@@ -25,6 +25,7 @@ All job control tasks return a task ID which can be queried at any time using ta
    get_transcript
    get_caption
    get_elementlist
+   burn_in_caption
    list_elementlists
    aggregate_statistics
    request_upload_url
