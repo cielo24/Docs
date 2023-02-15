@@ -16,3 +16,4 @@ Api tokens expire after the user has been inactive for more than one hour.
    update_setting
    generate_api_key
    remove_api_key
+   sandbox_access

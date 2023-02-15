@@ -19,6 +19,31 @@ Transcript/caption requests made to the sandbox will return a pre-prepared sampl
 However, the transcript/caption will be formatted as you request in your :doc:`get_transcript <job_control/get_transcript>` **/** :doc:`get_caption <job_control/get_caption>` call.
 The sandbox API will make URL callbacks, if requested, a few seconds after the call to :doc:`perform_transcription <job_control/perform_transcription>` is made.
 
+In order to use the sandbox API, create an account in the environment is a prerequisite. See here :doc:`sandbox_access <access_control/sandbox_access>` for additional details.
+
+The sandbox API follows the same steps as the production API for job creation:
+
+#. A job must be created (:doc:`new <job_control/create_job>`)
+#. A media must be added to the job (:doc:`add_media <job_control/add_media_job>`)
+#. Finally, the Perform transcription must be called (:doc:`perform_transcription <job_control/perform_transcription>`)
+
+After all the steps are done, basic information on the job can be requested (:doc:`info <job_control/job_info>`).
+
+Notes:
+
+#. The sandbox API will also change the state of the job to Complete after some time in the processing state.
+
+#. The Sandbox API returns a pre-prepared sample of the production API, the data will not match the content or length of media you submitted
+
+#. Some endpoints aren't implemented on the Sandbox:
+
+    #. List Related
+    #. Add Custom Guideline To Job
+    #. Get Transcoded Media
+    #. Order Translation
+    #. Request Pre-signed Upload URL
+    #. Uplevel Job
+
 Production API
 --------------
 The production API can be accessed from the following location: https://api.cielo24.com.
