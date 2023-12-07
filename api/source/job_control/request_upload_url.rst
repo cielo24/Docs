@@ -6,7 +6,7 @@ Use this endpoint when you need to upload local files.
 For media where a public URL is available, consider using the "add_media_url" endpoint instead.
 After calling this endpoint, you will receive a signed URL in the response. The next step is to perform a "PUT" request to this URL.
 URLs have a lifetime of 12 hours.  Note: when performing the "PUT" request on the pre-signed URL, make sure to omit the 
-authorization header.  When your upload is complete, perform the standard "POST" request to the "perform_transcription" endpoint to begin processing.
+authorization header and content type.  When your upload is complete, perform the standard "POST" request to the "perform_transcription" endpoint to begin processing.
 
 **HTTP Method**
 
@@ -36,11 +36,11 @@ authorization header.  When your upload is complete, perform the standard "POST"
 |                  | `Example`        | ``job_id=64bea283eff6475ea6596027a6ba0929``               |
 +------------------+------------------+-----------------------------------------------------------+
 
-**Request Body** — `(when adding media from local file)`
+**Request Body** 
 
 not applicable
 
-**HTTP Headers** — Required `(when uploading LARGE media files)`
+**HTTP Headers** 
 
 not applicable
 
