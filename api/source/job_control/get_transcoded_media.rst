@@ -32,9 +32,9 @@ Get a URL to a specific transcoded version of the media for an existing job.
 +-------------------+------------------+-----------------------------------------------------------+
 | transcoded_version| `Description`    | The transcoded version of the media                       |
 |                   +------------------+-----------------------------------------------------------+
-|                   | `Allowed Values` | mp4, mp3, webm                                            |
+|                   | `Allowed Values` | mp4, mp3                                                  |
 |                   +------------------+-----------------------------------------------------------+
-|                   | `Example`        | ``transcoded_media=webm``                                 |
+|                   | `Example`        | ``transcoded_media=mp4``                                  |
 +-------------------+------------------+-----------------------------------------------------------+
 
 **Responses**
