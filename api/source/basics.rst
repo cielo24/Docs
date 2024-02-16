@@ -167,7 +167,7 @@ Transcription and translation are supported in the following languages for PROFE
 | Vietnamese                          | vn                 |
 +-------------------------------------+--------------------+
 
-Transcription is supported in the following languages for MECHANICAL fidelity jobs:
+Transcription and translation are supported in the following languages for MECHANICAL fidelity jobs:
 
 +---------------------------------+--------------------+
 | Language                        | IETF Language Code |
